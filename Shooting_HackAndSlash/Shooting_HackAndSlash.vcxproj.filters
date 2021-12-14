@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{35c5a242-3805-45f5-a3e4-f875b5b36620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject">
+      <UniqueIdentifier>{b975092a-c319-4be1-b1fe-caea41dd5a4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Scene">
+      <UniqueIdentifier>{2f2ebf11-8577-4d5b-ad1e-cdbf38cd08ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Template">
+      <UniqueIdentifier>{14e119c8-6f0a-404b-a180-924469a76cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Bullet">
+      <UniqueIdentifier>{f6f50403-a54b-460f-9965-e92e22e75e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UI">
+      <UniqueIdentifier>{e0ecfb4d-79e8-4ead-abcc-f9e03ba81f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Controller">
+      <UniqueIdentifier>{3352337f-10e4-4cee-8fd1-f91373fc80dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Enemy">
+      <UniqueIdentifier>{805e3bb3-83e9-4f4f-8591-5beb74ecb902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Component">
+      <UniqueIdentifier>{95916ced-e8b7-4563-8390-9ecc810cd6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Enum">
+      <UniqueIdentifier>{015f942d-f013-4482-a7dd-0ac5f435e2ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Interface">
+      <UniqueIdentifier>{a2a4958b-d512-4892-9579-da2b73259726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System">
+      <UniqueIdentifier>{7ee86fee-28e1-4c92-b81f-a9e25171e8bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Input_com">
+      <UniqueIdentifier>{be718352-7aa6-4d27-8b5e-3f14637adbaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Item">
+      <UniqueIdentifier>{eba19b5c-821e-4d18-8692-f76b8e0c74db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UI\Button">
+      <UniqueIdentifier>{938712ea-28d5-497c-a9ff-3382eab4789b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Define">
+      <UniqueIdentifier>{51810202-75f4-4db8-ab93-de28f307dc5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UI\System">
+      <UniqueIdentifier>{0cd23844-82db-43c8-a8ec-f62b84805a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Struct">
+      <UniqueIdentifier>{49384c17-1bb2-44fb-a6e4-890865536c8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Singleton">
+      <UniqueIdentifier>{78d6c602-575e-4659-8644-d98633498d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Struct\Resource">
+      <UniqueIdentifier>{47d7481a-2441-4df7-9237-679c16c8e73d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\System">
+      <UniqueIdentifier>{6a353584-0715-42eb-b441-dd008095d3c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>Source\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Abstruct_Shared_Manager.cpp">
+      <Filter>Source\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Abstruct_Shared_Handle.cpp">
+      <Filter>Source\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Boss.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bomb_count_displayer.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_CoolTime_Displayer.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BulletController_Player.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bomb_Launcher.cpp">
+      <Filter>Source\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_Lancher.cpp">
+      <Filter>Source\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ButtonController.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Debug_Choice.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Menu.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainGame.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NullScene.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Enemy_Kusozako.cpp">
+      <Filter>Source\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TestBullet.cpp">
+      <Filter>Source\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CircleCollider.cpp">
+      <Filter>Source\GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextDisplayer.cpp">
+      <Filter>Source\GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhotoDisplayer.cpp">
+      <Filter>Source\GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIController.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EnemyController.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Title.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Result.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MouseChecker.cpp">
+      <Filter>Source\System\Input_com</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MousePointer.cpp">
+      <Filter>Source\System\Input_com</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KeyChecker.cpp">
+      <Filter>Source\System\Input_com</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System.cpp">
+      <Filter>Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Looper.cpp">
+      <Filter>Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HP_Bar.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gauge.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Photo_SharedHandle.cpp">
+      <Filter>Source\System\Struct\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Font_SharedHandle.cpp">
+      <Filter>Source\System\Struct\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EnemySpawner.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemSpawner.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemController.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AbstructItem.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Item_Bomb.cpp">
+      <Filter>Source\GameObject\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Item_Cure.cpp">
+      <Filter>Source\GameObject\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Button.cpp">
+      <Filter>Source\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CursorDrawer.cpp">
+      <Filter>Source\UI\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Color.cpp">
+      <Filter>Source\System\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Text.cpp">
+      <Filter>Source\System\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Text_centeralign.cpp">
+      <Filter>Source\System\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input.cpp">
+      <Filter>Source\System\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Random.cpp">
+      <Filter>Source\System\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stage_Info.cpp">
+      <Filter>Source\System\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Time.cpp">
+      <Filter>Source\System\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kill_Count_Displayer.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Debug_Scene.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player_Bullet.cpp">
+      <Filter>Source\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AbstructBullet.cpp">
+      <Filter>Source\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerInfo.cpp">
+      <Filter>Source\System\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StagePrepare.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneFade.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneLoader.cpp">
+      <Filter>Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gauge_Horizontal.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Volume.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VolumeController.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Fade.cpp">
+      <Filter>Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stage_Num_Displayer.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AbstructEnemy.cpp">
+      <Filter>Source\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gun_Custamize.cpp" />
+    <ClCompile Include="src\BackPack.cpp" />
+    <ClCompile Include="src\Slot.cpp" />
+    <ClCompile Include="src\Gun_Slots.cpp" />
+    <ClCompile Include="src\BulletIcon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Player.h">
+      <Filter>Source\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Boss.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Abstruct_Shared_Handle.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Abstruct_Shared_Manager.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Abstruct_UI.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructBullet.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructEnemy.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructGameObject.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructScene.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bomb_Launcher.h">
+      <Filter>Source\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bomb_count_displayer.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_Lancher.h">
+      <Filter>Source\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_CoolTime_Displayer.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BulletController_Player.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Debug_Choice.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ButtonController.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EnemyController.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CircleCollider.h">
+      <Filter>Source\GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enemy_Kusozako.h">
+      <Filter>Source\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eEnemy.h">
+      <Filter>Source\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gauge.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eScene.h">
+      <Filter>Source\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HP_Bar.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IDisplayer.h">
+      <Filter>Source\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ISceneChangListener.h">
+      <Filter>Source\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IOSceneDestroyedListener.h">
+      <Filter>Source\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IOnPositionChangedListener.h">
+      <Filter>Source\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Title.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Result.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MainGame.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIController.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Looper.h">
+      <Filter>Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inputcode.h">
+      <Filter>Source\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System.h">
+      <Filter>Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Menu.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Singleton.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NullScene.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MousePointer.h">
+      <Filter>Source\System\Input_com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MouseChecker.h">
+      <Filter>Source\System\Input_com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KeyChecker.h">
+      <Filter>Source\System\Input_com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextDisplayer.h">
+      <Filter>Source\GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhotoDisplayer.h">
+      <Filter>Source\GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestBullet.h">
+      <Filter>Source\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Photo_SharedHandle.h">
+      <Filter>Source\System\Struct\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Font_SharedHandle.h">
+      <Filter>Source\System\Struct\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EnemySpawner.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemSpawner.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructItem.h">
+      <Filter>Source\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemController.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ISpawnCallListener.h">
+      <Filter>Source\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Item_Bomb.h">
+      <Filter>Source\GameObject\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Item_Cure.h">
+      <Filter>Source\GameObject\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Button.h">
+      <Filter>Source\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Define.h">
+      <Filter>Source\System\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CursorDrawer.h">
+      <Filter>Source\UI\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Color.h">
+      <Filter>Source\System\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Text.h">
+      <Filter>Source\System\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Text_centeralign.h">
+      <Filter>Source\System\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input.h">
+      <Filter>Source\System\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Random.h">
+      <Filter>Source\System\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stage_Info.h">
+      <Filter>Source\System\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Time.h">
+      <Filter>Source\System\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kill_Count_Displayer.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Define_Debug.h">
+      <Filter>Source\System\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Debug_Scene.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player_Bullet.h">
+      <Filter>Source\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerInfo.h">
+      <Filter>Source\System\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StagePrepare.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneFade.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneLoader.h">
+      <Filter>Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gauge_Horizontal.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Volume.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VolumeController.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fade.h">
+      <Filter>Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stage_Num_Displayer.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gun_Custamize.h" />
+    <ClInclude Include="src\BackPack.h" />
+    <ClInclude Include="src\Slot.h" />
+    <ClInclude Include="src\Gun_Slots.h" />
+    <ClInclude Include="src\BulletIcon.h" />
+    <ClInclude Include="src\eBullet.h" />
+  </ItemGroup>
+</Project>
