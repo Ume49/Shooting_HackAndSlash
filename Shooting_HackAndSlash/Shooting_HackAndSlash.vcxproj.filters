@@ -255,21 +255,11 @@
     <ClCompile Include="src\AbstructEnemy.cpp">
       <Filter>Source\Template</Filter>
     </ClCompile>
-    <ClCompile Include="src\BackPack.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClCompile>
-    <ClCompile Include="src\BulletIcon.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Gun_Custamize.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Gun_Slots.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Slot.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClCompile>
+    <ClCompile Include="src\BackPack.cpp" />
+    <ClCompile Include="src\BulletIcon.cpp" />
+    <ClCompile Include="src\Gun_Custamize.cpp" />
+    <ClCompile Include="src\Gun_Slots.cpp" />
+    <ClCompile Include="src\Slot.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -497,23 +487,11 @@
     <ClInclude Include="src\Stage_Num_Displayer.h">
       <Filter>Source\UI</Filter>
     </ClInclude>
-    <ClInclude Include="src\BackPack.h">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClInclude>
-    <ClInclude Include="src\BulletIcon.h">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClInclude>
-    <ClInclude Include="src\eBullet.h">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Gun_Custamize.h">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Gun_Slots.h">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Slot.h">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClInclude>
+    <ClInclude Include="src\BackPack.h" />
+    <ClInclude Include="src\BulletIcon.h" />
+    <ClInclude Include="src\eBullet.h" />
+    <ClInclude Include="src\Gun_Custamize.h" />
+    <ClInclude Include="src\Gun_Slots.h" />
+    <ClInclude Include="src\Slot.h" />
   </ItemGroup>
 </Project>
