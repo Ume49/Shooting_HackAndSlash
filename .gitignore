@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# .vsファイルはいらない
+.vs/
+
+# x64ファイルはいらない
+x64/
+Shooting_HackAndSlash/x64/
