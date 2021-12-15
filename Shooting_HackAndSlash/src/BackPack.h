@@ -3,19 +3,23 @@
 #include<vector>
 #include"BackPack_Slot.h"
 
+
 namespace Shooting_HackAndSlash {
 	// 現在所持している弾丸を表示する場所
 	// スクロールできるようにする？
 	// とりあえずスクロールなしで作る
 	class BackPack {
 		std::vector<BackPack_Slot> slots;
-	public:
+		Point pos;
 		Photo_SharedHandle back_photo;
+
+
+	public:
 
 		void update();
 		void draw() const;
 
-		BackPack();
+		BackPack(const Point& leftup);
 		~BackPack() = default;
 	};
 }

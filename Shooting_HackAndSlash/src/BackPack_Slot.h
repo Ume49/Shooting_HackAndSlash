@@ -15,7 +15,7 @@ namespace Shooting_HackAndSlash {
 		
 		void draw() const;
 
-		BackPack_Slot(const Point& center, const Point& size);
+		BackPack_Slot(const Point& leftup);
 		~BackPack_Slot() = default;
 	};
 }

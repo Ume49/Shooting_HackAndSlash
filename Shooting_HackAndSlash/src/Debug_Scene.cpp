@@ -56,9 +56,6 @@ namespace Shooting_HackAndSlash::Scene {
 
 		{	// ©—R‚É‘‚­êŠ
 			v.draw();
-
-			BulletIcon icon{ Define::Path::Photo::Cristal };
-			icon.draw();
 		}
 	}
 }

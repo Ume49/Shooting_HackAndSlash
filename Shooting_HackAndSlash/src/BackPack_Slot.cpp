@@ -8,15 +8,15 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash {
-	BackPack_Slot::BackPack_Slot(const Point& c, const Point& s) :
+	BackPack_Slot::BackPack_Slot(const Point& c) :
 		leftup(), 
 		rightdown(),
 		photo(::Path)
 	{
-		Point half = s / 2;
+		Point size = photo.size();
 
-		leftup = c - half;
-		rightdown = c + half;
+		leftup = c;
+		rightdown = c + size;
 	}
 
 	bool BackPack_Slot::is_click() const {
