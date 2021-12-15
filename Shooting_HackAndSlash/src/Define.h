@@ -122,6 +122,11 @@ namespace Shooting_HackAndSlash {
 					constexpr char Gauge[] = "Resource/volume_gauge.png";
 					constexpr char Window[] = "Resource/volume_window.png";
 				}
+				namespace Icon {
+					constexpr char ST_1[] = "Resource/volume_window.png";
+					constexpr char ST_2[] = "Resource/volume_window.png";
+					constexpr char ST_3[] = "Resource/volume_window.png";
+				}
 			}
 		}
 	}

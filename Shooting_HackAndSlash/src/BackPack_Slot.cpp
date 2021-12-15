@@ -9,7 +9,7 @@ namespace {
 
 namespace Shooting_HackAndSlash {
 	BackPack_Slot::BackPack_Slot(const Point& c) :
-		leftup(), 
+		leftup(),
 		rightdown(),
 		photo(::Path)
 	{
@@ -17,10 +17,11 @@ namespace Shooting_HackAndSlash {
 
 		leftup = c;
 		rightdown = c + size;
+
+		center = (rightdown + leftup) / 2;
 	}
 
 	bool BackPack_Slot::is_click() const {
-		
 		// 指定した数字の内側にいるか
 		auto is_inner = [](int value, int min, int max) {
 			return value >= min && value <= max;
@@ -32,19 +33,22 @@ namespace Shooting_HackAndSlash {
 		// 判定の外側にいるのであればその時点でfalseを返す
 		if (not is_inner(m_pos.x, leftup.x, rightdown.x)) { return false; }
 		if (not is_inner(m_pos.y, leftup.y, rightdown.y)) { return false; }
-		
+
 		// ポインタが判定内にあることは確定しているので、右クリックがされたかどうか返すだけで良い
 		return Input::GetDown(Inputcode::Fire1);
 	}
 
-
-
 	void BackPack_Slot::draw() const {
 #ifdef _DEBUG
 		// 当たり可視化
-		DrawBox(leftup.x, leftup.y, rightdown.x, rightdown.y, Palette::Collider, TRUE);
+		DrawBox(leftup.x, leftup.y, rightdown.x, rightdown.y, Palette::Collider, FALSE);
+		DrawLine(leftup.x, leftup.y, rightdown.x, rightdown.y, Palette::Collider);
 #endif // _DEBUG
 
 		DrawGraph(leftup.x, leftup.y, photo, TRUE);
+	}
+
+	const Point& BackPack_Slot::get_center() const{
+		return center;
 	}
 }

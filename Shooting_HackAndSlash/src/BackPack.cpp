@@ -1,9 +1,11 @@
 #include"BackPack.h"
 #include<DxLib.h>
+#include"BackPack_Info.h"
+#include"BackPack_Info.h"
 
 namespace {
 	// スロット同士の間隔
-	constexpr int Button_distance = 10;
+	constexpr int Button_distance = 74;
 
 	// スロットの個数
 	constexpr int x = 3, y = 3;
@@ -48,7 +50,17 @@ namespace Shooting_HackAndSlash {
 	}
 
 	void BackPack::draw() const {
+		// 背景描画
 		DrawGraph(pos.x, pos.y, back_photo, TRUE);
+		// 空枠描画
 		for (auto& w : slots) { w.draw(); }
+		// アイテムアイコン描画
+		auto& data = BackPack_Info::getContainer();
+		for (auto i = 0U; i < data.size(); i++) {
+			const auto& c = slots.at(i).get_center();
+
+			// スロットの中央を基準にアイコンを描画
+			DrawRotaGraph(c.x, c.y, 1., 0., BackPack_Info::getIcon(data.at(i)), TRUE);
+		}
 	}
 }

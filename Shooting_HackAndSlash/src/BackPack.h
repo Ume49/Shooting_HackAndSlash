@@ -2,7 +2,8 @@
 #include"Photo_SharedHandle.h"
 #include<vector>
 #include"BackPack_Slot.h"
-
+#include"eBullet.h"
+#include<unordered_map>
 
 namespace Shooting_HackAndSlash {
 	// Œ»İŠ‚µ‚Ä‚¢‚é’eŠÛ‚ğ•\¦‚·‚éêŠ
@@ -12,8 +13,6 @@ namespace Shooting_HackAndSlash {
 		std::vector<BackPack_Slot> slots;
 		Point pos;
 		Photo_SharedHandle back_photo;
-
-
 	public:
 
 		void update();

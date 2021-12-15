@@ -26,10 +26,11 @@ namespace Shooting_HackAndSlash::Scene {
 		AbstructScene(s),
 
 		//ˆÈ‰º©—R‚É‰Šú‰»
-		
+
 		//v(Point{ 100, 100 }, [](float f) {})
 		v(Point{ 70,100 }),
-		fade()
+		fade(),
+		backpack(Point{ 300,300 })
 	{
 		buttons.Add([&]() { listener.ScenePop(); }, "Return", Point{ 10, 10 });
 
@@ -47,6 +48,8 @@ namespace Shooting_HackAndSlash::Scene {
 			v.update();
 
 			fade.update();
+
+			backpack.update();
 		}
 		return is_continue;
 	}
@@ -56,6 +59,8 @@ namespace Shooting_HackAndSlash::Scene {
 
 		{	// ©—R‚É‘‚­êŠ
 			v.draw();
+
+			backpack.draw();
 		}
 	}
 }

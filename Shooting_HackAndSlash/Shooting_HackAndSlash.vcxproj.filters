@@ -261,6 +261,9 @@
     <ClCompile Include="src\Gun_Slots.cpp" />
     <ClCompile Include="src\Slot.cpp" />
     <ClCompile Include="src\BackPack_Slot.cpp" />
+    <ClCompile Include="src\Bullet_Info.cpp" />
+    <ClCompile Include="src\BackPack_Info.cpp" />
+    <ClCompile Include="src\Gun.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -495,5 +498,8 @@
     <ClInclude Include="src\Gun_Slots.h" />
     <ClInclude Include="src\Slot.h" />
     <ClInclude Include="src\BackPack_Slot.h" />
+    <ClInclude Include="src\Bullet_Info.h" />
+    <ClInclude Include="src\BackPack_Info.h" />
+    <ClInclude Include="src\Gun.h" />
   </ItemGroup>
 </Project>
