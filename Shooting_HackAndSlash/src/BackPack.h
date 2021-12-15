@@ -1,14 +1,14 @@
 #pragma once
 #include"Photo_SharedHandle.h"
 #include<vector>
-#include"Button.h"
+#include"BackPack_Slot.h"
 
 namespace Shooting_HackAndSlash {
 	// 現在所持している弾丸を表示する場所
 	// スクロールできるようにする？
 	// とりあえずスクロールなしで作る
 	class BackPack {
-		std::vector<UI::Button> slots;
+		std::vector<BackPack_Slot> slots;
 	public:
 		Photo_SharedHandle back_photo;
 

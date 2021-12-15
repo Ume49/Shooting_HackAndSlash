@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\BackPack_Slot.cpp" />
     <ClCompile Include="src\BulletIcon.cpp" />
     <ClCompile Include="src\BackPack.cpp" />
     <ClCompile Include="src\Gun_Slots.cpp" />
@@ -224,6 +225,7 @@
     <ClCompile Include="src\Stage_Num_Displayer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\BackPack_Slot.h" />
     <ClInclude Include="src\eBullet.h" />
     <ClInclude Include="src\BulletIcon.h" />
     <ClInclude Include="src\BackPack.h" />

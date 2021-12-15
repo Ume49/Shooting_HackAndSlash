@@ -96,6 +96,7 @@ namespace Shooting_HackAndSlash {
 				constexpr char Cursor[] = "Resource/cursor.png";
 				constexpr char UI_Window[] = "Resource/ui_window.png";
 				constexpr char Cristal[] = "Resource/cristal.png";
+				constexpr char Slot[]{ "Resource/null_slot.png" };
 
 				namespace Enemy {
 					constexpr char Kusozako[] = "Resource/kusozako.png";

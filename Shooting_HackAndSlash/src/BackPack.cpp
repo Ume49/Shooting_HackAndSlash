@@ -10,15 +10,13 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash {
-	BackPack::BackPack() {
-
+	BackPack::BackPack() :
+		slots() {
 	}
 
 	void BackPack::update() {
-		
 	}
 
 	void BackPack::draw() const {
-
 	}
 }
