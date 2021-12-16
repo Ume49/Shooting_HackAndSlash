@@ -2,9 +2,9 @@
 
 namespace {
 	// —v‹“¢”°”‚Ì‰Šú’l
-	constexpr int INIT = 10;
+	constexpr int INIT = 30;
 	// —v‹“¢”°”‚Ìã¸—Ê
-	constexpr int UP = 50;
+	constexpr int UP = 30;
 }
 
 namespace Shooting_HackAndSlash {

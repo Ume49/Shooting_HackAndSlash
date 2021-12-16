@@ -264,6 +264,7 @@
     <ClCompile Include="src\Bullet_Info.cpp" />
     <ClCompile Include="src\BackPack_Info.cpp" />
     <ClCompile Include="src\Gun.cpp" />
+    <ClCompile Include="src\Gun_Info.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -501,5 +502,6 @@
     <ClInclude Include="src\Bullet_Info.h" />
     <ClInclude Include="src\BackPack_Info.h" />
     <ClInclude Include="src\Gun.h" />
+    <ClInclude Include="src\Gun_Info.h" />
   </ItemGroup>
 </Project>
