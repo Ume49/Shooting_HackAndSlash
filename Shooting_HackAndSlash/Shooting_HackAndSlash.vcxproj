@@ -160,11 +160,10 @@
     <ClCompile Include="src\Gun.cpp" />
     <ClCompile Include="src\Inventory_Info.cpp" />
     <ClCompile Include="src\BackPack_Slot.cpp" />
-    <ClCompile Include="src\BulletIcon.cpp" />
     <ClCompile Include="src\BackPack.cpp" />
     <ClCompile Include="src\Gun_Slots.cpp" />
     <ClCompile Include="src\Dragged_Icon.cpp" />
-    <ClCompile Include="src\Gun_Custamize.cpp" />
+    <ClCompile Include="src\Gun_Custamize_Window.cpp" />
     <ClCompile Include="src\AbstructEnemy.cpp" />
     <ClCompile Include="src\Fade.cpp" />
     <ClCompile Include="src\Gauge_Horizontal.cpp" />
@@ -235,11 +234,10 @@
     <ClInclude Include="src\Inventory_Info.h" />
     <ClInclude Include="src\BackPack_Slot.h" />
     <ClInclude Include="src\eBullet.h" />
-    <ClInclude Include="src\BulletIcon.h" />
     <ClInclude Include="src\BackPack.h" />
     <ClInclude Include="src\Gun_Slots.h" />
     <ClInclude Include="src\Dragged_Icon.h" />
-    <ClInclude Include="src\Gun_Custamize.h" />
+    <ClInclude Include="src\Gun_Custamize_Window.h" />
     <ClInclude Include="src\Fade.h" />
     <ClInclude Include="src\Gauge_Horizontal.h" />
     <ClInclude Include="src\SceneFade.h" />

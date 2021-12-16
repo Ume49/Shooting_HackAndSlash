@@ -87,6 +87,12 @@ namespace Shooting_HackAndSlash {
 			}
 		}
 
+		// DrawRotaGraphを使ったときの、デフォルトの値
+		namespace RotaGraph_Default {
+			constexpr double ExRate = 1.0;
+			constexpr double Angle = 1.0;
+		}
+
 		// ファイルパス
 		namespace Path {
 			namespace Photo {
