@@ -7,7 +7,7 @@ namespace {
 	const char* Path = Shooting_HackAndSlash::Define::Path::Photo::Slot;
 }
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	BackPack_Slot::BackPack_Slot(const Point& c) :
 		leftup(),
 		rightdown(),

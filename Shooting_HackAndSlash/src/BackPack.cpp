@@ -14,7 +14,7 @@ namespace {
 	constexpr int init_x = 10, init_y = 10;
 }
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	BackPack::BackPack(const Point& p) :
 		slots(),
 		pos(p)

@@ -5,7 +5,7 @@
 #include"eBullet.h"
 #include<unordered_map>
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	// 現在所持している弾丸を表示する場所
 	// スクロールできるようにする？
 	// とりあえずスクロールなしで作る

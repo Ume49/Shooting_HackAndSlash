@@ -9,7 +9,7 @@ namespace {
 	constexpr double Zero_Angle = 0.;
 }
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	BulletIcon::BulletIcon(const std::string& path) :
 		pos(),
 		photo(path) {

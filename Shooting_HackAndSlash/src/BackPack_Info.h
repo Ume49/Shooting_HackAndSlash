@@ -5,7 +5,7 @@
 #include"eBullet.h"
 #include"Photo_SharedHandle.h"
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	class BackPack_Info : public Singleton<BackPack_Info>{
 		friend Singleton;
 		BackPack_Info();

@@ -6,8 +6,10 @@
 #include"Gun_Slots.h"
 
 namespace Shooting_HackAndSlash {
+	using namespace Gun_Custamize;
+
 	// 銃カスタマイズ画面
-	class Gun_Custamize{
+	class Gun_Custamize_Window{
 		// 所有している弾丸のインベントリ
 		BackPack backpack;
 
@@ -19,7 +21,7 @@ namespace Shooting_HackAndSlash {
 		void update();
 		void draw() const;
 
-		Gun_Custamize();
-		~Gun_Custamize() = default;
+		Gun_Custamize_Window();
+		~Gun_Custamize_Window() = default;
 	};
 }

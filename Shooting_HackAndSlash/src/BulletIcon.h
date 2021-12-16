@@ -1,7 +1,7 @@
 #pragma once
 #include"Photo_SharedHandle.h"
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	// ドラッグ＆ドロップ可能な、弾丸のアイコン
 	class BulletIcon{
 		Photo_SharedHandle photo;

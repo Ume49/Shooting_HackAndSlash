@@ -3,7 +3,7 @@
 #include"Photo_SharedHandle.h"
 #include<memory>
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	// バックパック向けに当たり判定を提供する
 	class BackPack_Slot{
 		Point leftup, rightdown, center;

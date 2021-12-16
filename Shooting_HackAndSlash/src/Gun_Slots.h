@@ -2,7 +2,7 @@
 #include"Slot.h"
 #include<vector>
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	// ’e‚ð“ü‚ê‚é‚Æ‚±
 	class Gun_Slots {
 		std::vector<Slot> slots;

@@ -6,7 +6,7 @@ namespace {
 	constexpr size_t bullet_length = 10;
 }
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	BackPack_Info::BackPack_Info() :
 		bullets(),
 		icon_table() {

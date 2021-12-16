@@ -4,7 +4,7 @@
 #include<DxLib.h>
 
 
-namespace Shooting_HackAndSlash {
+namespace Shooting_HackAndSlash::Gun_Custamize {
 	Slot::Slot() :
 		null_slot_photo(),
 		pos(),
