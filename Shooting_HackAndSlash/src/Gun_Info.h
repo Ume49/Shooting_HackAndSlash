@@ -10,7 +10,7 @@ namespace Shooting_HackAndSlash {
 		~Gun_Info() = default;
 
 		// Œ»İŠ—L‚µ‚Ä‚¢‚ée
-		std::vector<Gun> guns;
+		std::vector<Gun_Custamize::Gun> guns;
 	public:
 		
 	};

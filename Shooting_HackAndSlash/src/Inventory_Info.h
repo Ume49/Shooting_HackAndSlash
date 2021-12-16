@@ -9,11 +9,11 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		friend Singleton;
 		Inventory_Info();
 		~Inventory_Info() = default;
+	public:
+		void initialize();
 
 		// Œ»İ‚Á‚Ä‚¢‚é’eŠÛ
 		std::vector<eBullet> owned_item;
-	public:
-		void initialize();
 		
 	};
 }

@@ -5,6 +5,7 @@ namespace Shooting_HackAndSlash {
 	// ST : ’¼i‚·‚é
 	// Single , Double , Triple : Á–Å‚µ‚½ŒãA‰½ŒÂ‚Ì’eŠÛ‚ğ¶¬‚·‚é‚Ì‚©
 	enum class eBullet {
+		Null,
 		ST_Single,
 		ST_Double,
 		ST_Triple

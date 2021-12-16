@@ -6,10 +6,9 @@
 #include<unordered_map>
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
-	// 現在所持している弾丸を表示する場所
-	// スクロールできるようにする？
-	// とりあえずスクロールなしで作る
-	class BackPack {
+	// インベントリの内容を表示するクラス
+	//
+	class BackPack_Display {
 		std::vector<BackPack_Slot> slots;
 		Point pos;
 		Photo_SharedHandle back_photo;
@@ -18,7 +17,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		void update();
 		void draw() const;
 
-		BackPack(const Point& leftup);
-		~BackPack() = default;
+		BackPack_Display(const Point& leftup);
+		~BackPack_Display() = default;
 	};
 }

@@ -5,6 +5,10 @@
 #include"Icon_Table.h"
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
+	Dragged_Icon::Dragged_Icon() :
+		bullet(),
+		pos() {}
+
 	Dragged_Icon::Dragged_Icon(const eBullet& b) :
 		bullet(b),
 		pos()

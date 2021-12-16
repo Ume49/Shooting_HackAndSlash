@@ -8,8 +8,6 @@
 
 #include<format>
 
-#include"BulletIcon.h"
-
 namespace {
 	int bright = 255;
 
@@ -26,15 +24,9 @@ namespace Shooting_HackAndSlash::Scene {
 		AbstructScene(s),
 
 		//ˆÈ‰º©—R‚É‰Šú‰»
-
-		//v(Point{ 100, 100 }, [](float f) {})
-		v(Point{ 70,100 }),
-		fade(),
-		backpack(Point{ 300,300 })
+		custamize()
 	{
 		buttons.Add([&]() { listener.ScenePop(); }, "Return", Point{ 10, 10 });
-
-		buttons.Add([&]() { fade.Set();  }, "ˆÃ‚­‚·‚é", Point{ 200,10 });
 
 		::init();
 	}
@@ -45,11 +37,7 @@ namespace Shooting_HackAndSlash::Scene {
 		buttons.update();
 
 		{	// ©—R‚É‘‚­êŠ
-			v.update();
-
-			fade.update();
-
-			backpack.update();
+			custamize.update();
 		}
 		return is_continue;
 	}
@@ -58,9 +46,7 @@ namespace Shooting_HackAndSlash::Scene {
 		buttons.draw();
 
 		{	// ©—R‚É‘‚­êŠ
-			v.draw();
-
-			backpack.draw();
+			custamize.draw();
 		}
 	}
 }
