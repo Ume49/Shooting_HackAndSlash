@@ -23,7 +23,6 @@ namespace Shooting_HackAndSlash {
 		// 今ドラッグしている弾を表示する奴
 		// *出したり消したりしたいので、スマートポインタで保持する
 		std::unique_ptr<Dragged_Icon> icon;
-
 	public:
 		void update();
 		void draw() const;

@@ -129,9 +129,9 @@ namespace Shooting_HackAndSlash {
 					constexpr char Window[] = "Resource/volume_window.png";
 				}
 				namespace Icon {
-					constexpr char ST_1[] = "Resource/volume_window.png";
-					constexpr char ST_2[] = "Resource/volume_window.png";
-					constexpr char ST_3[] = "Resource/volume_window.png";
+					constexpr char ST_1[] = "Resource/st_1.png";
+					constexpr char ST_2[] = "Resource/st_2.png";
+					constexpr char ST_3[] = "Resource/st_3.png";
 				}
 			}
 		}
