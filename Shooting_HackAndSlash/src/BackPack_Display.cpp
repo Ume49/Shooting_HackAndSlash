@@ -15,9 +15,10 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
-	BackPack_Display::BackPack_Display(const Point& p) :
+	BackPack_Display::BackPack_Display(const Point& p, ISetIcon& i) :
 		slots(),
-		pos(p)
+		pos(p),
+		iseticon(i)
 	{
 		// スロットの初期位置を求める
 		Point init = p + Point{ ::init_x, ::init_y };
@@ -26,8 +27,8 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		slots.reserve(static_cast<size_t>(::x * ::y));
 
 		// スロットを登録
-		for (auto x = 0; x < ::x; x++) {
-			for (auto y = 0; y < ::y; y++) {
+		for (auto y = 0; y < ::y; y++) {
+			for (auto x = 0; x < ::x; x++) {
 				// 座標を計算
 				Point temp = init + Point{ Button_distance * x, Button_distance * y };
 
@@ -39,11 +40,15 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 
 	void BackPack_Display::update() {
 		// アイテムドラッグ関数
-		auto generate = []() {};
+		auto generate = [&](const eBullet& b) { 
+			iseticon.SetIcon(b);
+		};
 
-		for (auto& w : slots) {
-			if (w.is_click()) {
-				generate();
+		for (auto i = 0U; i < slots.size(); i++) {
+			if (slots.at(i).is_click()) {
+				auto bullet = Inventory_Info::getInstance().owned_item.at(i);
+
+				generate(bullet);
 				break;
 			}
 		}

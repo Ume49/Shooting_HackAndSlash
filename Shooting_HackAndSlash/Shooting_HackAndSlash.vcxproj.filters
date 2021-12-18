@@ -504,4 +504,7 @@
     <ClInclude Include="src\ISetIcon.h" />
     <ClInclude Include="src\IEraseIcon.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="メモ.txt" />
+  </ItemGroup>
 </Project>

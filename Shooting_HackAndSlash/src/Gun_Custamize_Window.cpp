@@ -11,7 +11,7 @@ namespace {
 
 namespace Shooting_HackAndSlash {
 	Gun_Custamize_Window::Gun_Custamize_Window() :
-		backpack(Point{ ::BackPack::x, ::BackPack::y }),
+		backpack(Point{ ::BackPack::x, ::BackPack::y }, *this),
 		magazine(),
 		icon() {
 		icon = std::make_unique<Dragged_Icon_Null>();

@@ -1,13 +1,16 @@
 #include "Icon_Table.h"
 
-namespace {
-
-}
+#include"Define.h"
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
+	namespace Path = Define::Path::Photo::Icon;
+
 	Icon_Table::Icon_Table() :
 		table() {
-		
+		// ‘Î‰•\‚ğì¬
+		table.emplace(eBullet::ST_Single, Path::ST_1);
+		table.emplace(eBullet::ST_Double, Path::ST_2);
+		table.emplace(eBullet::ST_Triple, Path::ST_3);
 	}
 
 	const Photo_SharedHandle& Icon_Table::at(const eBullet& b) {

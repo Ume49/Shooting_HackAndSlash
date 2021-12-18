@@ -1,12 +1,11 @@
 #include "Debug_Scene.h"
 #include"Define.h"
-
 #include<DxLib.h>
 #include"Input.h"
-
+#include<format>
 #include"Color.h"
 
-#include<format>
+#include"Inventory_Info.h"
 
 namespace {
 	int bright = 255;
@@ -27,6 +26,8 @@ namespace Shooting_HackAndSlash::Scene {
 		custamize()
 	{
 		buttons.Add([&]() { listener.ScenePop(); }, "Return", Point{ 10, 10 });
+
+		buttons.Add([&]() { Inventory_Info::getInstance().owned_item.push_back(eBullet::ST_Single); }, "ƒAƒCƒeƒ€’Ç‰Á", Point{ 10, 110 });
 
 		::init();
 	}
