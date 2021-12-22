@@ -228,6 +228,7 @@
     <ClCompile Include="src\Stage_Num_Displayer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Define_Inventory.h" />
     <ClInclude Include="src\IEraseIcon.h" />
     <ClInclude Include="src\ISetIcon.h" />
     <ClInclude Include="src\Icon_Table.h" />

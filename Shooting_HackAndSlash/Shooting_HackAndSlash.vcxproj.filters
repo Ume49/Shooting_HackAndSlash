@@ -503,6 +503,7 @@
     <ClInclude Include="src\Icon_Table.h" />
     <ClInclude Include="src\ISetIcon.h" />
     <ClInclude Include="src\IEraseIcon.h" />
+    <ClInclude Include="src\Define_Inventory.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="メモ.txt" />
