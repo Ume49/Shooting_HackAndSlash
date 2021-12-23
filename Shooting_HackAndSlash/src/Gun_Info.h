@@ -12,6 +12,13 @@ namespace Shooting_HackAndSlash {
 		// 現在所有している銃
 		std::vector<Gun_Custamize::Gun> guns;
 	public:
-		
+		// 初期化
+		static void initialize();
+
+		// 要素へのアクセス
+		static Gun_Custamize::Gun& at(size_t index);
+
+		// 銃を追加する
+		static void Add(size_t magazine_length);
 	};
 }

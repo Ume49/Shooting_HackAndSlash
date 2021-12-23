@@ -1,6 +1,9 @@
 #pragma once
 #include<vector>
 
+#include"Slot.h"
+#include"Photo_SharedHandle.h"
+
 #include"IDragAndDropListener.h"
 #include"ISetIcon.h"
 
@@ -9,6 +12,9 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	// 
 	class Magazine : public IDragAndDropListener{
 		ISetIcon& setter;
+
+		std::vector<Slot> slots;
+		Photo_SharedHandle null_slot_photo;
 	public:
 		void update();
 		void draw() const;

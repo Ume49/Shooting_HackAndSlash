@@ -2,9 +2,14 @@
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
 	Gun::Gun() :
-		magazine() {
+		magazine() 
+	{
 
 	}
 
+	Gun::Gun(size_t l) :
+		magazine(l) 
+	{
 
+	}
 }

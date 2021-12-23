@@ -263,18 +263,16 @@
     <ClCompile Include="src\Gun_Custamize_Window.cpp" />
     <ClCompile Include="src\Dragged_Icon.cpp" />
     <ClCompile Include="src\BackPack.cpp" />
+    <ClCompile Include="src\Icon_Table.cpp">
+      <Filter>あんま触ってない</Filter>
+    </ClCompile>
     <ClCompile Include="src\Gun.cpp">
       <Filter>あんま触ってない</Filter>
     </ClCompile>
     <ClCompile Include="src\Gun_Info.cpp">
       <Filter>あんま触ってない</Filter>
     </ClCompile>
-    <ClCompile Include="src\Icon_Table.cpp">
-      <Filter>あんま触ってない</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Magazine.cpp">
-      <Filter>あんま触ってない</Filter>
-    </ClCompile>
+    <ClCompile Include="src\Magazine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -515,16 +513,16 @@
     <ClInclude Include="src\eBullet.h">
       <Filter>あんま触ってない</Filter>
     </ClInclude>
-    <ClInclude Include="src\Gun.h">
+    <ClInclude Include="src\Icon_Table.h">
+      <Filter>あんま触ってない</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IEraseIcon.h">
       <Filter>あんま触ってない</Filter>
     </ClInclude>
     <ClInclude Include="src\Gun_Info.h">
       <Filter>あんま触ってない</Filter>
     </ClInclude>
-    <ClInclude Include="src\Icon_Table.h">
-      <Filter>あんま触ってない</Filter>
-    </ClInclude>
-    <ClInclude Include="src\IEraseIcon.h">
+    <ClInclude Include="src\Gun.h">
       <Filter>あんま触ってない</Filter>
     </ClInclude>
   </ItemGroup>

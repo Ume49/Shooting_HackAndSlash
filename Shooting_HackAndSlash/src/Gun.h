@@ -10,6 +10,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 
 	public:
 		Gun();
+		Gun(size_t length);
 		~Gun() = default;
 	};
 }
