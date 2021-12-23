@@ -38,13 +38,10 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		// スロットを登録
 		for (auto y = 0; y < height; y++) {
 			for (auto x = 0; x < ::x; x++) {
-				// x座標を計算
-				int temp_x = ::init_x + x * (Button_distance + size.x);
-				// y座標を計算
-				int temp_y = ::init_y + y * (Button_distance + size.y);
+				Point temp = pos + Point{ ::init_x, ::init_y } + (Point{ Button_distance, Button_distance } + size) * Point { x, y };
 
 				// 登録
-				slots.push_back(Slot(Point{ temp_x, temp_y }, size));
+				slots.push_back(Slot(temp, size));
 			}
 		}
 	}
@@ -52,7 +49,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	void BackPack::update() {
 		// アイテムドラッグ関数
 		auto generate = [&](const eBullet& b, size_t index) {
-			setter.SetIcon(b, *this ,index);
+			setter.SetIcon(b, *this, index);
 		};
 
 		if (Input::GetDown(Inputcode::Fire1)) {
@@ -118,7 +115,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 				break;
 			}
 
-				iter++;
+			iter++;
 		}
 
 		return result;
