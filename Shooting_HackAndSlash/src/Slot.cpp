@@ -19,7 +19,7 @@ namespace Shooting_HackAndSlash {
 	bool Slot::is_on_mouse() const {
 		Point mouse = Input::GetMousePos();
 
-		bool result = false;
+		bool result = true;
 
 		// 範囲内にいるかどうか返す
 		auto is_inrange = [](int value, int min, int max) {
@@ -27,10 +27,10 @@ namespace Shooting_HackAndSlash {
 		};
 
 		// x軸方向において範囲内にいるかどうか
-		result |= is_inrange(mouse.x, leftup.x, rightdown.x);
+		result &= is_inrange(mouse.x, leftup.x, rightdown.x);
 
 		// y軸方向において範囲内にいるかどうか
-		result |= is_inrange(mouse.y, leftup.y, rightdown.y);
+		result &= is_inrange(mouse.y, leftup.y, rightdown.y);
 
 		return result;
 	}

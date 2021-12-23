@@ -52,9 +52,10 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 			setter.SetIcon(b, *this, index);
 		};
 
-		if (Input::GetDown(Inputcode::Fire1)) {
-			for (auto i = 0U; i < slots.size(); i++) {
-				if (slots.at(i).is_on_mouse()) {
+		if (Input::GetDown(Inputcode::Fire1)) {	// 左クリックが押された時
+			for (auto i = 0U; i < slots.size(); i++) {	// 全ての当たり判定をチェック
+				if (slots.at(i).is_on_mouse()) {	// マウスが重なっているスロットがあるかどうか
+					//インベントリから、対応する弾を取得
 					auto bullet = Inventory_Info::getInstance().owned_item.at(i);
 
 					if (bullet != eBullet::Null) {
@@ -74,6 +75,10 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		// スロットの戦闘イテレータを取得
 		auto iter = slots.cbegin();
 
+#ifdef _DEBUG
+		int count = 0;
+#endif // _DEBUG
+
 		// インベントリを参照
 		for (auto& w : Inventory_Info::getInstance().owned_item) {
 			// 座標を取得
@@ -92,6 +97,12 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 
 				draw(handle);
 			}
+
+			// デバッグ用に番号描画
+#ifdef _DEBUG
+			DrawFormatString(pos.x, pos.y, Palette::White, "%d", count);
+			count++;
+#endif // _DEBUG
 
 			iter++;
 		}
