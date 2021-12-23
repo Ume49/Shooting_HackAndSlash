@@ -3,10 +3,11 @@
 #include"Inventory_Info.h"
 #include"Icon_Table.h"
 #include"Define.h"
+#include"Input.h"
 
 namespace {
 	// スロット同士の間隔
-	constexpr int Button_distance = 74;
+	constexpr int Button_distance = 10;
 
 	// スロットを横に何個並べるか
 	constexpr int x = 2;
@@ -20,7 +21,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		null_slot_photo(Define::Path::Photo::Slot),
 		slots(),
 		pos(p),
-		iseticon(i)
+		setter(i)
 	{
 		// スロットの初期位置を求める
 		Point init = p + Point{ ::init_x, ::init_y };
@@ -31,34 +32,40 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		// スロットを縦に何個並べるか
 		int height = Inventory_Length / ::x;
 
+		// スロットのサイズを取得
+		auto size = null_slot_photo.size();
+
 		// スロットを登録
 		for (auto y = 0; y < height; y++) {
 			for (auto x = 0; x < ::x; x++) {
-				// 座標を計算
-				Point temp = init + Point{ Button_distance * x, Button_distance * y };
+				// x座標を計算
+				int temp_x = ::init_x + x * (Button_distance + size.x);
+				// y座標を計算
+				int temp_y = ::init_y + y * (Button_distance + size.y);
 
 				// 登録
-				slots.push_back(BackPack_Slot(temp));
+				slots.push_back(Slot(Point{ temp_x, temp_y }, size));
 			}
 		}
 	}
 
 	void BackPack::update() {
 		// アイテムドラッグ関数
-		auto generate = [&](const eBullet& b) {
-			iseticon.SetIcon(b);
+		auto generate = [&](const eBullet& b, size_t index) {
+			setter.SetIcon(b, *this ,index);
 		};
 
-		for (auto i = 0U; i < slots.size(); i++) {
-			if (slots.at(i).is_click()) {
-				auto bullet = Inventory_Info::getInstance().owned_item.at(i);
+		if (Input::GetDown(Inputcode::Fire1)) {
+			for (auto i = 0U; i < slots.size(); i++) {
+				if (slots.at(i).is_on_mouse()) {
+					auto bullet = Inventory_Info::getInstance().owned_item.at(i);
 
-				
-				if (bullet != eBullet::Null) { 
-					generate(bullet);
-					Inventory_Info::SetNull(i);
+					if (bullet != eBullet::Null) {
+						generate(bullet, i);
+						Inventory_Info::SetNull(i);
+					}
+					break;
 				}
-				break;
 			}
 		}
 	}
@@ -73,7 +80,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		// インベントリを参照
 		for (auto& w : Inventory_Info::getInstance().owned_item) {
 			// 座標を取得
-			auto pos = iter->get_center();
+			auto pos = iter->Center();
 
 			// 描画命令
 			auto draw = [&](int h) {DrawRotaGraph(pos.x, pos.y, Define::RotaGraph_Default::ExRate, Define::RotaGraph_Default::Angle, h, TRUE); };
@@ -93,9 +100,31 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		}
 	}
 
-	bool BackPack::CheckDrop() {
-		for (auto& w : slots) {
+	bool BackPack::CheckDrop(const eBullet& b) {
+		bool result = false;
 
+		// コンテナの先頭イテレータを取得
+		auto iter = Inventory_Info::getInstance().owned_item.begin();
+
+		// マウスが重なっているスロットがあるか探索
+		// ついでにそれと合うようにイテレータも移動
+		for (auto& w : slots) {
+			if (w.is_on_mouse()) {
+				result = true;
+
+				// 代入
+				*iter = b;
+
+				break;
+			}
+
+				iter++;
 		}
+
+		return result;
+	}
+
+	void BackPack::Back(size_t index, const eBullet& bullet) {
+		Inventory_Info::Set(index, bullet);
 	}
 }

@@ -22,4 +22,8 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	void Inventory_Info::SetNull(size_t index) {
 		Inventory_Info::getInstance().owned_item.at(index) = eBullet::Null;
 	}
+
+	void Inventory_Info::Set(size_t index, const eBullet& b) {
+		Inventory_Info::getInstance().owned_item.at(index) = b;
+	}
 }

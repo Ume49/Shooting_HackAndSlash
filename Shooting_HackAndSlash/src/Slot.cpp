@@ -2,7 +2,9 @@
 
 #include"Input.h"
 
-namespace Shooting_HackAndSlash{
+#include"Define.h"
+
+namespace Shooting_HackAndSlash {
 	Slot::Slot(const Point& c, const Point& size) :
 		leftup(),
 		rightdown(),
@@ -35,5 +37,11 @@ namespace Shooting_HackAndSlash{
 
 	Point Slot::Center() const {
 		return center;
+	}
+
+	void Slot::draw() const {
+#ifdef _DEBUG
+		DrawBox(leftup.x, leftup.y, rightdown.x, rightdown.y, Palette::Collider, FALSE);
+#endif // _DEBUG
 	}
 }

@@ -10,9 +10,11 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash {
+	using namespace Gun_Custamize;
+
 	Gun_Custamize_Window::Gun_Custamize_Window() :
-		backpack(Point{ ::BackPack::x, ::BackPack::y }, *this),
-		magazine(),
+		backpack(Point{ ::BackPack::x, ::BackPack::y }, * this),
+		magazine(*this),
 		icon() {
 		icon = std::make_unique<Dragged_Icon_Null>();
 	}
@@ -29,8 +31,8 @@ namespace Shooting_HackAndSlash {
 		icon->draw();
 	}
 
-	void Gun_Custamize_Window::SetIcon(const eBullet& b) {
-		icon = std::make_unique<Dragged_Icon>(b);
+	void Gun_Custamize_Window::SetIcon(const eBullet& b, IBackListener& back, size_t i) {
+		icon = std::make_unique<Dragged_Icon>(b, i, *this, back, magazine, backpack);
 	}
 
 	void Gun_Custamize_Window::EraseIcon() {

@@ -20,6 +20,8 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		// ‹ó—“‚É‚·‚é
 		static void SetNull(size_t index);
 
+		static void Set(size_t index, const eBullet& Bullet);
+
 		// Œ»İ‚Á‚Ä‚¢‚é’eŠÛ
 		std::array<eBullet, Inventory_Length> owned_item;
 	};

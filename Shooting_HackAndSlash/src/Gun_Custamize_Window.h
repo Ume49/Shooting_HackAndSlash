@@ -10,24 +10,22 @@
 #include<memory>
 
 namespace Shooting_HackAndSlash {
-	using namespace Gun_Custamize;
-
 	// 銃カスタマイズ画面
 	class Gun_Custamize_Window : public ISetIcon, public IEraseIcon{
 		// インベントリ
-		BackPack backpack;
+		Gun_Custamize::BackPack backpack;
 
 		// 弾を入れる場所
-		Magazine magazine;
+		Gun_Custamize::Magazine magazine;
 
 		// 今ドラッグしている弾を表示する奴
 		// *出したり消したりしたいので、スマートポインタで保持する
-		std::unique_ptr<Dragged_Icon> icon;
+		std::unique_ptr<Gun_Custamize::Base_Icon> icon;
 	public:
 		void update();
 		void draw() const;
 
-		void SetIcon(const eBullet& bullet_kind) override;
+		void SetIcon(const eBullet& bullet_kind, IBackListener& back, size_t index) override;
 		void EraseIcon() override;
 
 		Gun_Custamize_Window();

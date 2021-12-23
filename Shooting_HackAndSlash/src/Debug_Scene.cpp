@@ -27,7 +27,9 @@ namespace Shooting_HackAndSlash::Scene {
 	{
 		buttons.Add([&]() { listener.ScenePop(); }, "Return", Point{ 10, 10 });
 
-		buttons.Add([&]() { *(Inventory_Info::container_space()) = eBullet::ST_Single;}, "アイテム追加", Point{ 10, 110 });
+
+		
+		buttons.Add([&]() { *(Gun_Custamize::Inventory_Info::container_space()) = eBullet::ST_Single;}, "アイテム追加", Point{ 10, 110 });
 
 		::init();
 	}

@@ -1,4 +1,5 @@
-﻿#include"Vector.h"
+﻿#pragma once
+#include"Vector.h"
 
 namespace Shooting_HackAndSlash {
 	class Slot {
@@ -12,5 +13,7 @@ namespace Shooting_HackAndSlash {
 
 		// 中央座標を返す
 		Point Center() const;
+
+		void draw() const;
 	};
 }
