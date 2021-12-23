@@ -1,4 +1,4 @@
-#include"BackPack_Display.h"
+#include"BackPack.h"
 #include<DxLib.h>
 #include"Inventory_Info.h"
 #include"Icon_Table.h"
@@ -16,7 +16,7 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
-	BackPack_Display::BackPack_Display(const Point& p, ISetIcon& i) :
+	BackPack::BackPack(const Point& p, ISetIcon& i) :
 		null_slot_photo(Define::Path::Photo::Slot),
 		slots(),
 		pos(p),
@@ -43,7 +43,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		}
 	}
 
-	void BackPack_Display::update() {
+	void BackPack::update() {
 		// アイテムドラッグ関数
 		auto generate = [&](const eBullet& b) {
 			iseticon.SetIcon(b);
@@ -54,13 +54,16 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 				auto bullet = Inventory_Info::getInstance().owned_item.at(i);
 
 				
-				if (bullet != eBullet::Null) { generate(bullet); }
+				if (bullet != eBullet::Null) { 
+					generate(bullet);
+					Inventory_Info::SetNull(i);
+				}
 				break;
 			}
 		}
 	}
 
-	void BackPack_Display::draw() const {
+	void BackPack::draw() const {
 		// 背景描画
 		DrawGraph(pos.x, pos.y, back_photo, TRUE);
 

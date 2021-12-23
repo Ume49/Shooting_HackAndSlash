@@ -4,8 +4,8 @@
 #include"ISetIcon.h"
 #include"IEraseIcon.h"
 
-#include"BackPack_Display.h"
-#include"Magazin_Displayer.h"
+#include"BackPack.h"
+#include"Magazine.h"
 #include"Dragged_Icon.h"
 #include<memory>
 
@@ -15,10 +15,10 @@ namespace Shooting_HackAndSlash {
 	// 銃カスタマイズ画面
 	class Gun_Custamize_Window : public ISetIcon, public IEraseIcon{
 		// インベントリ
-		BackPack_Display backpack;
+		BackPack backpack;
 
 		// 弾を入れる場所
-		Magazin_Displayer magazine;
+		Magazine magazine;
 
 		// 今ドラッグしている弾を表示する奴
 		// *出したり消したりしたいので、スマートポインタで保持する

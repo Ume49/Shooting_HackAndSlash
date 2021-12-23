@@ -18,4 +18,8 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 
 		return std::find(w.owned_item.begin(), w.owned_item.end(), eBullet::Null);
 	}
+
+	void Inventory_Info::SetNull(size_t index) {
+		Inventory_Info::getInstance().owned_item.at(index) = eBullet::Null;
+	}
 }

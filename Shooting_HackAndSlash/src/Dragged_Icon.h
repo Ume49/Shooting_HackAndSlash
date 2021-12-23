@@ -3,17 +3,22 @@
 #include"eBullet.h"
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
+	class BackPack;
+	class Magazine;
+
 	// マウスカーソルにくっついてくるアイコン
 	class Dragged_Icon {
 		Vec2 pos;
 	public:
 		eBullet bullet;
 
+		BackPack& backpack;
+		Magazine& magazine;
+
 		virtual void update();
 		virtual void draw() const;
 
-		Dragged_Icon();
-		Dragged_Icon(const eBullet& bullet);
+		Dragged_Icon(const eBullet& bullet, BackPack& backpack, Magazine& magazine);
 		~Dragged_Icon() = default;
 	};
 

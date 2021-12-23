@@ -10,7 +10,7 @@
 namespace Shooting_HackAndSlash::Gun_Custamize {
 	// インベントリの内容を表示するクラス
 	//
-	class BackPack_Display {
+	class BackPack {
 		std::vector<BackPack_Slot> slots;
 
 		Photo_SharedHandle null_slot_photo;
@@ -23,7 +23,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		void update();
 		void draw() const;
 
-		BackPack_Display(const Point& leftup, ISetIcon& i);
-		~BackPack_Display() = default;
+		BackPack(const Point& leftup, ISetIcon& i);
+		~BackPack() = default;
 	};
 }

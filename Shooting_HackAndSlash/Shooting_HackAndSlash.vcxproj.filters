@@ -255,9 +255,9 @@
     <ClCompile Include="src\AbstructEnemy.cpp">
       <Filter>Source\Template</Filter>
     </ClCompile>
-    <ClCompile Include="src\BackPack_Display.cpp" />
+    <ClCompile Include="src\BackPack.cpp" />
     <ClCompile Include="src\Gun_Custamize_Window.cpp" />
-    <ClCompile Include="src\Magazin_Displayer.cpp" />
+    <ClCompile Include="src\Magazine.cpp" />
     <ClCompile Include="src\Dragged_Icon.cpp" />
     <ClCompile Include="src\BackPack_Slot.cpp" />
     <ClCompile Include="src\Inventory_Info.cpp" />
@@ -491,10 +491,10 @@
     <ClInclude Include="src\Stage_Num_Displayer.h">
       <Filter>Source\UI</Filter>
     </ClInclude>
-    <ClInclude Include="src\BackPack_Display.h" />
+    <ClInclude Include="src\BackPack.h" />
     <ClInclude Include="src\eBullet.h" />
     <ClInclude Include="src\Gun_Custamize_Window.h" />
-    <ClInclude Include="src\Magazin_Displayer.h" />
+    <ClInclude Include="src\Magazine.h" />
     <ClInclude Include="src\Dragged_Icon.h" />
     <ClInclude Include="src\BackPack_Slot.h" />
     <ClInclude Include="src\Inventory_Info.h" />
