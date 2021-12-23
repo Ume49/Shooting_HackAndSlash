@@ -1,4 +1,5 @@
 #include "Inventory_Info.h"
+#include<algorithm>
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
 	Inventory_Info::Inventory_Info() :
@@ -10,5 +11,11 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		for (auto& w : owned_item) {
 			w = eBullet::Null;
 		}
+	}
+
+	std::array<eBullet, Inventory_Length>::iterator Inventory_Info::container_space() {
+		auto& w = Inventory_Info::getInstance();
+
+		return std::find(w.owned_item.begin(), w.owned_item.end(), eBullet::Null);
 	}
 }

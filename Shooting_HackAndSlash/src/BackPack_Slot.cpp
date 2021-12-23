@@ -10,10 +10,9 @@ namespace {
 namespace Shooting_HackAndSlash::Gun_Custamize {
 	BackPack_Slot::BackPack_Slot(const Point& c) :
 		leftup(),
-		rightdown(),
-		photo(::Path)
+		rightdown()
 	{
-		Point size = photo.size();
+		Point size = Photo_SharedHandle(::Path).size();
 
 		leftup = c;
 		rightdown = c + size;
@@ -44,8 +43,6 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		DrawBox(leftup.x, leftup.y, rightdown.x, rightdown.y, Palette::Collider, FALSE);
 		DrawLine(leftup.x, leftup.y, rightdown.x, rightdown.y, Palette::Collider);
 #endif // _DEBUG
-
-		DrawGraph(leftup.x, leftup.y, photo, TRUE);
 	}
 
 	const Point& BackPack_Slot::get_center() const{

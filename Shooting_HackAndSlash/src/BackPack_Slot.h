@@ -7,8 +7,6 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	// バックパック向けに当たり判定を提供する
 	class BackPack_Slot{
 		Point leftup, rightdown, center;
-		// 見た目
-		Photo_SharedHandle photo;
 	public:
 		// クリックされたか
 		bool is_click() const;

@@ -14,6 +14,9 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	public:
 		void initialize();
 
+		// コンテナの空いている箇所をイテレータで返す、空いていないならend()を返す
+		static std::array<eBullet, Inventory_Length>::iterator container_space();
+
 		// 現在持っている弾丸
 		std::array<eBullet, Inventory_Length> owned_item;
 	};

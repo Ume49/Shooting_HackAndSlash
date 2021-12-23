@@ -2,20 +2,22 @@
 #include<DxLib.h>
 #include"Inventory_Info.h"
 #include"Icon_Table.h"
+#include"Define.h"
 
 namespace {
 	// スロット同士の間隔
 	constexpr int Button_distance = 74;
 
-	// スロットの個数
-	constexpr int x = 3, y = 3;
+	// スロットを横に何個並べるか
+	constexpr int x = 2;
 
-	// スロットの位置 *相対座標
+	// スロットの初期位置
 	constexpr int init_x = 10, init_y = 10;
 }
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
 	BackPack_Display::BackPack_Display(const Point& p, ISetIcon& i) :
+		null_slot_photo(Define::Path::Photo::Slot),
 		slots(),
 		pos(p),
 		iseticon(i)
@@ -24,10 +26,13 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		Point init = p + Point{ ::init_x, ::init_y };
 
 		// スロットの領域を予約
-		slots.reserve(static_cast<size_t>(::x * ::y));
+		slots.reserve(static_cast<size_t>(Inventory_Info::getInstance().owned_item.size()));
+
+		// スロットを縦に何個並べるか
+		int height = Inventory_Length / ::x;
 
 		// スロットを登録
-		for (auto y = 0; y < ::y; y++) {
+		for (auto y = 0; y < height; y++) {
 			for (auto x = 0; x < ::x; x++) {
 				// 座標を計算
 				Point temp = init + Point{ Button_distance * x, Button_distance * y };
@@ -40,7 +45,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 
 	void BackPack_Display::update() {
 		// アイテムドラッグ関数
-		auto generate = [&](const eBullet& b) { 
+		auto generate = [&](const eBullet& b) {
 			iseticon.SetIcon(b);
 		};
 
@@ -57,15 +62,28 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	void BackPack_Display::draw() const {
 		// 背景描画
 		DrawGraph(pos.x, pos.y, back_photo, TRUE);
-		// 空枠描画
-		for (auto& w : slots) { w.draw(); }
-		// アイテムアイコン描画
-		auto& inventory = Inventory_Info::getInstance().owned_item;
-		for (auto i = 0U; i < inventory.size(); i++) {
-			const auto& c = slots.at(i).get_center();
 
-			// スロットの中央を基準にアイコンを描画
-			DrawRotaGraph(c.x, c.y, 1., 0., Icon_Table::at(inventory.at(i)), TRUE);
+		// スロットの戦闘イテレータを取得
+		auto iter = slots.cbegin();
+
+		// インベントリを参照
+		for (auto& w : Inventory_Info::getInstance().owned_item) {
+			if (w == eBullet::Null) {	// 中身が空の場合
+				iter->draw();
+			}
+			else {						// 中身がある場合
+				// 座標を取得
+				auto pos = iter->get_center();
+
+				namespace R = Define::RotaGraph_Default;
+
+				// 画像ハンドルを取得
+				int handle = Icon_Table::at(w);
+
+				DrawRotaGraph(pos.x, pos.y, R::ExRate, R::Angle, handle, TRUE);
+			}
+
+			iter++;
 		}
 	}
 }
