@@ -53,7 +53,8 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 			if (slots.at(i).is_click()) {
 				auto bullet = Inventory_Info::getInstance().owned_item.at(i);
 
-				generate(bullet);
+				
+				if (bullet != eBullet::Null) { generate(bullet); }
 				break;
 			}
 		}
@@ -68,19 +69,21 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 
 		// インベントリを参照
 		for (auto& w : Inventory_Info::getInstance().owned_item) {
+			// 座標を取得
+			auto pos = iter->get_center();
+
+			// 描画命令
+			auto draw = [&](int h) {DrawRotaGraph(pos.x, pos.y, Define::RotaGraph_Default::ExRate, Define::RotaGraph_Default::Angle, h, TRUE); };
+
 			if (w == eBullet::Null) {	// 中身が空の場合
 				iter->draw();
+				draw(null_slot_photo);
 			}
 			else {						// 中身がある場合
-				// 座標を取得
-				auto pos = iter->get_center();
-
-				namespace R = Define::RotaGraph_Default;
-
 				// 画像ハンドルを取得
 				int handle = Icon_Table::at(w);
 
-				DrawRotaGraph(pos.x, pos.y, R::ExRate, R::Angle, handle, TRUE);
+				draw(handle);
 			}
 
 			iter++;
