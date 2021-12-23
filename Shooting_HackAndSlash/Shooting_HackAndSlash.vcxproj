@@ -159,7 +159,6 @@
     <ClCompile Include="src\Gun_Info.cpp" />
     <ClCompile Include="src\Gun.cpp" />
     <ClCompile Include="src\Inventory_Info.cpp" />
-    <ClCompile Include="src\BackPack_Slot.cpp" />
     <ClCompile Include="src\BackPack.cpp" />
     <ClCompile Include="src\Magazine.cpp" />
     <ClCompile Include="src\Dragged_Icon.cpp" />
@@ -213,6 +212,7 @@
     <ClCompile Include="src\Random.cpp" />
     <ClCompile Include="src\Result.cpp" />
     <ClCompile Include="src\SceneLoader.cpp" />
+    <ClCompile Include="src\Slot.cpp" />
     <ClCompile Include="src\Stage_Info.cpp" />
     <ClCompile Include="src\System.cpp" />
     <ClCompile Include="src\TestBullet.cpp" />
@@ -235,7 +235,6 @@
     <ClInclude Include="src\Gun_Info.h" />
     <ClInclude Include="src\Gun.h" />
     <ClInclude Include="src\Inventory_Info.h" />
-    <ClInclude Include="src\BackPack_Slot.h" />
     <ClInclude Include="src\eBullet.h" />
     <ClInclude Include="src\BackPack.h" />
     <ClInclude Include="src\Magazine.h" />
@@ -303,6 +302,7 @@
     <ClInclude Include="src\Result.h" />
     <ClInclude Include="src\SceneLoader.h" />
     <ClInclude Include="src\Singleton.h" />
+    <ClInclude Include="src\Slot.h" />
     <ClInclude Include="src\Stage_Info.h" />
     <ClInclude Include="src\System.h" />
     <ClInclude Include="src\TestBullet.h" />
@@ -319,6 +319,10 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="メモ.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\IBackListener.h" />
+    <None Include="src\IDropListener.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -259,11 +259,11 @@
     <ClCompile Include="src\Gun_Custamize_Window.cpp" />
     <ClCompile Include="src\Magazine.cpp" />
     <ClCompile Include="src\Dragged_Icon.cpp" />
-    <ClCompile Include="src\BackPack_Slot.cpp" />
     <ClCompile Include="src\Inventory_Info.cpp" />
     <ClCompile Include="src\Gun.cpp" />
     <ClCompile Include="src\Gun_Info.cpp" />
     <ClCompile Include="src\Icon_Table.cpp" />
+    <ClCompile Include="src\Slot.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -496,7 +496,6 @@
     <ClInclude Include="src\Gun_Custamize_Window.h" />
     <ClInclude Include="src\Magazine.h" />
     <ClInclude Include="src\Dragged_Icon.h" />
-    <ClInclude Include="src\BackPack_Slot.h" />
     <ClInclude Include="src\Inventory_Info.h" />
     <ClInclude Include="src\Gun.h" />
     <ClInclude Include="src\Gun_Info.h" />
@@ -504,8 +503,13 @@
     <ClInclude Include="src\ISetIcon.h" />
     <ClInclude Include="src\IEraseIcon.h" />
     <ClInclude Include="src\Define_Inventory.h" />
+    <ClInclude Include="src\Slot.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="メモ.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\IDropListener.h" />
+    <None Include="src\IBackListener.h" />
   </ItemGroup>
 </Project>

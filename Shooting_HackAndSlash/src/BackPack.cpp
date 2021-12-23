@@ -92,4 +92,10 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 			iter++;
 		}
 	}
+
+	bool BackPack::CheckDrop() {
+		for (auto& w : slots) {
+
+		}
+	}
 }

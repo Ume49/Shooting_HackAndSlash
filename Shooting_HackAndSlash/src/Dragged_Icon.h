@@ -1,24 +1,26 @@
 #pragma once
 #include"Vector.h"
 #include"eBullet.h"
+#include"IDropListener.h"
+#include"IEraseIcon.h"
+#include"IBackListener.h"
+#include<array>
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
-	class BackPack;
-	class Magazine;
-
 	// マウスカーソルにくっついてくるアイコン
 	class Dragged_Icon {
 		Vec2 pos;
 	public:
 		eBullet bullet;
 
-		BackPack& backpack;
-		Magazine& magazine;
+		std::array<IDropListener&, 2> drop_listener;
+		IEraseIcon& eraser;
+		IBackListener& back_listener;
 
 		virtual void update();
 		virtual void draw() const;
 
-		Dragged_Icon(const eBullet& bullet, BackPack& backpack, Magazine& magazine);
+		Dragged_Icon(const eBullet& bullet, IEraseIcon& eraser, IBackListener& home ,IDropListener& magazine, IDropListener& backpack);
 		~Dragged_Icon() = default;
 	};
 
@@ -29,6 +31,6 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		~Dragged_Icon_Null() = default;
 
 		void update() override {}
-		void draw() const override{}
+		void draw() const override {}
 	};
 }
