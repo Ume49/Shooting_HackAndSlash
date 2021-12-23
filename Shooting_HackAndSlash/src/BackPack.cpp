@@ -117,7 +117,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		// マウスが重なっているスロットがあるか探索
 		// ついでにそれと合うようにイテレータも移動
 		for (auto& w : slots) {
-			if (w.is_on_mouse()) {
+			if (w.is_on_mouse() && (*iter == eBullet::Null)) {	// マウスと重なっているスロットが空欄の時のみ許可
 				result = true;
 
 				// 代入
