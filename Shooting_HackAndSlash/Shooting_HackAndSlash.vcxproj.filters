@@ -258,17 +258,33 @@
     <ClCompile Include="src\AbstructEnemy.cpp">
       <Filter>Source\Template</Filter>
     </ClCompile>
-    <ClCompile Include="src\Inventory_Info.cpp" />
-    <ClCompile Include="src\Slot.cpp" />
-    <ClCompile Include="src\Gun_Custamize_Window.cpp" />
-    <ClCompile Include="src\Dragged_Icon.cpp" />
-    <ClCompile Include="src\BackPack.cpp" />
-    <ClCompile Include="src\Icon_Table.cpp">
-      <Filter>あんま触ってない</Filter>
+    <ClCompile Include="src\BackPack.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
     </ClCompile>
-    <ClCompile Include="src\Magazine.cpp" />
-    <ClCompile Include="src\Gun_Info.cpp" />
-    <ClCompile Include="src\Gun.cpp" />
+    <ClCompile Include="src\Dragged_Icon.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gun.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gun_Custamize_Window.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gun_Info.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventory_Info.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Magazine.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Slot.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Icon_Table.cpp">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -496,32 +512,56 @@
     <ClInclude Include="src\Stage_Num_Displayer.h">
       <Filter>Source\UI</Filter>
     </ClInclude>
-    <ClInclude Include="src\Inventory_Info.h" />
-    <ClInclude Include="src\Slot.h" />
-    <ClInclude Include="src\Magazine.h" />
-    <ClInclude Include="src\ISetIcon.h" />
-    <ClInclude Include="src\Gun_Custamize_Window.h" />
-    <ClInclude Include="src\Dragged_Icon.h" />
-    <ClInclude Include="src\BackPack.h" />
+    <ClInclude Include="src\BackPack.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dragged_Icon.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gun.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gun_Custamize_Window.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gun_Info.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventory_Info.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ISetIcon.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Magazine.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Slot.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
     <ClInclude Include="src\Define_Inventory.h">
-      <Filter>あんま触ってない</Filter>
+      <Filter>Source\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\eBullet.h">
-      <Filter>あんま触ってない</Filter>
+      <Filter>Source\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Icon_Table.h">
-      <Filter>あんま触ってない</Filter>
+      <Filter>Source\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\IEraseIcon.h">
-      <Filter>あんま触ってない</Filter>
+      <Filter>Source\Gun_Custamize</Filter>
     </ClInclude>
-    <ClInclude Include="src\Gun_Info.h" />
-    <ClInclude Include="src\Gun.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\IDropListener.h" />
-    <None Include="src\IDragAndDropListener.h" />
-    <None Include="src\IBackListener.h" />
+    <None Include="src\IBackListener.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </None>
+    <None Include="src\IDragAndDropListener.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </None>
+    <None Include="src\IDropListener.h">
+      <Filter>Source\Gun_Custamize</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="メモ.txt" />
