@@ -42,6 +42,8 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	void Magazine::update() {
 		if (Input::GetDown(Inputcode::Fire1)) {
 			for (auto i = 0U; i < slots.size(); i++) {
+				if (gun_ref->get().magazine.at(i) == eBullet::Null) continue;	// Nullのところは考慮しない
+
 				if (slots.at(i).is_on_mouse()) {	// どれかのスロットがクリックされた時
 					setter.SetIcon(gun_ref->get().magazine.at(i), *this, i);
 
