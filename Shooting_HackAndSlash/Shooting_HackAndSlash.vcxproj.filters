@@ -266,13 +266,9 @@
     <ClCompile Include="src\Icon_Table.cpp">
       <Filter>あんま触ってない</Filter>
     </ClCompile>
-    <ClCompile Include="src\Gun.cpp">
-      <Filter>あんま触ってない</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Gun_Info.cpp">
-      <Filter>あんま触ってない</Filter>
-    </ClCompile>
     <ClCompile Include="src\Magazine.cpp" />
+    <ClCompile Include="src\Gun_Info.cpp" />
+    <ClCompile Include="src\Gun.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -519,12 +515,8 @@
     <ClInclude Include="src\IEraseIcon.h">
       <Filter>あんま触ってない</Filter>
     </ClInclude>
-    <ClInclude Include="src\Gun_Info.h">
-      <Filter>あんま触ってない</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Gun.h">
-      <Filter>あんま触ってない</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Gun_Info.h" />
+    <ClInclude Include="src\Gun.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\IDropListener.h" />

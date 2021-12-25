@@ -11,6 +11,9 @@ namespace Shooting_HackAndSlash {
 
 		// 現在所有している銃
 		std::vector<Gun_Custamize::Gun> guns;
+
+		// 現在見ているインデックス
+		size_t now_select;
 	public:
 		// 初期化
 		static void initialize();
@@ -20,5 +23,14 @@ namespace Shooting_HackAndSlash {
 
 		// 銃を追加する
 		static void Add(size_t magazine_length);
+
+		// 現在の銃
+		static Gun_Custamize::Gun& Now_Gun();
+
+		// インデックスを前に進める
+		static Gun_Custamize::Gun& Plus();
+
+		// インデックスを後ろに進める
+		static Gun_Custamize::Gun& Minus();
 	};
 }
