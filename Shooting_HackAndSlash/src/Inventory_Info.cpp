@@ -4,11 +4,15 @@
 namespace Shooting_HackAndSlash {
 	Inventory_Info::Inventory_Info() :
 		owned_item() {
-		this->initialize();
+		for (auto& w : owned_item) {
+			w = eBullet::Null;
+		}
 	}
 
 	void Inventory_Info::initialize() {
-		for (auto& w : Inventory_Info::getInstance().owned_item) {
+		auto& ref_item = Inventory_Info::getInstance().owned_item;
+
+		for (auto& w : ref_item) {
 			w = eBullet::Null;
 		}
 	}
