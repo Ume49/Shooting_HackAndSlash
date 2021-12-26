@@ -1,9 +1,12 @@
 #include "Title.h"
 
 #include<DxLib.h>
+#include"Define.h"
+
 #include"PlayerInfo.h"
 #include"Stage_Info.h"
-#include"Define.h"
+#include"Gun_Info.h"
+#include"Inventory_Info.h"
 
 namespace Shooting_HackAndSlash::Scene {
 	void Title::init() {
@@ -12,6 +15,8 @@ namespace Shooting_HackAndSlash::Scene {
 
 		PlayerInfo::initialize();
 		Stage_Info::initialize();
+		Gun_Info::initialize();
+		Inventory_Info::initialize();
 	}
 
 	bool Title::update() {

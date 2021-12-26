@@ -1,14 +1,14 @@
 #include "Inventory_Info.h"
 #include<algorithm>
 
-namespace Shooting_HackAndSlash::Gun_Custamize {
+namespace Shooting_HackAndSlash {
 	Inventory_Info::Inventory_Info() :
 		owned_item() {
 		this->initialize();
 	}
 
 	void Inventory_Info::initialize() {
-		for (auto& w : owned_item) {
+		for (auto& w : Inventory_Info::getInstance().owned_item) {
 			w = eBullet::Null;
 		}
 	}

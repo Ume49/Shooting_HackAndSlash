@@ -3,19 +3,23 @@
 namespace {
 	// インデックスの初期値
 	constexpr int init_index = 0;
+
+	// 開始時銃をいくつ持っているか
+	constexpr int init_gun_num = 1;
 }
 
 namespace Shooting_HackAndSlash {
 	using namespace Gun_Custamize;
 
 	Gun_Info::Gun_Info() :
-		guns(1),
+		guns(::init_gun_num),
 		now_select(::init_index)
 	{
 	}
 
 	void Gun_Info::initialize() {
-		Gun_Info::getInstance().guns.resize(0U);
+		Gun_Info::getInstance().guns.resize(::init_gun_num);
+		Gun_Info::getInstance().now_select = ::init_index;
 	}
 
 	Gun& Gun_Info::at(size_t i) {
