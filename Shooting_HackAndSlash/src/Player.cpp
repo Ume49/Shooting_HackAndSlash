@@ -30,7 +30,6 @@ namespace Shooting_HackAndSlash {
 		front = (Input::GetMousePosf() - pos).nomalize();
 
 		Move();
-		bomb.check();
 		bullet.check(pos);
 	}
 

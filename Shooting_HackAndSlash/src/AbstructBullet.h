@@ -8,6 +8,8 @@
 namespace Shooting_HackAndSlash {
 	class EnemyController;
 	class AbstructEnemy;
+
+	// 画像の描画、移動、ダメージ保持、移動、衝突判定を行う
 	class AbstructBullet : public AbstructGameObject {
 	protected:
 		Vec2 move_direction;

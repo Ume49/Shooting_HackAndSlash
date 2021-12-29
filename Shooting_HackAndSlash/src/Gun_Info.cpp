@@ -53,4 +53,8 @@ namespace Shooting_HackAndSlash {
 
 		return ref.guns.at(ref.now_select);
 	}
+
+	int Gun_Info::get_resource() {
+		return static_cast<int>(Gun_Info::getInstance().guns.size());
+	}
 }

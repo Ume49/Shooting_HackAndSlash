@@ -5,7 +5,6 @@
 
 #include"CircleCollider.h"
 
-#include"Bomb_Launcher.h"
 #include"Bullet_Lancher.h"
 
 #include"BulletController_Player.h"
@@ -48,7 +47,6 @@ namespace Shooting_HackAndSlash {
 
 		std::function<void(void)> go_result;
 
-		Bomb_Launcher bomb;
 		Bullet_Lancher bullet;
 
 		// ê≥ñ ï˚å¸
@@ -57,7 +55,6 @@ namespace Shooting_HackAndSlash {
 		Player(BulletController_Player& b, std::function<void()> func_go_result) :
 			looks(),
 			collider(pos, radius),
-			bomb(),
 			bullet(b),
 			go_result(func_go_result),
 			front(0.f,0.f){

@@ -2,7 +2,8 @@
 
 #include<algorithm>
 #include"EnemyController.h"
-#include"TestBullet.h"
+
+#include"Player_Bullet.h"
 
 namespace Shooting_HackAndSlash {
 	void BulletController_Player::update() {
@@ -23,7 +24,7 @@ namespace Shooting_HackAndSlash {
 		}
 	}
 
-	void BulletController_Player::Make(const Vec2& pos, const Vec2& direction, float speed, int damage) {
-		bullets.push_back(std::make_unique<Bullet::TestBullet>(pos, direction, speed, damage, enemy_con));
+	void BulletController_Player::Make(const Vec2& pos, const Vec2& direction, float speed, int damage, int resource) {
+		bullets.push_back(std::make_unique<Player_Bullet>(resource, *this, enemy_con));
 	}
 }

@@ -181,7 +181,6 @@
     <ClCompile Include="src\Abstruct_Shared_Handle.cpp" />
     <ClCompile Include="src\Abstruct_Shared_Manager.cpp" />
     <ClCompile Include="src\Bomb_count_displayer.cpp" />
-    <ClCompile Include="src\Bomb_Launcher.cpp" />
     <ClCompile Include="src\Boss.cpp" />
     <ClCompile Include="src\BulletController_Player.cpp" />
     <ClCompile Include="src\Bullet_CoolTime_Displayer.cpp" />
@@ -215,7 +214,6 @@
     <ClCompile Include="src\Slot.cpp" />
     <ClCompile Include="src\Stage_Info.cpp" />
     <ClCompile Include="src\System.cpp" />
-    <ClCompile Include="src\TestBullet.cpp" />
     <ClCompile Include="src\TextDisplayer.cpp" />
     <ClCompile Include="src\Time.cpp" />
     <ClCompile Include="src\Title.cpp" />
@@ -263,7 +261,6 @@
     <ClInclude Include="src\Abstruct_Shared_Manager.h" />
     <ClInclude Include="src\Abstruct_UI.h" />
     <ClInclude Include="src\Bomb_count_displayer.h" />
-    <ClInclude Include="src\Bomb_Launcher.h" />
     <ClInclude Include="src\Boss.h" />
     <ClInclude Include="src\BulletController_Player.h" />
     <ClInclude Include="src\Bullet_CoolTime_Displayer.h" />
@@ -305,7 +302,6 @@
     <ClInclude Include="src\Slot.h" />
     <ClInclude Include="src\Stage_Info.h" />
     <ClInclude Include="src\System.h" />
-    <ClInclude Include="src\TestBullet.h" />
     <ClInclude Include="src\TextDisplayer.h" />
     <ClInclude Include="src\Time.h" />
     <ClInclude Include="src\Title.h" />

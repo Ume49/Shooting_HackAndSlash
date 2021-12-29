@@ -3,6 +3,7 @@
 #include"Input.h"
 #include"Time.h"
 #include"PlayerInfo.h"
+#include"Gun_Info.h"
 
 namespace {
 	constexpr float BULLET_SPEED = 640.f;
@@ -34,7 +35,8 @@ namespace Shooting_HackAndSlash {
 		// ï˚å¸åvéZ
 		Vec2 direction = (Input::GetMousePosf() - pos).nomalize();
 
-		controller.Make(pos, direction, BULLET_SPEED, PlayerInfo::getInstance().atk);
+		// íeê∂ê¨
+		controller.Make(pos, direction, BULLET_SPEED, PlayerInfo::getInstance().atk, Gun_Info::get_resource());
 	}
 
 	float Bullet_Lancher::show_cooltime() const { return cool_time_count; }

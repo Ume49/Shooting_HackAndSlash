@@ -13,9 +13,6 @@
     <Filter Include="Source\Template">
       <UniqueIdentifier>{14e119c8-6f0a-404b-a180-924469a76cfa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\GameObject\Bullet">
-      <UniqueIdentifier>{f6f50403-a54b-460f-9965-e92e22e75e1f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\UI">
       <UniqueIdentifier>{e0ecfb4d-79e8-4ead-abcc-f9e03ba81f70}</UniqueIdentifier>
     </Filter>
@@ -70,6 +67,9 @@
     <Filter Include="あんま触ってない">
       <UniqueIdentifier>{c7f70d16-9530-4d42-aef4-4844220f132d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Bullet">
+      <UniqueIdentifier>{f6f50403-a54b-460f-9965-e92e22e75e1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Player.cpp">
@@ -90,14 +90,8 @@
     <ClCompile Include="src\Bullet_CoolTime_Displayer.cpp">
       <Filter>Source\UI</Filter>
     </ClCompile>
-    <ClCompile Include="src\BulletController_Player.cpp">
-      <Filter>Source\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Bomb_Launcher.cpp">
-      <Filter>Source\GameObject\Bullet</Filter>
-    </ClCompile>
     <ClCompile Include="src\Bullet_Lancher.cpp">
-      <Filter>Source\GameObject\Bullet</Filter>
+      <Filter>Source\Bullet</Filter>
     </ClCompile>
     <ClCompile Include="src\ButtonController.cpp">
       <Filter>Source\Controller</Filter>
@@ -116,9 +110,6 @@
     </ClCompile>
     <ClCompile Include="src\Enemy_Kusozako.cpp">
       <Filter>Source\GameObject\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TestBullet.cpp">
-      <Filter>Source\GameObject\Bullet</Filter>
     </ClCompile>
     <ClCompile Include="src\CircleCollider.cpp">
       <Filter>Source\GameObject\Component</Filter>
@@ -223,10 +214,7 @@
       <Filter>Source\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\Player_Bullet.cpp">
-      <Filter>Source\GameObject\Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="src\AbstructBullet.cpp">
-      <Filter>Source\Template</Filter>
+      <Filter>Source\Bullet</Filter>
     </ClCompile>
     <ClCompile Include="src\PlayerInfo.cpp">
       <Filter>Source\System\Singleton</Filter>
@@ -285,6 +273,12 @@
     <ClCompile Include="src\Icon_Table.cpp">
       <Filter>Source\Gun_Custamize</Filter>
     </ClCompile>
+    <ClCompile Include="src\AbstructBullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BulletController_Player.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -302,9 +296,6 @@
     <ClInclude Include="src\Abstruct_UI.h">
       <Filter>Source\Template</Filter>
     </ClInclude>
-    <ClInclude Include="src\AbstructBullet.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
     <ClInclude Include="src\AbstructEnemy.h">
       <Filter>Source\Template</Filter>
     </ClInclude>
@@ -314,20 +305,14 @@
     <ClInclude Include="src\AbstructScene.h">
       <Filter>Source\Template</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bomb_Launcher.h">
-      <Filter>Source\GameObject\Bullet</Filter>
-    </ClInclude>
     <ClInclude Include="src\Bomb_count_displayer.h">
       <Filter>Source\UI</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Lancher.h">
-      <Filter>Source\GameObject\Bullet</Filter>
+      <Filter>Source\Bullet</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_CoolTime_Displayer.h">
       <Filter>Source\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="src\BulletController_Player.h">
-      <Filter>Source\Controller</Filter>
     </ClInclude>
     <ClInclude Include="src\Debug_Choice.h">
       <Filter>Source\Scene</Filter>
@@ -413,9 +398,6 @@
     <ClInclude Include="src\PhotoDisplayer.h">
       <Filter>Source\GameObject\Component</Filter>
     </ClInclude>
-    <ClInclude Include="src\TestBullet.h">
-      <Filter>Source\GameObject\Bullet</Filter>
-    </ClInclude>
     <ClInclude Include="src\Photo_SharedHandle.h">
       <Filter>Source\System\Struct\Resource</Filter>
     </ClInclude>
@@ -483,7 +465,7 @@
       <Filter>Source\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\Player_Bullet.h">
-      <Filter>Source\GameObject\Bullet</Filter>
+      <Filter>Source\Bullet</Filter>
     </ClInclude>
     <ClInclude Include="src\PlayerInfo.h">
       <Filter>Source\System\Singleton</Filter>
@@ -550,6 +532,12 @@
     </ClInclude>
     <ClInclude Include="src\IEraseIcon.h">
       <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructBullet.h">
+      <Filter>Source\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BulletController_Player.h">
+      <Filter>Source\Bullet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
