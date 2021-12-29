@@ -86,11 +86,19 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 
 		// スロットをチェック
 		for (auto& w : slots) {
-			if (w.is_on_mouse()) {
-				*itr = e;
+			if (*itr == eBullet::Null) {
+				// 空のときだけ続行
 
-				result = true;
-				break;
+				if (w.is_on_mouse()) {
+					*itr = e;
+
+					result = true;
+					break;
+				}
+			}
+			else {
+				// スロットに中身があるとき
+				
 			}
 
 			itr++;
