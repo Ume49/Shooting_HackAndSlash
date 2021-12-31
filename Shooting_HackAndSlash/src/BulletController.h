@@ -4,10 +4,11 @@
 #include<memory>
 #include"AbstructBullet.h"
 #include"Vector.h"
+#include"Bullet_Paramater.h"
 
 namespace Shooting_HackAndSlash {
 	class EnemyController;
-	class BulletController_Player {
+	class BulletController {
 	private:
 		EnemyController& enemy_con;
 		std::list<std::unique_ptr<AbstructBullet>> bullets;
@@ -15,9 +16,9 @@ namespace Shooting_HackAndSlash {
 		void update();
 		void draw() const;
 
-		void Make(const Vec2& pos, const Vec2& direction, float speed, int damage, int resource);
+		void Make(const Bullet_Paramater& bp);
 
-		BulletController_Player(EnemyController& e) : bullets(), enemy_con(e) {}
-		~BulletController_Player() = default;
+		BulletController(EnemyController& e) : bullets(), enemy_con(e) {}
+		~BulletController() = default;
 	};
 }

@@ -3,7 +3,7 @@
 #include "AbstructScene.h"
 #include"Player.h"
 #include"UIController.h"
-#include"BulletController_Player.h"
+#include"BulletController.h"
 #include"EnemyController.h"
 #include"EnemySpawner.h"
 #include"CursorDrawer.h"
@@ -15,7 +15,7 @@ namespace Shooting_HackAndSlash {
 		private:
 			Player player;
 			UIController ui;
-			BulletController_Player bullet_player; 
+			BulletController bullet_player; 
 			ItemController item_controller;
 			EnemySpawner enemy_spawner;
 			EnemyController enemy_controller;

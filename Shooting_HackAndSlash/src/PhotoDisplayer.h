@@ -16,6 +16,7 @@ namespace Shooting_HackAndSlash {
 		void display(const Vec2& pos_center, const Vec2& direction) const override;
 
 		PhotoDisplayer(const std::string& path);
+		PhotoDisplayer(const Photo_SharedHandle& p);
 		~PhotoDisplayer() = default;
 	};
 }

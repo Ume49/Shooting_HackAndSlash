@@ -6,15 +6,15 @@
 #include"Gun_Info.h"
 
 namespace {
-	constexpr float BULLET_SPEED = 640.f;
+	constexpr float init_count=0.2f;
 	constexpr float COOL_TIME = 0.6f;
 }
 
 namespace Shooting_HackAndSlash {
-	Bullet_Lancher::Bullet_Lancher(BulletController_Player& c) :
+	Bullet_Lancher::Bullet_Lancher(BulletController& c) :
 		controller(c),
 		cool_time(::COOL_TIME),
-		cool_time_count(0.f) {
+		cool_time_count(::init_count) {
 	}
 
 	void Bullet_Lancher::check(const Vec2& pos) {
@@ -35,8 +35,17 @@ namespace Shooting_HackAndSlash {
 		// 方向計算
 		Vec2 direction = (Input::GetMousePosf() - pos).nomalize();
 
+		// パラメータの作成と設定
+		Bullet_Paramater para;
+
+		para.pos = pos;
+		para.direction = direction;
+		para.damage = PlayerInfo::getInstance().atk;
+		para.resource = Gun_Info::get_resource();
+		//para.bullet
+
 		// 弾生成
-		controller.Make(pos, direction, BULLET_SPEED, PlayerInfo::getInstance().atk, Gun_Info::get_resource());
+		controller.Make(para);
 	}
 
 	float Bullet_Lancher::show_cooltime() const { return cool_time_count; }

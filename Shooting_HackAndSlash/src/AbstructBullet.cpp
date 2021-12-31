@@ -6,18 +6,30 @@
 
 namespace Shooting_HackAndSlash {
 	AbstructBullet::AbstructBullet(const std::string& photo_path, EnemyController& e) :
-		move_direction(),
+		velocity(),
 		damage(),
 		is_dead(false),
 		collider(),
 		photo(photo_path),
+		resource(0),
+		enemies_ref(e)
+	{
+	}
+
+	AbstructBullet::AbstructBullet(const Photo_SharedHandle& p, EnemyController& e) :
+		velocity(),
+		damage(),
+		is_dead(false),
+		collider(),
+		photo(p),
+		resource(0),
 		enemies_ref(e)
 	{
 	}
 
 	void AbstructBullet::update() {
 		// 移動
-		pos += move_direction * Time::DeltaTime();
+		pos += velocity * Time::DeltaTime();
 		collider.OnPositionChanged(pos);
 
 		// 衝突しているエネミーのリストを取得
@@ -32,7 +44,7 @@ namespace Shooting_HackAndSlash {
 	}
 
 	void AbstructBullet::draw() const {
-		photo.display(pos, move_direction);
+		photo.display(pos, velocity);
 
 #ifdef _DEBUG
 		collider.draw();

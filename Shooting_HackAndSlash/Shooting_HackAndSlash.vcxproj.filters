@@ -213,7 +213,7 @@
     <ClCompile Include="src\Debug_Scene.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="src\Player_Bullet.cpp">
+    <ClCompile Include="src\Bullet_ST.cpp">
       <Filter>Source\Bullet</Filter>
     </ClCompile>
     <ClCompile Include="src\PlayerInfo.cpp">
@@ -276,7 +276,7 @@
     <ClCompile Include="src\AbstructBullet.cpp">
       <Filter>Source\Bullet</Filter>
     </ClCompile>
-    <ClCompile Include="src\BulletController_Player.cpp">
+    <ClCompile Include="src\BulletController.cpp">
       <Filter>Source\Bullet</Filter>
     </ClCompile>
   </ItemGroup>
@@ -464,7 +464,7 @@
     <ClInclude Include="src\Debug_Scene.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\Player_Bullet.h">
+    <ClInclude Include="src\Bullet_ST.h">
       <Filter>Source\Bullet</Filter>
     </ClInclude>
     <ClInclude Include="src\PlayerInfo.h">
@@ -536,7 +536,10 @@
     <ClInclude Include="src\AbstructBullet.h">
       <Filter>Source\Bullet</Filter>
     </ClInclude>
-    <ClInclude Include="src\BulletController_Player.h">
+    <ClInclude Include="src\BulletController.h">
+      <Filter>Source\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_Paramater.h">
       <Filter>Source\Bullet</Filter>
     </ClInclude>
   </ItemGroup>

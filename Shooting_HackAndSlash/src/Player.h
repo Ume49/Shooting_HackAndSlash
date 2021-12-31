@@ -7,7 +7,7 @@
 
 #include"Bullet_Lancher.h"
 
-#include"BulletController_Player.h"
+#include"BulletController.h"
 
 #include<memory>
 #include<functional>
@@ -52,7 +52,7 @@ namespace Shooting_HackAndSlash {
 		// ê≥ñ ï˚å¸
 		Vec2 front;
 	public:
-		Player(BulletController_Player& b, std::function<void()> func_go_result) :
+		Player(BulletController& b, std::function<void()> func_go_result) :
 			looks(),
 			collider(pos, radius),
 			bullet(b),

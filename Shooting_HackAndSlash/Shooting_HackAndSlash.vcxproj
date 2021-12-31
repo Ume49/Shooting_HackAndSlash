@@ -168,7 +168,7 @@
     <ClCompile Include="src\Gauge_Horizontal.cpp" />
     <ClCompile Include="src\SceneFade.cpp" />
     <ClCompile Include="src\AbstructBullet.cpp" />
-    <ClCompile Include="src\Player_Bullet.cpp" />
+    <ClCompile Include="src\Bullet_ST.cpp" />
     <ClCompile Include="src\Debug_Scene.cpp" />
     <ClCompile Include="src\Kill_Count_Displayer.cpp" />
     <ClCompile Include="src\CursorDrawer.cpp" />
@@ -182,7 +182,7 @@
     <ClCompile Include="src\Abstruct_Shared_Manager.cpp" />
     <ClCompile Include="src\Bomb_count_displayer.cpp" />
     <ClCompile Include="src\Boss.cpp" />
-    <ClCompile Include="src\BulletController_Player.cpp" />
+    <ClCompile Include="src\BulletController.cpp" />
     <ClCompile Include="src\Bullet_CoolTime_Displayer.cpp" />
     <ClCompile Include="src\Bullet_Lancher.cpp" />
     <ClCompile Include="src\Button.cpp" />
@@ -226,6 +226,7 @@
     <ClCompile Include="src\Stage_Num_Displayer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Bullet_Paramater.h" />
     <ClInclude Include="src\Define_Inventory.h" />
     <ClInclude Include="src\IEraseIcon.h" />
     <ClInclude Include="src\ISetIcon.h" />
@@ -241,7 +242,7 @@
     <ClInclude Include="src\Fade.h" />
     <ClInclude Include="src\Gauge_Horizontal.h" />
     <ClInclude Include="src\SceneFade.h" />
-    <ClInclude Include="src\Player_Bullet.h" />
+    <ClInclude Include="src\Bullet_ST.h" />
     <ClInclude Include="src\Debug_Scene.h" />
     <ClInclude Include="src\Define_Debug.h" />
     <ClInclude Include="src\Kill_Count_Displayer.h" />
@@ -262,7 +263,7 @@
     <ClInclude Include="src\Abstruct_UI.h" />
     <ClInclude Include="src\Bomb_count_displayer.h" />
     <ClInclude Include="src\Boss.h" />
-    <ClInclude Include="src\BulletController_Player.h" />
+    <ClInclude Include="src\BulletController.h" />
     <ClInclude Include="src\Bullet_CoolTime_Displayer.h" />
     <ClInclude Include="src\Bullet_Lancher.h" />
     <ClInclude Include="src\Button.h" />
