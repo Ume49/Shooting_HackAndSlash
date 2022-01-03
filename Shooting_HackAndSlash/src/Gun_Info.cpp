@@ -12,9 +12,21 @@ namespace Shooting_HackAndSlash {
 	using namespace Gun_Custamize;
 
 	Gun_Info::Gun_Info() :
-		guns(::init_gun_num),
+		guns(),
 		now_select(::init_index)
 	{
+		// ‰Šúe‚ÌÝ’è
+#ifdef _DEBUG
+		guns.push_back(Gun(3U));
+
+		auto& m = guns.begin()->magazine;
+
+		m.at(0) = eBullet::ST;
+		m.at(1) = eBullet::ST;
+		m.at(2) = eBullet::ST;
+#else
+
+#endif // _DEBUG
 	}
 
 	void Gun_Info::initialize() {
@@ -52,9 +64,5 @@ namespace Shooting_HackAndSlash {
 		((--ref.now_select) += i) &= i;
 
 		return ref.guns.at(ref.now_select);
-	}
-
-	int Gun_Info::get_resource() {
-		return static_cast<int>(Gun_Info::getInstance().guns.size());
 	}
 }

@@ -10,6 +10,9 @@ namespace Shooting_HackAndSlash {
 		// 画像のサイズを取得して返す
 		Point size() const;
 
+		// キーを公開する
+		const std::string& getkey() const;
+
 		// 画像を登録しない
 		Photo_SharedHandle();
 		// path : 登録する画像のパス

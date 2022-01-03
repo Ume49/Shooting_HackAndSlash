@@ -155,6 +155,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Bullet_Paramater.cpp" />
+    <ClCompile Include="src\Bullet_Resource.cpp" />
+    <ClCompile Include="src\Bullet_Star.cpp" />
+    <ClCompile Include="src\Bullet_V.cpp" />
     <ClCompile Include="src\Icon_Table.cpp" />
     <ClCompile Include="src\Gun_Info.cpp" />
     <ClCompile Include="src\Gun.cpp" />
@@ -226,6 +230,9 @@
     <ClCompile Include="src\Stage_Num_Displayer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Bullet_Resource.h" />
+    <ClInclude Include="src\Bullet_Star.h" />
+    <ClInclude Include="src\Bullet_V.h" />
     <ClInclude Include="src\Bullet_Paramater.h" />
     <ClInclude Include="src\Define_Inventory.h" />
     <ClInclude Include="src\IEraseIcon.h" />

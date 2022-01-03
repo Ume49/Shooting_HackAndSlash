@@ -1,16 +1,14 @@
 #pragma once
 #include"AbstructBullet.h"
-#include"Photo_SharedHandle.h"
-#include"Vector.h"
-#include"Bullet_Paramater.h"
 
 namespace Shooting_HackAndSlash {
-	class BulletController;
 	namespace Bullet {
 		// ’¼i‚·‚é
 		class ST : public AbstructBullet {
 		private:
-			BulletController& controller_ref;
+			// ¶‘¶ŠÔ
+			float survival_count;
+
 		protected:
 			// ƒƒCƒ“ˆ—
 			void _update() override;
@@ -21,7 +19,7 @@ namespace Shooting_HackAndSlash {
 			// €‚Ê‚Æ‚«‚Ìˆ—
 			void OnDestroy() override;
 
-			ST(const Bullet_Paramater& p, BulletController& b, EnemyController& e);
+			ST(const Bullet_Paramater& p, std::unique_ptr<Bullet_Resource>& resource, BulletController& b, EnemyController& e);
 			~ST() = default;
 		};
 	}

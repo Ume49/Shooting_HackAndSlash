@@ -32,9 +32,5 @@ namespace Shooting_HackAndSlash {
 
 		// インデックスを後ろに進める
 		static Gun_Custamize::Gun& Minus();
-
-		// 弾のリソースを取得する
-		// *マガジンの長さ
-		static int get_resource();
 	};
 }

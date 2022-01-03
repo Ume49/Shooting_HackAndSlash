@@ -5,8 +5,11 @@
 #include"PlayerInfo.h"
 #include"Gun_Info.h"
 
+#include<memory>
+#include"Bullet_Resource.h"
+
 namespace {
-	constexpr float init_count=0.2f;
+	constexpr float init_count = 0.2f;
 	constexpr float COOL_TIME = 0.6f;
 }
 
@@ -35,17 +38,21 @@ namespace Shooting_HackAndSlash {
 		// 方向計算
 		Vec2 direction = (Input::GetMousePosf() - pos).nomalize();
 
-		// パラメータの作成と設定
+		// リソース取得
+		std::unique_ptr<Bullet_Resource> resource{ std::make_unique<Bullet_Resource>() };
+
+		// パラメータ作成
 		Bullet_Paramater para;
 
+		para.damage = PlayerInfo::getInstance().atk;
 		para.pos = pos;
 		para.direction = direction;
-		para.damage = PlayerInfo::getInstance().atk;
-		para.resource = Gun_Info::get_resource();
-		//para.bullet
+
+		// 弾取得
+		eBullet bullet = resource->get();
 
 		// 弾生成
-		controller.Make(para);
+		controller.Make(bullet, para, resource);
 	}
 
 	float Bullet_Lancher::show_cooltime() const { return cool_time_count; }

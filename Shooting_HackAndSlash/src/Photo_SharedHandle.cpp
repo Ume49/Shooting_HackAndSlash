@@ -33,4 +33,8 @@ namespace Shooting_HackAndSlash {
 
 		return s;
 	}
+
+	const std::string& Photo_SharedHandle::getkey() const {
+		return this->release_key;
+	}
 }

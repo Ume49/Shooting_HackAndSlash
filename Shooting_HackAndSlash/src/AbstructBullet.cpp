@@ -1,30 +1,25 @@
 #include"AbstructBullet.h"
 #include<DxLib.h>
 #include"EnemyController.h"
+#include"BulletController.h"
+#include"AbstructEnemy.h"
 
 #include"Time.h"
 
 namespace Shooting_HackAndSlash {
-	AbstructBullet::AbstructBullet(const std::string& photo_path, EnemyController& e) :
-		velocity(),
-		damage(),
+	AbstructBullet::AbstructBullet(const std::string& path, const Bullet_Paramater& para, std::unique_ptr<Bullet_Resource>& r, EnemyController& e, BulletController& b) :
+		velocity(para.direction),
+		damage(para.damage),
 		is_dead(false),
+		is_destroy(true),
 		collider(),
-		photo(photo_path),
-		resource(0),
-		enemies_ref(e)
+		photo(path),
+		resource(),
+		enemies_ref(e),
+		bulletcontroller_ref(b)
 	{
-	}
-
-	AbstructBullet::AbstructBullet(const Photo_SharedHandle& p, EnemyController& e) :
-		velocity(),
-		damage(),
-		is_dead(false),
-		collider(),
-		photo(p),
-		resource(0),
-		enemies_ref(e)
-	{
+		// ƒŠƒ\[ƒXŽó‚¯Žæ‚è
+		this->resource = std::move(r);
 	}
 
 	void AbstructBullet::update() {

@@ -3,11 +3,15 @@
 #include"AbstructGameObject.h"
 #include"CircleCollider.h"
 #include"PhotoDisplayer.h"
+#include"Bullet_Paramater.h"
+#include"Bullet_Resource.h"
 
+#include<memory>
 
 namespace Shooting_HackAndSlash {
 	class EnemyController;
 	class AbstructEnemy;
+	class BulletController;
 
 	// 画像の描画、移動、ダメージ保持、移動、衝突判定を行う
 	class AbstructBullet : public AbstructGameObject {
@@ -16,12 +20,14 @@ namespace Shooting_HackAndSlash {
 		Vec2 velocity;
 		// 弾が保持するダメージ
 		int damage;
-		// 何回まで分岐できるか、という回数
-		int resource;
 		// 見た目表示器
 		PhotoDisplayer photo;
 
+		// 分岐情報を格納しておくリソース
+		std::unique_ptr<Bullet_Resource> resource;
+
 		EnemyController& enemies_ref;
+		BulletController& bulletcontroller_ref;
 
 		// 更新処理
 		virtual void _update() = 0;
@@ -29,7 +35,10 @@ namespace Shooting_HackAndSlash {
 		// エネミーと衝突した時の処理
 		virtual void OnCollide(AbstructEnemy& enemy) = 0;
 	public:
+		// 消えるかどうか
 		bool is_dead;
+		// 消えるとき、OnDestroyを呼び出すかどうか
+		bool is_destroy;
 		CircleCollider collider;
 
 		void update() override;
@@ -38,8 +47,7 @@ namespace Shooting_HackAndSlash {
 		// オブジェクトが消去される直前に呼ばれる処理
 		virtual void OnDestroy() {}
 
-		AbstructBullet(const std::string& photo_path, EnemyController& e);
-		AbstructBullet(const Photo_SharedHandle& p, EnemyController& e);
+		AbstructBullet(const std::string& path, const Bullet_Paramater& para, std::unique_ptr<Bullet_Resource>& r, EnemyController& e, BulletController& b);
 		virtual ~AbstructBullet() = default;
 	};
 }

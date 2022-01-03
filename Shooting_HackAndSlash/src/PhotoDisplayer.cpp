@@ -16,13 +16,6 @@ namespace Shooting_HackAndSlash {
 		gr_half_size = gr_half_size / 2.f;
 	}
 
-	PhotoDisplayer::PhotoDisplayer(const Photo_SharedHandle& p) :
-		gr_handle(p),
-		gr_half_size() {
-		GetGraphSizeF(gr_handle, &gr_half_size.x, &gr_half_size.y);
-		gr_half_size = gr_half_size / 2.f;
-	}
-
 	void PhotoDisplayer::display(const Vec2& pos_center, const Vec2& direction) const {
 		// —^‚¦‚ç‚ê‚½•ûŒü‚©‚çŠp“x‚ğŒvZ‚·‚é
 		// Šî€‚Íy²

@@ -279,6 +279,18 @@
     <ClCompile Include="src\BulletController.cpp">
       <Filter>Source\Bullet</Filter>
     </ClCompile>
+    <ClCompile Include="src\Bullet_V.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_Star.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_Resource.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_Paramater.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -524,9 +536,6 @@
     <ClInclude Include="src\Define_Inventory.h">
       <Filter>Source\Gun_Custamize</Filter>
     </ClInclude>
-    <ClInclude Include="src\eBullet.h">
-      <Filter>Source\Gun_Custamize</Filter>
-    </ClInclude>
     <ClInclude Include="src\Icon_Table.h">
       <Filter>Source\Gun_Custamize</Filter>
     </ClInclude>
@@ -541,6 +550,18 @@
     </ClInclude>
     <ClInclude Include="src\Bullet_Paramater.h">
       <Filter>Source\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_V.h">
+      <Filter>Source\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_Star.h">
+      <Filter>Source\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_Resource.h">
+      <Filter>Source\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eBullet.h">
+      <Filter>Source\Enum</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

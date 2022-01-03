@@ -5,28 +5,43 @@
 
 #include"Define.h"
 #include"Gun_Info.h"
+#include"Time.h"
 
 namespace {
 	// 当たり判定の大きさ
 	constexpr float collider_radius = 10.f;
 
 	// 移動速度
-	constexpr float speed = 640.f;
+	constexpr float speed = 1280.f;
+
+	// 速度の減衰度
+	constexpr float resistance = 0.99f;
+
+	// 生存時間
+	constexpr float survival_count = 0.7f;
 }
 
 namespace Shooting_HackAndSlash::Bullet {
-	ST::ST(const Bullet_Paramater& p, BulletController& b, EnemyController& e) :
-		AbstructBullet(Define::Path::Photo::Bullet, e),
-		controller_ref(b)
+	ST::ST(const Bullet_Paramater& p, std::unique_ptr<Bullet_Resource>& resource, BulletController& b, EnemyController& e) :
+		AbstructBullet(Define::Path::Photo::Bullet, p, resource, e, b),
+		survival_count(::survival_count)
 	{
-		damage = p.damage;
-		velocity = p.direction * ::speed;
-		pos = p.pos;
-		resource = p.resource;
-		collider = CircleCollider(pos, ::collider_radius);
+		collider = CircleCollider(this->pos, ::collider_radius);
+
+		this->velocity = p.direction * ::speed;
 	}
 
 	void ST::_update() {
+		// 減衰させる
+		velocity = velocity * ::resistance;
+
+		// 生存時間を更新
+		this->survival_count -= Time::DeltaTime();
+
+		if (this->survival_count <= 0.f) {
+			is_dead = true;
+			is_destroy = false;
+		}
 	}
 
 	void ST::OnCollide(AbstructEnemy& enemy) {
@@ -38,27 +53,18 @@ namespace Shooting_HackAndSlash::Bullet {
 	void ST::OnDestroy() {
 		//次の弾を出す
 
-		// リソースが無いのであれば終了
-		if (resource == 0) return;
-
-		// リソースから生成する弾のインデックスを取得
-		// *バグあるかも
-		int temp_index = Gun_Info::get_resource() - this->resource;
-
 		// 生成する弾を取得
-		eBullet b = Gun_Info::Now_Gun().magazine.at(temp_index);
+		eBullet bullet = resource->get();
 
 		// 生成パラメータを作成
-		Bullet_Paramater temp_para;
+		Bullet_Paramater para;
 
 		// パラメータ設定
-		temp_para.direction = this->velocity.nomalize();
-		temp_para.damage = this->damage;
-		temp_para.bullet = b;
-		temp_para.pos = this->pos;
-		temp_para.resource = this->resource - 1;
+		para.direction = this->velocity.nomalize();
+		para.damage = this->damage;
+		para.pos = this->pos;
 
 		// 生成
-		this->controller_ref.Make(temp_para);
+		this->bulletcontroller_ref.Make(bullet, para, resource);
 	}
 }
