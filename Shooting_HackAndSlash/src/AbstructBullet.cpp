@@ -20,6 +20,9 @@ namespace Shooting_HackAndSlash {
 	{
 		// リソース受け取り
 		this->resource = std::move(r);
+
+		// 座標を渡す
+		pos = para.pos;
 	}
 
 	void AbstructBullet::update() {

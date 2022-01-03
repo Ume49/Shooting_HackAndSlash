@@ -2,6 +2,7 @@
 
 #include<cmath>
 #include<numbers>
+#include<array>
 
 #include"BulletController.h"
 #include"Define.h"

@@ -27,10 +27,11 @@ namespace Shooting_HackAndSlash {
 	}
 
 	void Player::update() {
+		// ³–Ê•ûŒü‚ðŒˆ’è
 		front = (Input::GetMousePosf() - pos).nomalize();
 
 		Move();
-		bullet.check(pos);
+		bullet.check(this->pos);
 	}
 
 	void Player::Damage(int damage) {
