@@ -67,8 +67,11 @@
     <Filter Include="あんま触ってない">
       <UniqueIdentifier>{c7f70d16-9530-4d42-aef4-4844220f132d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Bullet">
+    <Filter Include="Source\Bullet_Custam">
       <UniqueIdentifier>{f6f50403-a54b-460f-9965-e92e22e75e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Bullet_Custam\Bullets">
+      <UniqueIdentifier>{280cba9e-cb06-4c89-9444-a5dc689c4fa3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -91,7 +94,7 @@
       <Filter>Source\UI</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_Lancher.cpp">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\ButtonController.cpp">
       <Filter>Source\Controller</Filter>
@@ -213,9 +216,6 @@
     <ClCompile Include="src\Debug_Scene.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="src\Bullet_ST.cpp">
-      <Filter>Source\Bullet</Filter>
-    </ClCompile>
     <ClCompile Include="src\PlayerInfo.cpp">
       <Filter>Source\System\Singleton</Filter>
     </ClCompile>
@@ -274,22 +274,34 @@
       <Filter>Source\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\AbstructBullet.cpp">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\BulletController.cpp">
-      <Filter>Source\Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Bullet_V.cpp">
-      <Filter>Source\Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Bullet_Star.cpp">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_Resource.cpp">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_Paramater.cpp">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_LeftCurve.cpp">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_Refrect.cpp">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_RightCurve.cpp">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_ST.cpp">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_Star.cpp">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet_V.cpp">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -321,7 +333,7 @@
       <Filter>Source\UI</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Lancher.h">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_CoolTime_Displayer.h">
       <Filter>Source\UI</Filter>
@@ -476,9 +488,6 @@
     <ClInclude Include="src\Debug_Scene.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bullet_ST.h">
-      <Filter>Source\Bullet</Filter>
-    </ClInclude>
     <ClInclude Include="src\PlayerInfo.h">
       <Filter>Source\System\Singleton</Filter>
     </ClInclude>
@@ -543,25 +552,37 @@
       <Filter>Source\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\AbstructBullet.h">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\BulletController.h">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Paramater.h">
-      <Filter>Source\Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Bullet_V.h">
-      <Filter>Source\Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Bullet_Star.h">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Resource.h">
-      <Filter>Source\Bullet</Filter>
+      <Filter>Source\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\eBullet.h">
       <Filter>Source\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_LeftCurve.h">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_Refrect.h">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_RightCurve.h">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_ST.h">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_Star.h">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bullet_V.h">
+      <Filter>Source\Bullet_Custam\Bullets</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

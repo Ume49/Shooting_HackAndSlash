@@ -21,7 +21,7 @@ namespace Shooting_HackAndSlash {
 
 		auto& m = guns.begin()->magazine;
 
-		m.at(0) = eBullet::ST;
+		m.at(0) = eBullet::V;
 		m.at(1) = eBullet::Star;
 		m.at(2) = eBullet::ST;
 
