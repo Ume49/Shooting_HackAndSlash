@@ -4,6 +4,7 @@
 #include"IDropListener.h"
 #include"IEraseIcon.h"
 #include"IBackListener.h"
+#include"IPackagedIcon.h"
 #include<array>
 
 namespace Shooting_HackAndSlash::Gun_Custamize {
@@ -17,7 +18,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	};
 
 	// マウスカーソルにくっついてくるアイコン
-	class Dragged_Icon : public Base_Icon{
+	class Dragged_Icon : public Base_Icon, public IPackagedIcon {
 		Vec2 pos;
 		// 戻るために使用する添え字
 		size_t return_index;
@@ -32,6 +33,9 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 
 		void update() override;
 		void draw() const override;
+
+		eBullet& get_Bullet() override;
+		size_t get_index() override;
 
 		Dragged_Icon(
 			const eBullet& bullet,

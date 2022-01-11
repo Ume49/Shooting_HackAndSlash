@@ -231,8 +231,10 @@
     <ClCompile Include="src\Volume.cpp" />
     <ClCompile Include="src\VolumeController.cpp" />
     <ClCompile Include="src\Stage_Num_Displayer.cpp" />
+    <ClCompile Include="src\Survival_Counter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\IPackagedIcon.h" />
     <ClInclude Include="src\Bullet_LeftCurve.h" />
     <ClInclude Include="src\Bullet_Refrect.h" />
     <ClInclude Include="src\Bullet_RightCurve.h" />
@@ -326,6 +328,7 @@
     <ClInclude Include="src\Volume.h" />
     <ClInclude Include="src\VolumeController.h" />
     <ClInclude Include="src\Stage_Num_Displayer.h" />
+    <ClInclude Include="src\Survival_Counter.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="メモ.txt" />

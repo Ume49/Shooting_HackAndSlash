@@ -25,7 +25,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		void update();
 		void draw() const;
 
-		bool CheckDrop(const eBullet& e) override;
+		bool CheckDrop(IPackagedIcon& i) override;
 		void Back(size_t index, const eBullet& bullet) override;
 
 		Magazine(ISetIcon& set);

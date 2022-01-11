@@ -3,8 +3,9 @@
 
 #include"Define.h"
 #include"Input.h"
-#include"Gun_Info.h"
 #include"Icon_Table.h"
+#include"Gun_Info.h"
+#include"Inventory_Info.h"
 
 namespace {
 	// スロット間の距離
@@ -79,28 +80,40 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		}
 	}
 
-	bool Magazine::CheckDrop(const eBullet& e) {
+	bool Magazine::CheckDrop(IPackagedIcon& icon) {
 		bool result = false;
 
 		auto itr = gun_ref->get().magazine.begin();
 
 		// スロットをチェック
 		for (auto& w : slots) {
-			if (*itr == eBullet::Null) {
-				// 空のときだけ続行
+			if (w.is_on_mouse()) {	// スロットが選択されている時は続行
+				if (*itr != eBullet::Null) {	// スロットに中身がある場合の処理
+					// 中身を退避
+					auto temp_bullet = *itr;
 
-				if (w.is_on_mouse()) {
-					*itr = e;
+					// スロットに代入
+					*itr = icon.get_Bullet();
 
-					result = true;
-					break;
+					// アイコンに退避させていたものを渡す
+					icon.get_Bullet() = temp_bullet;
+
+					// 退避したアイコンを戻して欲しいので、falseを返させる
+					result = false;
 				}
-			}
-			else {
-				// スロットに中身があるとき
-				
+				else {	// スロットに中身がない場合の処理
+					// 代入
+					*itr = icon.get_Bullet();
+
+					// 空の場合は戻す処理をさせない
+					result = true;
+				}
+
+				// スロットは一つしか処理させない
+				break;
 			}
 
+			// イテレータを進める
 			itr++;
 		}
 

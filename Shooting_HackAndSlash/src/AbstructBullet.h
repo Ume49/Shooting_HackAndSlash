@@ -8,6 +8,8 @@
 
 #include<memory>
 
+#define _Bullet_Args_Template const Bullet_Paramater& p, std::unique_ptr<Bullet_Resource>& resource, BulletController& b, EnemyController& e
+
 namespace Shooting_HackAndSlash {
 	class EnemyController;
 	class AbstructEnemy;

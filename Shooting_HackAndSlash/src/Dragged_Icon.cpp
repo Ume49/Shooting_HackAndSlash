@@ -23,8 +23,8 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		if (Input::GetUp(Inputcode::Fire1)) {	// マウスから指が離れたとき
 			bool flag = false;
 
-			flag |= dropper_backpack.CheckDrop(bullet);
-			flag |= dropper_magazine.CheckDrop(bullet);
+			flag |= dropper_backpack.CheckDrop(*this);
+			flag |= dropper_magazine.CheckDrop(*this);
 
 			// どこにもドロップできなかった場合は元の場所へ返す
 			if (not flag) { back_listener.Back(return_index, bullet); }
@@ -36,5 +36,13 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	void Dragged_Icon::draw() const {
 		using namespace Define::RotaGraph_Default;
 		DrawRotaGraphF(pos.x, pos.y, ExRate, Angle, Icon_Table::at(bullet), TRUE);
+	}
+
+	eBullet& Dragged_Icon::get_Bullet() {
+		return bullet;
+	}
+
+	size_t Dragged_Icon::get_index() {
+		return return_index;
 	}
 }

@@ -108,7 +108,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		}
 	}
 
-	bool BackPack::CheckDrop(const eBullet& b) {
+	bool BackPack::CheckDrop(IPackagedIcon& icon) {
 		bool result = false;
 
 		// コンテナの先頭イテレータを取得
@@ -118,11 +118,29 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		// ついでにそれと合うようにイテレータも移動
 		for (auto& w : slots) {
 			if (w.is_on_mouse() && (*iter == eBullet::Null)) {	// マウスと重なっているスロットが空欄の時のみ許可
-				result = true;
 
-				// 代入
-				*iter = b;
+				if (*iter != eBullet::Null) {	// スロットに中身がある場合の処理
+					// 中身を退避
+					auto temp_bullet = *iter;
 
+					// スロットに代入
+					*iter = icon.get_Bullet();
+
+					// アイコンに退避させていたものを渡す
+					icon.get_Bullet() = temp_bullet;
+
+					// 退避したアイコンを戻して欲しいので、falseを返させる
+					result = false;
+				}
+				else {	// スロットに中身がない場合の処理
+					// 代入
+					*iter = icon.get_Bullet();
+
+					// 空の場合は戻す処理をさせない
+					result = true;
+				}
+
+				// アイコンは一個しか処理しない
 				break;
 			}
 

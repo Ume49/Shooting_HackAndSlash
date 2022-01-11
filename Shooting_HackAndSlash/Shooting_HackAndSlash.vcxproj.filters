@@ -303,6 +303,9 @@
     <ClCompile Include="src\Bullet_V.cpp">
       <Filter>Source\Bullet_Custam\Bullets</Filter>
     </ClCompile>
+    <ClCompile Include="src\Survival_Counter.cpp">
+      <Filter>Source\GameObject\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -583,6 +586,12 @@
     </ClInclude>
     <ClInclude Include="src\Bullet_V.h">
       <Filter>Source\Bullet_Custam\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Survival_Counter.h">
+      <Filter>Source\GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IPackagedIcon.h">
+      <Filter>Source\Gun_Custamize</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
