@@ -21,6 +21,11 @@ namespace Shooting_HackAndSlash::Scene {
 			listener.SceneChange(eScene::Menu);
 		}
 
+		// Tabを押したら銃カスタマイズ画面を開く
+		if (Input::GetDown(Inputcode::Tab)) {
+
+		}
+
 		player.update();
 		bullet_player.update();
 		item_controller.update();

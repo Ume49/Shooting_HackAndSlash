@@ -64,9 +64,6 @@
     <Filter Include="Source\Gun_Custamize">
       <UniqueIdentifier>{0c635a44-8cb4-4596-bcec-0aaea06b7e96}</UniqueIdentifier>
     </Filter>
-    <Filter Include="あんま触ってない">
-      <UniqueIdentifier>{c7f70d16-9530-4d42-aef4-4844220f132d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\Bullet_Custam">
       <UniqueIdentifier>{f6f50403-a54b-460f-9965-e92e22e75e1f}</UniqueIdentifier>
     </Filter>
@@ -306,6 +303,7 @@
     <ClCompile Include="src\Survival_Counter.cpp">
       <Filter>Source\GameObject\Component</Filter>
     </ClCompile>
+    <ClCompile Include="src\Vector_Rotate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -604,6 +602,7 @@
     <None Include="src\IDropListener.h">
       <Filter>Source\Gun_Custamize</Filter>
     </None>
+    <None Include="src\Vec2_Rotate.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="メモ.txt" />

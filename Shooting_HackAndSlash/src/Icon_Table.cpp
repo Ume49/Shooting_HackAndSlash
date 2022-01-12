@@ -1,5 +1,6 @@
 #include "Icon_Table.h"
 
+#include"eBullet.h"
 #include"Define.h"
 
 namespace Shooting_HackAndSlash::Gun_Custamize {

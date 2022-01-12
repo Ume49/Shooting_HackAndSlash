@@ -228,6 +228,7 @@
     <ClCompile Include="src\Text_centeralign.cpp" />
     <ClCompile Include="src\Text.cpp" />
     <ClCompile Include="src\StagePrepare.cpp" />
+    <ClCompile Include="src\Vector_Rotate.cpp" />
     <ClCompile Include="src\Volume.cpp" />
     <ClCompile Include="src\VolumeController.cpp" />
     <ClCompile Include="src\Stage_Num_Displayer.cpp" />
@@ -337,6 +338,7 @@
     <None Include="src\IBackListener.h" />
     <None Include="src\IDragAndDropListener.h" />
     <None Include="src\IDropListener.h" />
+    <None Include="src\Vec2_Rotate.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
