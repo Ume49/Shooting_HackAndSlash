@@ -1,7 +1,9 @@
 #include "Bullet_RightCurve.h"
 
-#include"Define.h"
+#include"BulletController.h"
+#include"AbstructEnemy.h"
 
+#include"Define.h"
 #include"Vec2_Rotate.h"
 
 #include"Time.h"
@@ -27,8 +29,27 @@ namespace Shooting_HackAndSlash::Bullet {
 	}
 
 	void RightCurve::OnCollide(AbstructEnemy& e) {
+		is_dead = true;
+		is_destroy = true;
+
+		e.Damage(damage);
 	}
 
 	void RightCurve::OnDestroy() {
+		//次の弾を出す
+
+		// 生成する弾を取得
+		eBullet bullet = resource->get();
+
+		// 生成パラメータを作成
+		Bullet_Paramater para;
+
+		// パラメータ設定
+		para.direction = this->velocity.nomalize();
+		para.damage = this->damage;
+		para.pos = this->pos;
+
+		// 生成
+		this->bulletcontroller_ref.Make(bullet, para, resource);
 	}
 }
