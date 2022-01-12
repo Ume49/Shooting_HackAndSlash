@@ -23,7 +23,7 @@ namespace Shooting_HackAndSlash::Scene {
 
 		// Tabを押したら銃カスタマイズ画面を開く
 		if (Input::GetDown(Inputcode::Tab)) {
-
+			listener.SceneChange(eScene::Gun_Custom);
 		}
 
 		player.update();

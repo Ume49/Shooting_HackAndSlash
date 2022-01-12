@@ -8,6 +8,7 @@
 #include"Menu.h"
 #include"Debug_Choice.h"
 #include"Debug_Scene.h"
+#include"Scene_GunCustom.h"
 
 #include"Define.h"
 
@@ -46,7 +47,7 @@ namespace Shooting_HackAndSlash {
 
 		// シーンスタック変更
 		if (isScenePop) { scene_pop(); }
-		if (isSceneChange) { 
+		if (isSceneChange) {
 			if (isFade) {
 				if (fade.update()) {
 					isFade = false;
@@ -96,8 +97,12 @@ namespace Shooting_HackAndSlash {
 		case eScene::Boss:
 			temp_scene = std::make_unique<Scene::Boss>(*this);
 			break;
+		case eScene::Gun_Custom:
+			temp_scene = std::make_unique<Scene::GunCustom>(*this, *scene_stack.top());
+			break;
 		case eScene::Debug:
 			temp_scene = std::make_unique<Scene::Debug_Scene>(*this);
+			break;
 		}
 
 		// リセット

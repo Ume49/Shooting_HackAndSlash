@@ -10,6 +10,7 @@ namespace Shooting_HackAndSlash {
 		Boss,
 		Fade,
 		Prepare,
+		Gun_Custom,
 		Debug
 	};
 }

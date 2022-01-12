@@ -304,6 +304,9 @@
       <Filter>Source\GameObject\Component</Filter>
     </ClCompile>
     <ClCompile Include="src\Vector_Rotate.cpp" />
+    <ClCompile Include="src\Scene_GunCustom.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -325,9 +328,6 @@
       <Filter>Source\Template</Filter>
     </ClInclude>
     <ClInclude Include="src\AbstructGameObject.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
-    <ClInclude Include="src\AbstructScene.h">
       <Filter>Source\Template</Filter>
     </ClInclude>
     <ClInclude Include="src\Bomb_count_displayer.h">
@@ -359,9 +359,6 @@
     </ClInclude>
     <ClInclude Include="src\Gauge.h">
       <Filter>Source\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="src\eScene.h">
-      <Filter>Source\Enum</Filter>
     </ClInclude>
     <ClInclude Include="src\HP_Bar.h">
       <Filter>Source\UI</Filter>
@@ -590,6 +587,15 @@
     </ClInclude>
     <ClInclude Include="src\IPackagedIcon.h">
       <Filter>Source\Gun_Custamize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene_GunCustom.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructScene.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eScene.h">
+      <Filter>Source\Enum</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

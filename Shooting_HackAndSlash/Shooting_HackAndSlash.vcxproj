@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Scene_GunCustom.cpp" />
     <ClCompile Include="src\Bullet_LeftCurve.cpp" />
     <ClCompile Include="src\Bullet_Refrect.cpp" />
     <ClCompile Include="src\Bullet_RightCurve.cpp" />
@@ -235,6 +236,7 @@
     <ClCompile Include="src\Survival_Counter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Scene_GunCustom.h" />
     <ClInclude Include="src\IPackagedIcon.h" />
     <ClInclude Include="src\Bullet_LeftCurve.h" />
     <ClInclude Include="src\Bullet_Refrect.h" />
