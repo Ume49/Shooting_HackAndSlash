@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Item_Bullet.cpp" />
     <ClCompile Include="src\Scene_GunCustom.cpp" />
     <ClCompile Include="src\Bullet_LeftCurve.cpp" />
     <ClCompile Include="src\Bullet_Refrect.cpp" />
@@ -184,7 +185,6 @@
     <ClCompile Include="src\Item_Cure.cpp" />
     <ClCompile Include="src\AbstructItem.cpp" />
     <ClCompile Include="src\ItemController.cpp" />
-    <ClCompile Include="src\ItemSpawner.cpp" />
     <ClCompile Include="src\Font_SharedHandle.cpp" />
     <ClCompile Include="src\Abstruct_Shared_Handle.cpp" />
     <ClCompile Include="src\Abstruct_Shared_Manager.cpp" />
@@ -236,6 +236,7 @@
     <ClCompile Include="src\Survival_Counter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Item_Bullet.h" />
     <ClInclude Include="src\Scene_GunCustom.h" />
     <ClInclude Include="src\IPackagedIcon.h" />
     <ClInclude Include="src\Bullet_LeftCurve.h" />
@@ -270,7 +271,6 @@
     <ClInclude Include="src\ISpawnCallListener.h" />
     <ClInclude Include="src\AbstructItem.h" />
     <ClInclude Include="src\ItemController.h" />
-    <ClInclude Include="src\ItemSpawner.h" />
     <ClInclude Include="src\Font_SharedHandle.h" />
     <ClInclude Include="src\AbstructBullet.h" />
     <ClInclude Include="src\AbstructEnemy.h" />

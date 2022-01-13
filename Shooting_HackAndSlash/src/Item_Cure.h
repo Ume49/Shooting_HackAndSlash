@@ -1,14 +1,11 @@
 #pragma once
 #include"AbstructItem.h"
 
-namespace Shooting_HackAndSlash{
-	class Player;
+namespace Shooting_HackAndSlash {
 	namespace Item {
 		class Cure : public AbstructItem {
-			float survival_time;
-			Player& ref_player;
+			void OnCollide(Player& p) override;
 		public:
-			void update() override;
 			void draw() const override;
 
 			Cure(const Vec2& pos, Player& p);

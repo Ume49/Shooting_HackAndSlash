@@ -8,6 +8,9 @@
 
 namespace {
 	constexpr float Spanw_Rate = 0.7f;
+
+	// 乱数の上限値
+	constexpr int random_max = 100;
 }
 
 namespace Shooting_HackAndSlash {
@@ -35,6 +38,13 @@ namespace Shooting_HackAndSlash {
 		assert(Spanw_Rate <= 1.f);
 
 		if (Random::Question(Spanw_Rate)) {
+			// アイテムをランダムに選ぶ
+			
+			// ランダムな数列を生成
+			int rand = Random::Range(0, ::random_max);
+
+			
+
 			{	// アイテム生成
 				item_list.push_back(std::make_unique<Item::Cure>(p, player_ref));
 			}

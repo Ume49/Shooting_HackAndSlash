@@ -22,6 +22,10 @@ namespace Shooting_HackAndSlash {
 
 		static void Set(size_t index, const eBullet& Bullet);
 
+		// ‹ó‚¢‚½êŠ‚É’Ç‰Á‚·‚é
+		// •Ô‚è’l: ‹ó‚¢‚Ä‚¢‚éêŠ‚ª‚ ‚Á‚½‚çtrueA‚È‚¢‚È‚çfalse
+		static bool Add(const eBullet& bullet);
+
 		// Œ»İ‚Á‚Ä‚¢‚é’eŠÛ
 		std::array<eBullet, Inventory_Length> owned_item;
 	};

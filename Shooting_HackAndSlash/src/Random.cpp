@@ -29,19 +29,17 @@ namespace Shooting_HackAndSlash {
 	}
 
 	int Random::Range(int min, int max) {
+		assert(min < max);
+
 		// —”‚Ì‰ÁH—p‚Émin~max‚Ì’·‚³‚ğŒvZ
 		// ‚Â‚¢‚Å‚ÉŒ^•ÏŠ·
-		uint32_t range = static_cast<uint32_t>(max - min);
-
-		// 0œZ‰ñ”ğ
-		if (range == 0) {
-			return 0;
-		}
+		uint32_t range = static_cast<uint32_t>(max - min + 1);
 
 		// —”‚ğæ“¾
 		uint32_t rand = Random::getInstance().random_machine();
 
 		// —”‚ğ‰ÁH
+		// 0~(max-min)‚Ü‚Å‚Ì”š‚ğ•Ô‚µ‚Ä—~‚µ‚¢
 		int rand_reshaped = static_cast<int>(rand % range);
 
 		// ‰º‘Ê‚ğ—š‚©‚¹‚ÄƒŠƒ^[ƒ“

@@ -19,9 +19,6 @@
     <Filter Include="Source\Controller">
       <UniqueIdentifier>{3352337f-10e4-4cee-8fd1-f91373fc80dc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\GameObject\Enemy">
-      <UniqueIdentifier>{805e3bb3-83e9-4f4f-8591-5beb74ecb902}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\GameObject\Component">
       <UniqueIdentifier>{95916ced-e8b7-4563-8390-9ecc810cd6ce}</UniqueIdentifier>
     </Filter>
@@ -36,9 +33,6 @@
     </Filter>
     <Filter Include="Source\System\Input_com">
       <UniqueIdentifier>{be718352-7aa6-4d27-8b5e-3f14637adbaf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\GameObject\Item">
-      <UniqueIdentifier>{eba19b5c-821e-4d18-8692-f76b8e0c74db}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\UI\Button">
       <UniqueIdentifier>{938712ea-28d5-497c-a9ff-3382eab4789b}</UniqueIdentifier>
@@ -69,6 +63,12 @@
     </Filter>
     <Filter Include="Source\Bullet_Custam\Bullets">
       <UniqueIdentifier>{280cba9e-cb06-4c89-9444-a5dc689c4fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Enemy">
+      <UniqueIdentifier>{805e3bb3-83e9-4f4f-8591-5beb74ecb902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Item">
+      <UniqueIdentifier>{eba19b5c-821e-4d18-8692-f76b8e0c74db}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -109,7 +109,7 @@
       <Filter>Source\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\Enemy_Kusozako.cpp">
-      <Filter>Source\GameObject\Enemy</Filter>
+      <Filter>Source\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\CircleCollider.cpp">
       <Filter>Source\GameObject\Component</Filter>
@@ -165,20 +165,11 @@
     <ClCompile Include="src\EnemySpawner.cpp">
       <Filter>Source\Controller</Filter>
     </ClCompile>
-    <ClCompile Include="src\ItemSpawner.cpp">
-      <Filter>Source\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ItemController.cpp">
-      <Filter>Source\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="src\AbstructItem.cpp">
-      <Filter>Source\Controller</Filter>
-    </ClCompile>
     <ClCompile Include="src\Item_Bomb.cpp">
-      <Filter>Source\GameObject\Item</Filter>
+      <Filter>Source\Item</Filter>
     </ClCompile>
     <ClCompile Include="src\Item_Cure.cpp">
-      <Filter>Source\GameObject\Item</Filter>
+      <Filter>Source\Item</Filter>
     </ClCompile>
     <ClCompile Include="src\Button.cpp">
       <Filter>Source\UI\Button</Filter>
@@ -303,9 +294,20 @@
     <ClCompile Include="src\Survival_Counter.cpp">
       <Filter>Source\GameObject\Component</Filter>
     </ClCompile>
-    <ClCompile Include="src\Vector_Rotate.cpp" />
     <ClCompile Include="src\Scene_GunCustom.cpp">
       <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector_Rotate.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Item_Bullet.cpp">
+      <Filter>Source\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AbstructItem.cpp">
+      <Filter>Source\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemController.cpp">
+      <Filter>Source\Item</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -352,7 +354,7 @@
       <Filter>Source\GameObject\Component</Filter>
     </ClInclude>
     <ClInclude Include="src\Enemy_Kusozako.h">
-      <Filter>Source\GameObject\Enemy</Filter>
+      <Filter>Source\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\eEnemy.h">
       <Filter>Source\Enum</Filter>
@@ -429,23 +431,14 @@
     <ClInclude Include="src\EnemySpawner.h">
       <Filter>Source\Controller</Filter>
     </ClInclude>
-    <ClInclude Include="src\ItemSpawner.h">
-      <Filter>Source\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="src\AbstructItem.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
-    <ClInclude Include="src\ItemController.h">
-      <Filter>Source\Controller</Filter>
-    </ClInclude>
     <ClInclude Include="src\ISpawnCallListener.h">
       <Filter>Source\Interface</Filter>
     </ClInclude>
     <ClInclude Include="src\Item_Bomb.h">
-      <Filter>Source\GameObject\Item</Filter>
+      <Filter>Source\Item</Filter>
     </ClInclude>
     <ClInclude Include="src\Item_Cure.h">
-      <Filter>Source\GameObject\Item</Filter>
+      <Filter>Source\Item</Filter>
     </ClInclude>
     <ClInclude Include="src\Button.h">
       <Filter>Source\UI\Button</Filter>
@@ -597,6 +590,15 @@
     <ClInclude Include="src\eScene.h">
       <Filter>Source\Enum</Filter>
     </ClInclude>
+    <ClInclude Include="src\Item_Bullet.h">
+      <Filter>Source\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructItem.h">
+      <Filter>Source\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemController.h">
+      <Filter>Source\Item</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\IBackListener.h">
@@ -608,7 +610,9 @@
     <None Include="src\IDropListener.h">
       <Filter>Source\Gun_Custamize</Filter>
     </None>
-    <None Include="src\Vec2_Rotate.h" />
+    <None Include="src\Vec2_Rotate.h">
+      <Filter>Source</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="メモ.txt" />

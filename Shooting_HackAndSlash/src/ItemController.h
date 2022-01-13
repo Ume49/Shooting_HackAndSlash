@@ -1,7 +1,6 @@
 #pragma once
 #include"AbstructItem.h"
 #include"ISpawnCallListener.h"
-#include"ItemSpawner.h"
 #include<memory>
 #include<list>
 
@@ -12,9 +11,6 @@ namespace Shooting_HackAndSlash {
 	private:
 		std::list<Pointer> item_list;
 		Player& player_ref;
-
-		// アイテム生成処理をラップしたクラス
-		ItemSpawner spawner;
 	public:
 		void draw() const;
 		void update();

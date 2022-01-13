@@ -30,4 +30,20 @@ namespace Shooting_HackAndSlash {
 	void Inventory_Info::Set(size_t index, const eBullet& b) {
 		Inventory_Info::getInstance().owned_item.at(index) = b;
 	}
+
+	// ‹ó—“‚ğŒŸõ‚µ‚Ä’Ç‰Á‚·‚é
+	bool Inventory_Info::Add(const eBullet& b) {
+		auto& container = Inventory_Info::getInstance().owned_item;
+
+		// ‹ó‚ÌêŠ‚ğ’T‚·
+		auto itr = std::find(container.begin(), container.end(), eBullet::Null);
+
+		// ‹ó‚¢‚½êŠ‚ª‚È‚¢‚È‚çfalse‚Å•Ô‚·
+		if (itr == container.end()) return false;
+
+		// ŒŸõ‚µ‚½êŠ‚É‘ã“ü
+		*itr = b;
+
+		return true;
+	}
 }
