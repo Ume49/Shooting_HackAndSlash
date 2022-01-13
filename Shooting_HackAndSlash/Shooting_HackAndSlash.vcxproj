@@ -155,6 +155,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\eBullet.cpp" />
+    <ClCompile Include="src\ItemSpawnFunc_Table.cpp" />
     <ClCompile Include="src\Item_Bullet.cpp" />
     <ClCompile Include="src\Scene_GunCustom.cpp" />
     <ClCompile Include="src\Bullet_LeftCurve.cpp" />
@@ -236,6 +238,7 @@
     <ClCompile Include="src\Survival_Counter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ItemSpawnFunc_Table.h" />
     <ClInclude Include="src\Item_Bullet.h" />
     <ClInclude Include="src\Scene_GunCustom.h" />
     <ClInclude Include="src\IPackagedIcon.h" />

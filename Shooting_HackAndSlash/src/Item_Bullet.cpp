@@ -14,7 +14,7 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash::Item {
-	Bullet::Bullet(const eBullet& b, Player& p, const Vec2& position) :
+	Bullet::Bullet(const eBullet& b, const Vec2& position, Player& p) :
 		AbstructItem(Gun_Custamize::Icon_Table::at(b).getkey(), p, position),
 		survival(::survival_time),
 		bullet(b)

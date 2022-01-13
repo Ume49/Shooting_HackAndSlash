@@ -73,7 +73,7 @@ namespace Shooting_HackAndSlash {
 			// カウンタ更新
 			spawn_count = spawn_interval;
 
-			int party_size = static_cast<int> (party_list.size());
+			int party_size = static_cast<int> (party_list.size())-1;
 			// 生成するパーティを決定
 			const Party_List& party = party_list.at(Random::Range(0, party_size));
 
