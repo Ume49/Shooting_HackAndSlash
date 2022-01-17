@@ -9,9 +9,12 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 	Icon_Table::Icon_Table() :
 		table() {
 		// ëŒâûï\ÇçÏê¨
-		table.emplace(eBullet::ST, Path::ST_1);
-		table.emplace(eBullet::V, Path::ST_2);
-		table.emplace(eBullet::Star, Path::ST_3);
+		table.emplace(eBullet::ST, Path::ST);
+		table.emplace(eBullet::V, Path::V);
+		table.emplace(eBullet::Star, Path::Star);
+		table.emplace(eBullet::Refrect, Path::Refrect);
+		table.emplace(eBullet::RightCurve, Path::RightCurve);
+		table.emplace(eBullet::LeftCurve, Path::LeftCurve);
 	}
 
 	const Photo_SharedHandle& Icon_Table::at(const eBullet& b) {

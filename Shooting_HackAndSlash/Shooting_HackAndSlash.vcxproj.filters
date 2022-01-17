@@ -22,9 +22,6 @@
     <Filter Include="Source\GameObject\Component">
       <UniqueIdentifier>{95916ced-e8b7-4563-8390-9ecc810cd6ce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Enum">
-      <UniqueIdentifier>{015f942d-f013-4482-a7dd-0ac5f435e2ee}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\Interface">
       <UniqueIdentifier>{a2a4958b-d512-4892-9579-da2b73259726}</UniqueIdentifier>
     </Filter>
@@ -306,12 +303,14 @@
     <ClCompile Include="src\ItemSpawnFunc_Table.cpp">
       <Filter>Source\Item</Filter>
     </ClCompile>
-    <ClCompile Include="src\eBullet.cpp" />
     <ClCompile Include="src\EnemySpawner.cpp">
       <Filter>Source\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\EnemyController.cpp">
       <Filter>Source\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eBullet.cpp">
+      <Filter>Source\Bullet_Custam</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -357,9 +356,6 @@
     <ClInclude Include="src\Enemy_Kusozako.h">
       <Filter>Source\Enemy</Filter>
     </ClInclude>
-    <ClInclude Include="src\eEnemy.h">
-      <Filter>Source\Enum</Filter>
-    </ClInclude>
     <ClInclude Include="src\Gauge.h">
       <Filter>Source\UI</Filter>
     </ClInclude>
@@ -392,9 +388,6 @@
     </ClInclude>
     <ClInclude Include="src\Looper.h">
       <Filter>Source\System</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Inputcode.h">
-      <Filter>Source\Enum</Filter>
     </ClInclude>
     <ClInclude Include="src\System.h">
       <Filter>Source\System</Filter>
@@ -552,9 +545,6 @@
     <ClInclude Include="src\Bullet_Resource.h">
       <Filter>Source\Bullet_Custam</Filter>
     </ClInclude>
-    <ClInclude Include="src\eBullet.h">
-      <Filter>Source\Enum</Filter>
-    </ClInclude>
     <ClInclude Include="src\Bullet_LeftCurve.h">
       <Filter>Source\Bullet_Custam\Bullets</Filter>
     </ClInclude>
@@ -585,9 +575,6 @@
     <ClInclude Include="src\AbstructScene.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\eScene.h">
-      <Filter>Source\Enum</Filter>
-    </ClInclude>
     <ClInclude Include="src\Item_Bullet.h">
       <Filter>Source\Item</Filter>
     </ClInclude>
@@ -605,6 +592,18 @@
     </ClInclude>
     <ClInclude Include="src\EnemyController.h">
       <Filter>Source\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eBullet.h">
+      <Filter>Source\Bullet_Custam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eEnemy.h">
+      <Filter>Source\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eScene.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inputcode.h">
+      <Filter>Source\System\Input_com</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

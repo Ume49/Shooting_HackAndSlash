@@ -21,12 +21,12 @@ namespace Shooting_HackAndSlash {
 
 		auto& m = guns.begin()->magazine;
 
-		m.at(0) = eBullet::V;
-		m.at(1) = eBullet::Star;
-		m.at(2) = eBullet::ST;
+		m.at(0) = eBullet::Refrect;
+		m.at(1) = eBullet::LeftCurve;
+		m.at(2) = eBullet::RightCurve;
 
 #else
-
+		guns.push_back(Gun(3U));
 #endif // _DEBUG
 	}
 

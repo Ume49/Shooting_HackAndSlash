@@ -129,9 +129,12 @@ namespace Shooting_HackAndSlash {
 					constexpr char Window[] = "Resource/volume_window.png";
 				}
 				namespace Icon {
-					constexpr char ST_1[] = "Resource/st_1.png";
-					constexpr char ST_2[] = "Resource/st_2.png";
-					constexpr char ST_3[] = "Resource/st_3.png";
+					constexpr char ST[] = "Resource/Bullet_ST.png";
+					constexpr char V[] = "Resource/Bullet_V.png";
+					constexpr char Star[] = "Resource/Bullet_Star.png";
+					constexpr char RightCurve[] = "Resource/Bullet_RightCurve.png";
+					constexpr char LeftCurve[] = "Resource/Bullet_LeftCurve.png";
+					constexpr char Refrect[] = "Resource/Bullet_Refrect.png";
 				}
 			}
 		}

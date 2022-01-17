@@ -2,6 +2,7 @@
 
 #include<algorithm>
 #include<memory>
+#include<exception>
 
 #include"EnemyController.h"
 #include"Define.h"
@@ -11,6 +12,9 @@
 #include"Bullet_ST.h"
 #include"Bullet_V.h"
 #include"Bullet_Star.h"
+#include"Bullet_Refrect.h"
+#include"Bullet_RightCurve.h"
+#include"Bullet_LeftCurve.h"
 
 namespace Shooting_HackAndSlash {
 	BulletController::BulletController(EnemyController& e) :
@@ -43,8 +47,10 @@ namespace Shooting_HackAndSlash {
 		const Bullet_Paramater& p,
 		std::unique_ptr<Bullet_Resource>& r
 	) {
+#define _Args_Pass p, r, *this, enemycontroller_ref
+
 		switch (b) {
-		default: break;				// âΩÇ‡ÇµÇ»Ç¢
+		default: throw "ê∂ê¨Ç≈Ç´Ç»Ç¢íeÇ™åƒÇ—èoÇ≥ÇÍÇ‹ÇµÇΩ";  break;				// âΩÇ‡ÇµÇ»Ç¢
 		case eBullet::Null: break;	// âΩÇ‡ÇµÇ»Ç¢
 
 		case eBullet::ST:
@@ -56,6 +62,17 @@ namespace Shooting_HackAndSlash {
 		case eBullet::Star:
 			bullets.push_back(std::make_unique<Bullet::Star>(p, r, *this, enemycontroller_ref));
 			break;
+		case eBullet::Refrect:
+			bullets.push_back(std::make_unique < Bullet::Refrect>(_Args_Pass));
+			break;
+		case eBullet::RightCurve:
+			bullets.push_back(std::make_unique<Bullet::RightCurve>(_Args_Pass));
+			break;
+		case eBullet::LeftCurve:
+			bullets.push_back(std::make_unique<Bullet::LeftCurve>(_Args_Pass));
+			break;
 		}
+
+#undef _Args_Pass
 	}
 }

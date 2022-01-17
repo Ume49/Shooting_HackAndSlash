@@ -11,14 +11,20 @@ namespace {
 	constexpr float x_min = Start::Xf, x_max = End::Xf;
 	constexpr float y_min = Start::Yf, y_max = End::Yf;
 
-	constexpr float survival_time = 10.f;
+	constexpr float survival_time = 6.f;
+
+	constexpr float collider_radius = 10.f;
+
+	constexpr float speed = 1280.f;
 }
 
 namespace Shooting_HackAndSlash::Bullet {
 	Refrect::Refrect(_Bullet_Args_Template) :
 		AbstructBullet(Define::Path::Photo::Bullet, p, resource, e, b),
 		survival(::survival_time) {
+		collider = CircleCollider(pos, ::collider_radius);
 
+		velocity = p.direction * ::speed;
 	}
 
 	void Refrect::_update() {

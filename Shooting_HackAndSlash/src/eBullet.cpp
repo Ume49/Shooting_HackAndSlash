@@ -9,7 +9,7 @@ namespace {
 
 	// 末尾
 	// eBulletの最後のものを入れること
-	constexpr int end = static_cast<int>(Shooting_HackAndSlash::eBullet::Star);
+	constexpr int end = static_cast<int>(Shooting_HackAndSlash::eBullet::LeftCurve);
 }
 
 namespace Shooting_HackAndSlash {

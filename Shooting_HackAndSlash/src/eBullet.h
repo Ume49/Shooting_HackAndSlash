@@ -8,7 +8,10 @@ namespace Shooting_HackAndSlash {
 		Null,
 		ST,
 		V,
-		Star
+		Star,
+		Refrect,
+		RightCurve,
+		LeftCurve
 	};
 
 	// ’e‚ðƒ‰ƒ“ƒ_ƒ€‚ÉŽæ“¾‚·‚é
