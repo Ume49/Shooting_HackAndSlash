@@ -238,6 +238,7 @@
     <ClCompile Include="src\Survival_Counter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Font_Path.h" />
     <ClInclude Include="src\ItemSpawnFunc_Table.h" />
     <ClInclude Include="src\Item_Bullet.h" />
     <ClInclude Include="src\Scene_GunCustom.h" />

@@ -5,18 +5,18 @@
 
 #include<string>
 
+#include"Photo_SharedHandle.h"
+
 namespace Shooting_HackAndSlash {
 	namespace Scene {
 		class Title :public AbstructScene {
 		private:
-			std::string title_text;
+			Photo_SharedHandle title_text;
 			ButtonController buttons;
 
 			bool keep_game;
-
-			void init();
 		public:
-			Title(ISceneChangeListener& s) :AbstructScene(s), title_text("タイトルシーン"), buttons(), keep_game(true) { init(); }
+			Title(ISceneChangeListener& s);
 			~Title() = default;
 			void draw() const override;
 			bool update() override;

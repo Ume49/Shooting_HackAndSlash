@@ -222,9 +222,6 @@
     <ClCompile Include="src\Stage_Num_Displayer.cpp">
       <Filter>Source\UI</Filter>
     </ClCompile>
-    <ClCompile Include="src\AbstructEnemy.cpp">
-      <Filter>Source\Template</Filter>
-    </ClCompile>
     <ClCompile Include="src\BackPack.cpp">
       <Filter>Source\Gun_Custamize</Filter>
     </ClCompile>
@@ -312,6 +309,9 @@
     <ClCompile Include="src\eBullet.cpp">
       <Filter>Source\Bullet_Custam</Filter>
     </ClCompile>
+    <ClCompile Include="src\AbstructEnemy.cpp">
+      <Filter>Source\Enemy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Player.h">
@@ -327,9 +327,6 @@
       <Filter>Source\Template</Filter>
     </ClInclude>
     <ClInclude Include="src\Abstruct_UI.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
-    <ClInclude Include="src\AbstructEnemy.h">
       <Filter>Source\Template</Filter>
     </ClInclude>
     <ClInclude Include="src\AbstructGameObject.h">
@@ -604,6 +601,12 @@
     </ClInclude>
     <ClInclude Include="src\Inputcode.h">
       <Filter>Source\System\Input_com</Filter>
+    </ClInclude>
+    <ClInclude Include="Font_Path.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructEnemy.h">
+      <Filter>Source\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -20,6 +20,7 @@ namespace Shooting_HackAndSlash {
 		for (auto& w : container) {
 			w->update();
 
+			// エネミーと接触したらダメージ
 			if (w->collider.isColide(player.collider)) {
 				player.Crush();
 

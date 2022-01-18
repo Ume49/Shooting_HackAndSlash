@@ -21,13 +21,17 @@ namespace Shooting_HackAndSlash {
 			frame_handle(Define::Path::Photo::HP_Bar::Frame),
 			backgr_handle(Define::Path::Photo::HP_Bar::Back),
 			Abstruct_UI(Point{ ::POS_X, ::POS_Y }),
-			font_handle(Font_Test::Name, 24, 2, Font_Test::Type),
-			mini_font_handle(Font_Test::Name, 16, 2, Font_Test::Type)
+			font_handle("Resource/Dot_24.dft"),
+			mini_font_handle("Resource/Dot_16.dft")
 		{
 		}
 
 		float HP_Bar::get_ratio() const {
-			return static_cast<float>(now_hp) / static_cast<float>(max_hp);
+			float rate = static_cast<float>(now_hp) / static_cast<float>(max_hp);
+
+			if (rate < 0.f) return 0.f;
+
+			return rate;
 		}
 
 		void HP_Bar::draw() const {

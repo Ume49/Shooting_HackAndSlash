@@ -9,7 +9,7 @@ namespace Shooting_HackAndSlash {
 
 	namespace Define {
 		// ウインドウの左上に表示されるメッセージ
-		constexpr char GAME_TITLE[] = "This text is written Define.h file.";
+		constexpr char GAME_TITLE[] = "Shoot!";
 
 		// 背景の色
 		namespace Background {

@@ -14,7 +14,7 @@ namespace Shooting_HackAndSlash::UI {
 		center(),
 		photo(Define::Path::Photo::Button::Normal),
 		photo_selected(Define::Path::Photo::Button::Selected),
-		text(text, Font_SharedHandle(Font_Test::Name, 16, 0, Font_Test::Type), Color(Palette::Black)) {
+		text(text, Font_SharedHandle("Resource/Dot_24.dft"), Color(Palette::Black)) {
 		// rightdown‚ðŒvŽZ
 		rightdown = leftup + photo.size();
 
