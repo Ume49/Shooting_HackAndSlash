@@ -15,8 +15,7 @@ namespace Shooting_HackAndSlash {
 		collider(),
 		is_dead(::dead_init),
 		displayer(photo_path),
-		player_ref(p),
-		velocity()
+		player_ref(p)
 	{
 	}
 
@@ -24,14 +23,6 @@ namespace Shooting_HackAndSlash {
 		assert(damage >= 0);
 
 		if ((hp -= damage) <= 0) { is_dead = true; }
-	}
-
-	void AbstructEnemy::update() {
-		// ˆÚ“®
-		pos += velocity * Time::DeltaTime();
-
-		// ”h¶æ‚Å’è‹`‚Å‚«‚éupdate
-		_update();
 	}
 
 	void AbstructEnemy::draw() const {

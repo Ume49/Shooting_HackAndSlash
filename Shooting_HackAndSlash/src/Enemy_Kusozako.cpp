@@ -12,33 +12,36 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash::Enemy {
-	void Kusozako::update() {
-		// 移動方向を計算
-		move_direction = (p.pos - pos).nomalize();
-
-		pos += move_direction * speed * Time::DeltaTime();
-		collider.OnPositionChanged(pos);
-	}
-
-	void Kusozako::draw() const {
-		displayer.display(pos, move_direction);
-
-#ifdef _DEBUG
-		collider.draw();
-#endif // _DEBUG
-	}
-
-#include"TextDisplayer.h"
-
 	Kusozako::Kusozako(const Player& p, const Vec2& spawn_pos) :
-		p(p),
-		speed(SPEED),
-		AbstructEnemy("Resource/misile.png") 
+		AbstructEnemy("Resource/misile.png", p),
+		direction()
 	{
 		pos = spawn_pos;
 
 		atk = ::atk;
 		hp = ::hp;
 		collider = CircleCollider(pos, ::collider_radius);
+	}
+
+	void Kusozako::update() {
+		// 移動方向を計算
+		direction = (player_ref.pos - pos).nomalize();
+
+		// 移動
+		pos += direction * ::SPEED * Time::DeltaTime();
+		collider.OnPositionChanged(pos);
+
+		// プレイヤーと接触していたらダメージを与えて消滅
+		if (collider.isColide(player_ref.collider)) {
+			is_dead = true;
+		}
+	}
+
+	void Kusozako::draw() const {
+		displayer.display(pos, direction);
+
+#ifdef _DEBUG
+		collider.draw();
+#endif // _DEBUG
 	}
 }

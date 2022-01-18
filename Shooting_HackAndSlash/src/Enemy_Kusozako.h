@@ -7,9 +7,7 @@ namespace Shooting_HackAndSlash {
 	namespace Enemy {
 		class Kusozako : public AbstructEnemy {
 		private:
-			const Player& p;
-			Vec2 move_direction;
-			float speed;
+			Vec2 direction;
 		public:
 			void update() override;
 			void draw() const override;

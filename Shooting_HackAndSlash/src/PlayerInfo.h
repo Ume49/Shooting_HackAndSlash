@@ -18,8 +18,13 @@ namespace Shooting_HackAndSlash {
 		// HPを回復する
 		static void Cure(int value);
 
+		// ダメージを与える
+		static void Damage(int damage);
+
 		// データの初期化
 		static void initialize();
+
+		
 	private:
 		friend Singleton;
 		PlayerInfo() :
