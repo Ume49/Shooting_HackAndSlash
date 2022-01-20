@@ -7,7 +7,7 @@
 namespace {
 	constexpr char CLEAR[] = "CLEAR!!";
 	constexpr char FAILED[] = "FAILED...";
-	constexpr uint32_t COLOR = 0x000000;
+	constexpr uint32_t COLOR = 0xffffff;
 }
 
 namespace Shooting_HackAndSlash::Scene {

@@ -10,9 +10,8 @@ namespace Shooting_HackAndSlash {
 			Vec2 direction;
 		public:
 			void update() override;
-			void draw() const override;
 
-			Kusozako(const Player& p, const Vec2& spawn_pos);
+			Kusozako(Player& p, const Vec2& spawn_pos);
 			~Kusozako() = default;
 		};
 	}

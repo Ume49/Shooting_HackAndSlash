@@ -19,7 +19,7 @@ namespace Shooting_HackAndSlash {
 		static void Cure(int value);
 
 		// ダメージを与える
-		static void Damage(int damage);
+		static void Damage(int value);
 
 		// データの初期化
 		static void initialize();

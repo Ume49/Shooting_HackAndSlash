@@ -5,7 +5,9 @@
 
 namespace Shooting_HackAndSlash {
 	void CircleCollider::draw() const {
+#ifdef  _DEBUG
 		DrawCircleAA(pos.x, pos.y, radius, 12, Palette::Collider, FALSE);
+#endif //  _DEBUG
 	}
 
 	bool CircleCollider::isColide(const CircleCollider& r) {

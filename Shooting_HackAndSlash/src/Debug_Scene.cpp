@@ -12,7 +12,7 @@
 
 namespace {
 	int bright = 255;
-
+#ifdef  _DEBUG
 	Shooting_HackAndSlash::Color color;
 
 	Vec2 center{ 100,600 };
@@ -26,6 +26,7 @@ namespace {
 
 		point2 = Shooting_HackAndSlash::Vec2_Rotate(point, Shooting_HackAndSlash::Degree_to_Radian(angle));
 	}
+#endif
 }
 
 namespace Shooting_HackAndSlash::Scene {
@@ -35,26 +36,37 @@ namespace Shooting_HackAndSlash::Scene {
 		//以下自由に初期化
 		custamize()
 	{
+#ifdef  _DEBUG
 		buttons.Add([&]() { listener.ScenePop(); }, "Return", Point{ 10, 10 });
 
 		buttons.Add([&]() { *(Inventory_Info::container_space()) = eBullet::ST; }, "アイテム追加", Point{ 10, 110 });
 		buttons.Add([&]() { *(Inventory_Info::container_space()) = eBullet::V; }, "アイテム追加2", Point{ 10, 180 });
 
 		::init();
+
+		star.push_back(BackGround_Object::BigStar(Vec2{ 600,800 }, 0xffffff));
+#endif //  _DEBUG
 	}
 
 	bool Debug_Scene::update() {
+#ifdef  _DEBUG
 		bool is_continue = true;
 
 		buttons.update();
 
 		{	// 自由に書く場所
 			custamize.update();
+
+			for (auto& w : star) { w.update(); }
 		}
 		return is_continue;
+#else
+		return true;
+#endif
 	}
 
 	void Debug_Scene::draw() const {
+#ifdef  _DEBUG
 		buttons.draw();
 
 		{	// 自由に書く場所
@@ -65,6 +77,9 @@ namespace Shooting_HackAndSlash::Scene {
 			drawpixel(::center, 0x4169e1);
 			drawpixel(::center + ::point, Palette::White);
 			drawpixel(::center + ::point2);
+
+			for (auto& w : star) { w.draw(); }
 		}
+#endif
 	}
 }

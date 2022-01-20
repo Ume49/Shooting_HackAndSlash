@@ -6,6 +6,8 @@
 #include"Define.h"
 
 namespace Shooting_HackAndSlash::UI {
+#define _FONT Font_SharedHandle("Resource/Dot_24.dft")
+
 	Button::Button(std::function<void(void)> onclick, const std::string& text, const Point& leftup) :
 		leftup(leftup),
 		rightdown(),
@@ -14,7 +16,7 @@ namespace Shooting_HackAndSlash::UI {
 		center(),
 		photo(Define::Path::Photo::Button::Normal),
 		photo_selected(Define::Path::Photo::Button::Selected),
-		text(text, Font_SharedHandle("Resource/Dot_24.dft"), Color(Palette::Black)) {
+		text(text, _FONT, Color(Palette::Black)) {
 		// rightdown‚ðŒvŽZ
 		rightdown = leftup + photo.size();
 
@@ -32,7 +34,7 @@ namespace Shooting_HackAndSlash::UI {
 		center(),
 		photo(photo_path),
 		photo_selected(photo_selected_path),
-		text(text, Font_SharedHandle(Font_Test::Name, 16, 0, Font_Test::Type), Color(Palette::Black)) {
+		text(text, _FONT, Color(Palette::Black)) {
 		// rightdown‚ðŒvŽZ
 		rightdown = leftup + photo.size();
 
@@ -49,7 +51,7 @@ namespace Shooting_HackAndSlash::UI {
 		center(),
 		photo(),
 		photo_selected(),	/*‰æ‘œ‚ÍŽg—p‚µ‚È‚¢‚Ì‚Å—¼•û‚Æ‚àNull‚Å“o˜^*/
-		text("", Font_SharedHandle(Font_Test::Name, 16, 0, Font_Test::Type), Color(Palette::Black)) {
+		text("", _FONT, Color(Palette::Black)) {
 		// rightdown‚ðŒvŽZ
 		rightdown = leftup + size;
 
@@ -57,6 +59,8 @@ namespace Shooting_HackAndSlash::UI {
 		Point p = leftup + rightdown;
 		center = Vec2(static_cast<float>(p.x), static_cast<float>(p.y)) / 2.f;
 	}
+
+#undef _FONT
 
 	void Button::draw() const {
 		DrawGraph(leftup.x, leftup.y, (isselect ? photo_selected : photo), TRUE);

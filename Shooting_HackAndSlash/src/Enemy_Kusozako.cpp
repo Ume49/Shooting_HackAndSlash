@@ -3,6 +3,7 @@
 #include"Time.h"
 #include"TextDisplayer.h"
 #include"Player.h"
+#include"PlayerInfo.h"
 
 namespace {
 	constexpr float SPEED = 120.f;
@@ -12,7 +13,7 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash::Enemy {
-	Kusozako::Kusozako(const Player& p, const Vec2& spawn_pos) :
+	Kusozako::Kusozako(Player& p, const Vec2& spawn_pos) :
 		AbstructEnemy("Resource/misile.png", p),
 		direction()
 	{
@@ -34,14 +35,8 @@ namespace Shooting_HackAndSlash::Enemy {
 		// プレイヤーと接触していたらダメージを与えて消滅
 		if (collider.isColide(player_ref.collider)) {
 			is_dead = true;
+
+			PlayerInfo::Damage(this->atk);
 		}
-	}
-
-	void Kusozako::draw() const {
-		displayer.display(pos, direction);
-
-#ifdef _DEBUG
-		collider.draw();
-#endif // _DEBUG
 	}
 }

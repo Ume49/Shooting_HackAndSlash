@@ -8,9 +8,7 @@ namespace Shooting_HackAndSlash {
 			Font_SharedHandle font_handle;
 		public:
 			void draw() const override;
-#ifdef _DEBUG
 			Kill_Count_Displayer();
-#endif // _DEBUG
 			Kill_Count_Displayer(const std::string& path);
 		};
 	}

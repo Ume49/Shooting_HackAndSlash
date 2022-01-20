@@ -4,6 +4,7 @@
 
 #include"CircleCollider.h"
 #include"PhotoDisplayer.h"
+#include"Vector.h"
 
 #include<memory>
 
@@ -13,12 +14,16 @@ namespace Shooting_HackAndSlash {
 	protected:
 		Player& player_ref;
 
+		// 各ステータス
 		int hp, atk;
+		// エネミーが向いている方向
+		Vec2 direction;
 
 		PhotoDisplayer displayer;
 	public:
 		CircleCollider collider;
 		bool is_dead;
+		bool is_hp_zero() const;
 		void Damage(int damage);
 
 		void draw() const override;

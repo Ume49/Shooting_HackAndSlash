@@ -16,9 +16,6 @@
     <Filter Include="Source\UI">
       <UniqueIdentifier>{e0ecfb4d-79e8-4ead-abcc-f9e03ba81f70}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Controller">
-      <UniqueIdentifier>{3352337f-10e4-4cee-8fd1-f91373fc80dc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\GameObject\Component">
       <UniqueIdentifier>{95916ced-e8b7-4563-8390-9ecc810cd6ce}</UniqueIdentifier>
     </Filter>
@@ -40,17 +37,8 @@
     <Filter Include="Source\UI\System">
       <UniqueIdentifier>{0cd23844-82db-43c8-a8ec-f62b84805a66}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\System\Struct">
-      <UniqueIdentifier>{49384c17-1bb2-44fb-a6e4-890865536c8e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\System\Singleton">
       <UniqueIdentifier>{78d6c602-575e-4659-8644-d98633498d7d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\System\Struct\Resource">
-      <UniqueIdentifier>{47d7481a-2441-4df7-9237-679c16c8e73d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\GameObject\System">
-      <UniqueIdentifier>{6a353584-0715-42eb-b441-dd008095d3c5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Gun_Custamize">
       <UniqueIdentifier>{0c635a44-8cb4-4596-bcec-0aaea06b7e96}</UniqueIdentifier>
@@ -67,11 +55,23 @@
     <Filter Include="Source\Item">
       <UniqueIdentifier>{eba19b5c-821e-4d18-8692-f76b8e0c74db}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Player">
+      <UniqueIdentifier>{bf6991d8-b7f9-47e4-9bce-6bf079162624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\mini_struct">
+      <UniqueIdentifier>{e9bbcdf8-4926-4b67-b54f-5d4aa880e1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Decoration">
+      <UniqueIdentifier>{11bbb170-4ea2-420a-9c56-36c57209bbae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\mini_struct\Resource">
+      <UniqueIdentifier>{47d7481a-2441-4df7-9237-679c16c8e73d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UI\Volume">
+      <UniqueIdentifier>{45a10beb-5291-4178-90e7-9703446481d0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Player.cpp">
-      <Filter>Source\GameObject</Filter>
-    </ClCompile>
     <ClCompile Include="src\Abstruct_Shared_Manager.cpp">
       <Filter>Source\Template</Filter>
     </ClCompile>
@@ -89,9 +89,6 @@
     </ClCompile>
     <ClCompile Include="src\Bullet_Lancher.cpp">
       <Filter>Source\Bullet_Custam</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ButtonController.cpp">
-      <Filter>Source\Controller</Filter>
     </ClCompile>
     <ClCompile Include="src\Debug_Choice.cpp">
       <Filter>Source\Scene</Filter>
@@ -116,9 +113,6 @@
     </ClCompile>
     <ClCompile Include="src\PhotoDisplayer.cpp">
       <Filter>Source\GameObject\Component</Filter>
-    </ClCompile>
-    <ClCompile Include="src\UIController.cpp">
-      <Filter>Source\Controller</Filter>
     </ClCompile>
     <ClCompile Include="src\Title.cpp">
       <Filter>Source\Scene</Filter>
@@ -151,10 +145,10 @@
       <Filter>Source\UI</Filter>
     </ClCompile>
     <ClCompile Include="src\Photo_SharedHandle.cpp">
-      <Filter>Source\System\Struct\Resource</Filter>
+      <Filter>Source\mini_struct\Resource</Filter>
     </ClCompile>
     <ClCompile Include="src\Font_SharedHandle.cpp">
-      <Filter>Source\System\Struct\Resource</Filter>
+      <Filter>Source\mini_struct\Resource</Filter>
     </ClCompile>
     <ClCompile Include="src\Item_Bomb.cpp">
       <Filter>Source\Item</Filter>
@@ -167,15 +161,6 @@
     </ClCompile>
     <ClCompile Include="src\CursorDrawer.cpp">
       <Filter>Source\UI\System</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Color.cpp">
-      <Filter>Source\System\Struct</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Text.cpp">
-      <Filter>Source\System\Struct</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Text_centeralign.cpp">
-      <Filter>Source\System\Struct</Filter>
     </ClCompile>
     <ClCompile Include="src\Input.cpp">
       <Filter>Source\System\Singleton</Filter>
@@ -195,9 +180,6 @@
     <ClCompile Include="src\Debug_Scene.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="src\PlayerInfo.cpp">
-      <Filter>Source\System\Singleton</Filter>
-    </ClCompile>
     <ClCompile Include="src\StagePrepare.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
@@ -209,12 +191,6 @@
     </ClCompile>
     <ClCompile Include="src\Gauge_Horizontal.cpp">
       <Filter>Source\UI</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Volume.cpp">
-      <Filter>Source\UI</Filter>
-    </ClCompile>
-    <ClCompile Include="src\VolumeController.cpp">
-      <Filter>Source\Controller</Filter>
     </ClCompile>
     <ClCompile Include="src\Fade.cpp">
       <Filter>Source\System</Filter>
@@ -285,9 +261,6 @@
     <ClCompile Include="src\Scene_GunCustom.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="src\Vector_Rotate.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="src\Item_Bullet.cpp">
       <Filter>Source\Item</Filter>
     </ClCompile>
@@ -312,11 +285,41 @@
     <ClCompile Include="src\AbstructEnemy.cpp">
       <Filter>Source\Enemy</Filter>
     </ClCompile>
+    <ClCompile Include="src\PlayerInfo.cpp">
+      <Filter>Source\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>Source\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector_Rotate.cpp">
+      <Filter>Source\mini_struct</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BackGround_BigStar.cpp">
+      <Filter>Source\Decoration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Text_centeralign.cpp">
+      <Filter>Source\mini_struct</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Text.cpp">
+      <Filter>Source\mini_struct</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Color.cpp">
+      <Filter>Source\mini_struct</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIController.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ButtonController.cpp">
+      <Filter>Source\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Volume.cpp">
+      <Filter>Source\UI\Volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VolumeController.cpp">
+      <Filter>Source\UI\Volume</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Player.h">
-      <Filter>Source\GameObject</Filter>
-    </ClInclude>
     <ClInclude Include="src\Boss.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
@@ -343,9 +346,6 @@
     </ClInclude>
     <ClInclude Include="src\Debug_Choice.h">
       <Filter>Source\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="src\ButtonController.h">
-      <Filter>Source\Controller</Filter>
     </ClInclude>
     <ClInclude Include="src\CircleCollider.h">
       <Filter>Source\GameObject\Component</Filter>
@@ -380,9 +380,6 @@
     <ClInclude Include="src\MainGame.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\UIController.h">
-      <Filter>Source\Controller</Filter>
-    </ClInclude>
     <ClInclude Include="src\Looper.h">
       <Filter>Source\System</Filter>
     </ClInclude>
@@ -414,10 +411,10 @@
       <Filter>Source\GameObject\Component</Filter>
     </ClInclude>
     <ClInclude Include="src\Photo_SharedHandle.h">
-      <Filter>Source\System\Struct\Resource</Filter>
+      <Filter>Source\mini_struct\Resource</Filter>
     </ClInclude>
     <ClInclude Include="src\Font_SharedHandle.h">
-      <Filter>Source\System\Struct\Resource</Filter>
+      <Filter>Source\mini_struct\Resource</Filter>
     </ClInclude>
     <ClInclude Include="src\ISpawnCallListener.h">
       <Filter>Source\Interface</Filter>
@@ -436,15 +433,6 @@
     </ClInclude>
     <ClInclude Include="src\CursorDrawer.h">
       <Filter>Source\UI\System</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Color.h">
-      <Filter>Source\System\Struct</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Text.h">
-      <Filter>Source\System\Struct</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Text_centeralign.h">
-      <Filter>Source\System\Struct</Filter>
     </ClInclude>
     <ClInclude Include="src\Input.h">
       <Filter>Source\System\Singleton</Filter>
@@ -467,9 +455,6 @@
     <ClInclude Include="src\Debug_Scene.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\PlayerInfo.h">
-      <Filter>Source\System\Singleton</Filter>
-    </ClInclude>
     <ClInclude Include="src\StagePrepare.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
@@ -481,12 +466,6 @@
     </ClInclude>
     <ClInclude Include="src\Gauge_Horizontal.h">
       <Filter>Source\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Volume.h">
-      <Filter>Source\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="src\VolumeController.h">
-      <Filter>Source\Controller</Filter>
     </ClInclude>
     <ClInclude Include="src\Fade.h">
       <Filter>Source\System</Filter>
@@ -602,11 +581,41 @@
     <ClInclude Include="src\Inputcode.h">
       <Filter>Source\System\Input_com</Filter>
     </ClInclude>
-    <ClInclude Include="Font_Path.h">
+    <ClInclude Include="src\Font_Path.h">
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="src\AbstructEnemy.h">
       <Filter>Source\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerInfo.h">
+      <Filter>Source\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>Source\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BackGround_BigStar.h">
+      <Filter>Source\Decoration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Text_centeralign.h">
+      <Filter>Source\mini_struct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Text.h">
+      <Filter>Source\mini_struct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Color.h">
+      <Filter>Source\mini_struct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIController.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ButtonController.h">
+      <Filter>Source\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Volume.h">
+      <Filter>Source\UI\Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VolumeController.h">
+      <Filter>Source\UI\Volume</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -620,7 +629,7 @@
       <Filter>Source\Gun_Custamize</Filter>
     </None>
     <None Include="src\Vec2_Rotate.h">
-      <Filter>Source</Filter>
+      <Filter>Source\mini_struct</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

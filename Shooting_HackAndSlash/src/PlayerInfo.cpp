@@ -20,4 +20,10 @@ namespace Shooting_HackAndSlash
 
 		p.hp = std::clamp((p.hp + v), 0, p.max_hp);
 	}
+
+	void PlayerInfo::Damage(int value) {
+		assert(value >= 0);
+
+		PlayerInfo::getInstance().hp -= value;
+	}
 }

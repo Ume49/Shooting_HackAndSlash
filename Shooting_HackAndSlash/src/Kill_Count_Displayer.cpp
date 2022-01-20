@@ -16,12 +16,10 @@ namespace {
 }
 
 namespace Shooting_HackAndSlash::UI {
-#ifdef _DEBUG
 	Kill_Count_Displayer::Kill_Count_Displayer() :
 		font_handle("Resource/Dot_24.dft") {
 		pos = Point{ ::x, ::y };
 	}
-#endif
 
 	Kill_Count_Displayer::Kill_Count_Displayer(const std::string& path) :
 		font_handle(path) {

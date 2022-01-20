@@ -22,4 +22,4 @@ namespace Shooting_HackAndSlash {
 	float Degree_to_Radian(float angle_deg) {
 		return angle_deg * ::deg_to_rad;
 	}
-}
+}	
