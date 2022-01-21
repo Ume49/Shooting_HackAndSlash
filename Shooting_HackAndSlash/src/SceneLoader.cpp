@@ -9,6 +9,7 @@
 #include"Debug_Choice.h"
 #include"Debug_Scene.h"
 #include"Scene_GunCustom.h"
+#include"Volume_Set_Scene.h"
 
 #include"Define.h"
 
@@ -99,6 +100,9 @@ namespace Shooting_HackAndSlash {
 			break;
 		case eScene::Gun_Custom:
 			temp_scene = std::make_unique<Scene::GunCustom>(*this, *scene_stack.top());
+			break;
+		case eScene::Volume:
+			temp_scene = std::make_unique<Scene::Volume_Set>(*this, *scene_stack.top());
 			break;
 		case eScene::Debug:
 			temp_scene = std::make_unique<Scene::Debug_Scene>(*this);

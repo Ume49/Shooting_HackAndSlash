@@ -14,8 +14,7 @@ namespace {
 
 namespace Shooting_HackAndSlash::Enemy {
 	Kusozako::Kusozako(Player& p, const Vec2& spawn_pos) :
-		AbstructEnemy("Resource/misile.png", p),
-		direction()
+		AbstructEnemy("Resource/misile.png", p)
 	{
 		pos = spawn_pos;
 

@@ -41,10 +41,8 @@ namespace Shooting_HackAndSlash {
 			gauge.draw(get_ratio());
 			draw(frame_handle);
 
-#ifdef _DEBUG
 			DrawStringToHandle(pos.x, pos.y - 30, "HP", Palette::Black, font_handle);
-			DrawStringToHandle(pos.x + 10, pos.y + 232, std::format("{}/{}", now_hp, max_hp).c_str(), Palette::Black, mini_font_handle);
-#endif // _DEBUG
+			DrawStringToHandle(pos.x + 10, pos.y + 210, std::format("{}\n  /{}", now_hp, max_hp).c_str(), Palette::White, mini_font_handle);
 		}
 	}
 }

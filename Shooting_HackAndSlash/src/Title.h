@@ -4,8 +4,10 @@
 #include"ButtonController.h"
 
 #include<string>
+#include<vector>
 
 #include"Photo_SharedHandle.h"
+#include"BackGround_BigStar.h"
 
 namespace Shooting_HackAndSlash {
 	namespace Scene {
@@ -13,6 +15,8 @@ namespace Shooting_HackAndSlash {
 		private:
 			Photo_SharedHandle title_text;
 			ButtonController buttons;
+
+			std::vector<BackGround_Object::BigStar> stars;
 
 			bool keep_game;
 		public:

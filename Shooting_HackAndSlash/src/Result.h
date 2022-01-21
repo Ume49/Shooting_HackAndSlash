@@ -3,6 +3,7 @@
 #include"AbstructScene.h"
 #include<string>
 #include"ButtonController.h"
+
 #include"Photo_SharedHandle.h"
 
 namespace Shooting_HackAndSlash {
@@ -20,8 +21,6 @@ namespace Shooting_HackAndSlash {
 			Photo_SharedHandle back_screen;
 
 			const AbstructScene& back_scene;
-
-			void init();
 		public:
 			Result(ISceneChangeListener& s, const AbstructScene& back_scene);
 			~Result() = default;

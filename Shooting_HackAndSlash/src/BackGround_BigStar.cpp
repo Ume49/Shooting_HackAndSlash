@@ -27,9 +27,9 @@ namespace Shooting_HackAndSlash::BackGround_Object {
 		state{  }{
 	}
 
-	BigStar::BigStar(const Vec2& pos, const Color& c) :
+	BigStar::BigStar(const Vec2& pos, const Color& c, float deray) :
 		position{ pos },
-		count{ ::count_init },
+		count{ ::count_init + deray },
 		color{ c },
 		state{  }{
 	}

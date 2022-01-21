@@ -6,6 +6,8 @@
 namespace {
 	constexpr int init = 0;
 	constexpr bool dead_init = false;
+
+	const std::string sound_path = "Resource/game_explosion1.mp3";
 }
 
 namespace Shooting_HackAndSlash {
@@ -16,14 +18,18 @@ namespace Shooting_HackAndSlash {
 		is_dead(::dead_init),
 		displayer(photo_path),
 		player_ref(p),
-		direction()
+		direction(),
+		sound(::sound_path)
 	{
 	}
 
 	void AbstructEnemy::Damage(int damage) {
 		assert(damage >= 0);
 
-		if ((hp -= damage) <= 0) { is_dead = true; }
+		if ((hp -= damage) <= 0) { 
+			is_dead = true; 
+			sound.play();
+		}
 	}
 
 	bool AbstructEnemy::is_hp_zero() const {
@@ -33,7 +39,9 @@ namespace Shooting_HackAndSlash {
 	void AbstructEnemy::draw() const {
 		displayer.display(pos, direction);
 
-#ifdef _DEBUG		collider.draw();
-#endif // _DEBUG
+#ifdef _DEBUG
+
+		collider.draw();
+#endif
 	}
 }

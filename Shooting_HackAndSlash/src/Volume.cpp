@@ -8,8 +8,8 @@
 namespace Shooting_HackAndSlash {
 	namespace PATH = Define::Path::Photo::Volume;
 
-	Volume::Volume(const Point& p, std::function<void(float)> f) :
-		value(),
+	Volume::Volume(const Point& p, std::function<void(float)> f, float v) :
+		value(v),
 		is_dragged(false),
 		gauge(PATH::Gauge, PATH::Back, p),
 		touch_pannel(),

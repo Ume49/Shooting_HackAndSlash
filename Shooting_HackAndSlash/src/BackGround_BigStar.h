@@ -14,7 +14,7 @@ namespace Shooting_HackAndSlash::BackGround_Object {
 		} state;
 	public:
 		BigStar();
-		BigStar(const Vec2& pos, const Color& c);
+		BigStar(const Vec2& pos, const Color& c, float deray = 0.f);
 		~BigStar() = default;
 
 		void update();

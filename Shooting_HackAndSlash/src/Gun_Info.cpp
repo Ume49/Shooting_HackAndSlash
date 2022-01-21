@@ -27,6 +27,10 @@ namespace Shooting_HackAndSlash {
 
 #else
 		guns.push_back(Gun(3U));
+
+		auto& m = guns.begin()->magazine;
+
+		m.at(0) = eBullet::ST;
 #endif // _DEBUG
 	}
 

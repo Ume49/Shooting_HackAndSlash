@@ -11,6 +11,7 @@ namespace Shooting_HackAndSlash::Scene {
 		back_scene(back),
 		back_screen(Define::Path::Photo::BackScreen){
 		// ƒ{ƒ^ƒ“‚ð’Ç‰Á
+		buttons.Add([&]() { listener.SceneChange(eScene::Volume); },  "Volume", Point{ 334, 400 });
 		buttons.Add([&]() { listener.ScenePop(); }, "Return", Point{ 334, 500 });
 		buttons.Add([&]() { listener.SceneChange(eScene::Title, true); }, "goTitle", Point{ 334,600 });
 		buttons.Add([&]() { keep_game = false; }, "Quit", Point{ 334, 700 });

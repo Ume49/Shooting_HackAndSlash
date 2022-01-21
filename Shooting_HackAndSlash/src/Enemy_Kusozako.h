@@ -7,7 +7,6 @@ namespace Shooting_HackAndSlash {
 	namespace Enemy {
 		class Kusozako : public AbstructEnemy {
 		private:
-			Vec2 direction;
 		public:
 			void update() override;
 

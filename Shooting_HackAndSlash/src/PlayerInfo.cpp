@@ -25,5 +25,7 @@ namespace Shooting_HackAndSlash
 		assert(value >= 0);
 
 		PlayerInfo::getInstance().hp -= value;
+
+		PlayerInfo::getInstance().sound.play();
 	}
 }

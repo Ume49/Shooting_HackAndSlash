@@ -20,7 +20,8 @@ namespace Shooting_HackAndSlash::Scene {
 		time_pos(),
 		kill_pos(),
 		keep_game(true),
-		back_screen(Define::Path::Photo::BackScreen) {
+		back_screen(Define::Path::Photo::BackScreen)
+	{
 		result_text = Stage_Info::Is_GameClear() ? CLEAR : FAILED;
 		buttons.Add([&]() {listener.SceneChange(eScene::Title, true); }, "Return to Title", Point{ 45,920 });
 		buttons.Add([&]() {keep_game = false; }, "Quit Game", Point{ 623, 920 });

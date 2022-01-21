@@ -1,11 +1,14 @@
 #pragma once
 
 #include"AbstructGameObject.h"
-#include"Vector.h"
+
 #include<functional>
 #include<string>
+
+#include"Vector.h"
 #include"Text_centeralign.h"
 #include"Photo_SharedHandle.h"
+#include"SE_Player.h"
 
 namespace Shooting_HackAndSlash {
 	namespace UI {
@@ -22,6 +25,8 @@ namespace Shooting_HackAndSlash {
 
 			std::function<void(void)> on_click;
 			bool isselect;
+
+			SE_Player sound;
 		public:
 			void update() override;
 			void draw() const override;

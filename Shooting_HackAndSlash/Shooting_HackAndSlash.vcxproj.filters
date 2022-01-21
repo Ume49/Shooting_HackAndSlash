@@ -40,44 +40,44 @@
     <Filter Include="Source\System\Singleton">
       <UniqueIdentifier>{78d6c602-575e-4659-8644-d98633498d7d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Gun_Custamize">
-      <UniqueIdentifier>{0c635a44-8cb4-4596-bcec-0aaea06b7e96}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Bullet_Custam">
-      <UniqueIdentifier>{f6f50403-a54b-460f-9965-e92e22e75e1f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Bullet_Custam\Bullets">
-      <UniqueIdentifier>{280cba9e-cb06-4c89-9444-a5dc689c4fa3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Enemy">
-      <UniqueIdentifier>{805e3bb3-83e9-4f4f-8591-5beb74ecb902}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Item">
-      <UniqueIdentifier>{eba19b5c-821e-4d18-8692-f76b8e0c74db}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Player">
-      <UniqueIdentifier>{bf6991d8-b7f9-47e4-9bce-6bf079162624}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\mini_struct">
       <UniqueIdentifier>{e9bbcdf8-4926-4b67-b54f-5d4aa880e1b1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Decoration">
       <UniqueIdentifier>{11bbb170-4ea2-420a-9c56-36c57209bbae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\mini_struct\Resource">
-      <UniqueIdentifier>{47d7481a-2441-4df7-9237-679c16c8e73d}</UniqueIdentifier>
+    <Filter Include="Source\GameObject\Player">
+      <UniqueIdentifier>{bf6991d8-b7f9-47e4-9bce-6bf079162624}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\UI\Volume">
+    <Filter Include="Source\GameObject\Bullet">
+      <UniqueIdentifier>{22b05500-1783-4c4e-89a5-5f50b1148cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Bullet\Bullet_Custam">
+      <UniqueIdentifier>{f6f50403-a54b-460f-9965-e92e22e75e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Bullet\Bullet_Custam\Bullets">
+      <UniqueIdentifier>{280cba9e-cb06-4c89-9444-a5dc689c4fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Bullet\Gun_Custamize">
+      <UniqueIdentifier>{0c635a44-8cb4-4596-bcec-0aaea06b7e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Enemy">
+      <UniqueIdentifier>{805e3bb3-83e9-4f4f-8591-5beb74ecb902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Item">
+      <UniqueIdentifier>{eba19b5c-821e-4d18-8692-f76b8e0c74db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Sound">
+      <UniqueIdentifier>{89ac90df-68ae-42af-a98b-21bbac3e6d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Sound\Volume">
       <UniqueIdentifier>{45a10beb-5291-4178-90e7-9703446481d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource">
+      <UniqueIdentifier>{47d7481a-2441-4df7-9237-679c16c8e73d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Abstruct_Shared_Manager.cpp">
-      <Filter>Source\Template</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Abstruct_Shared_Handle.cpp">
-      <Filter>Source\Template</Filter>
-    </ClCompile>
     <ClCompile Include="src\Boss.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
@@ -88,7 +88,7 @@
       <Filter>Source\UI</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_Lancher.cpp">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\Debug_Choice.cpp">
       <Filter>Source\Scene</Filter>
@@ -103,7 +103,7 @@
       <Filter>Source\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\Enemy_Kusozako.cpp">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\CircleCollider.cpp">
       <Filter>Source\GameObject\Component</Filter>
@@ -145,16 +145,16 @@
       <Filter>Source\UI</Filter>
     </ClCompile>
     <ClCompile Include="src\Photo_SharedHandle.cpp">
-      <Filter>Source\mini_struct\Resource</Filter>
+      <Filter>Source\Resource</Filter>
     </ClCompile>
     <ClCompile Include="src\Font_SharedHandle.cpp">
-      <Filter>Source\mini_struct\Resource</Filter>
+      <Filter>Source\Resource</Filter>
     </ClCompile>
     <ClCompile Include="src\Item_Bomb.cpp">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClCompile>
     <ClCompile Include="src\Item_Cure.cpp">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClCompile>
     <ClCompile Include="src\Button.cpp">
       <Filter>Source\UI\Button</Filter>
@@ -186,9 +186,6 @@
     <ClCompile Include="src\SceneFade.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="src\SceneLoader.cpp">
-      <Filter>Source\System</Filter>
-    </ClCompile>
     <ClCompile Include="src\Gauge_Horizontal.cpp">
       <Filter>Source\UI</Filter>
     </ClCompile>
@@ -199,61 +196,61 @@
       <Filter>Source\UI</Filter>
     </ClCompile>
     <ClCompile Include="src\BackPack.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\Dragged_Icon.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\Gun.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\Gun_Custamize_Window.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\Gun_Info.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\Inventory_Info.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\Magazine.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\Slot.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\Icon_Table.cpp">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClCompile>
     <ClCompile Include="src\AbstructBullet.cpp">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\BulletController.cpp">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_Resource.cpp">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_Paramater.cpp">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_LeftCurve.cpp">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_Refrect.cpp">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_RightCurve.cpp">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_ST.cpp">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_Star.cpp">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClCompile>
     <ClCompile Include="src\Bullet_V.cpp">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClCompile>
     <ClCompile Include="src\Survival_Counter.cpp">
       <Filter>Source\GameObject\Component</Filter>
@@ -262,34 +259,34 @@
       <Filter>Source\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\Item_Bullet.cpp">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClCompile>
     <ClCompile Include="src\AbstructItem.cpp">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClCompile>
     <ClCompile Include="src\ItemController.cpp">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClCompile>
     <ClCompile Include="src\ItemSpawnFunc_Table.cpp">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClCompile>
     <ClCompile Include="src\EnemySpawner.cpp">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\EnemyController.cpp">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\eBullet.cpp">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClCompile>
     <ClCompile Include="src\AbstructEnemy.cpp">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\PlayerInfo.cpp">
-      <Filter>Source\Player</Filter>
+      <Filter>Source\GameObject\Player</Filter>
     </ClCompile>
     <ClCompile Include="src\Player.cpp">
-      <Filter>Source\Player</Filter>
+      <Filter>Source\GameObject\Player</Filter>
     </ClCompile>
     <ClCompile Include="src\Vector_Rotate.cpp">
       <Filter>Source\mini_struct</Filter>
@@ -313,33 +310,51 @@
       <Filter>Source\UI\Button</Filter>
     </ClCompile>
     <ClCompile Include="src\Volume.cpp">
-      <Filter>Source\UI\Volume</Filter>
+      <Filter>Source\Sound\Volume</Filter>
     </ClCompile>
     <ClCompile Include="src\VolumeController.cpp">
-      <Filter>Source\UI\Volume</Filter>
+      <Filter>Source\Sound\Volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneLoader.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Abstruct_Shared_Manager.cpp">
+      <Filter>Source\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Abstruct_Shared_Handle.cpp">
+      <Filter>Source\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Volume_Info.cpp">
+      <Filter>Source\Sound\Volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SE_Player.cpp">
+      <Filter>Source\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BGM_Player.cpp">
+      <Filter>Source\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BGM_SharedHandle.cpp">
+      <Filter>Source\mini_struct</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SE_SharedHandle.cpp">
+      <Filter>Source\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shooting_Star.cpp">
+      <Filter>Source\Decoration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Volume_Set_Scene.cpp">
+      <Filter>Source\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Boss.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\Abstruct_Shared_Handle.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Abstruct_Shared_Manager.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Abstruct_UI.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
-    <ClInclude Include="src\AbstructGameObject.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
     <ClInclude Include="src\Bomb_count_displayer.h">
       <Filter>Source\UI</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Lancher.h">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_CoolTime_Displayer.h">
       <Filter>Source\UI</Filter>
@@ -351,7 +366,7 @@
       <Filter>Source\GameObject\Component</Filter>
     </ClInclude>
     <ClInclude Include="src\Enemy_Kusozako.h">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\Gauge.h">
       <Filter>Source\UI</Filter>
@@ -389,9 +404,6 @@
     <ClInclude Include="src\Menu.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\Singleton.h">
-      <Filter>Source\Template</Filter>
-    </ClInclude>
     <ClInclude Include="src\NullScene.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
@@ -411,19 +423,19 @@
       <Filter>Source\GameObject\Component</Filter>
     </ClInclude>
     <ClInclude Include="src\Photo_SharedHandle.h">
-      <Filter>Source\mini_struct\Resource</Filter>
+      <Filter>Source\Resource</Filter>
     </ClInclude>
     <ClInclude Include="src\Font_SharedHandle.h">
-      <Filter>Source\mini_struct\Resource</Filter>
+      <Filter>Source\Resource</Filter>
     </ClInclude>
     <ClInclude Include="src\ISpawnCallListener.h">
       <Filter>Source\Interface</Filter>
     </ClInclude>
     <ClInclude Include="src\Item_Bomb.h">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClInclude>
     <ClInclude Include="src\Item_Cure.h">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClInclude>
     <ClInclude Include="src\Button.h">
       <Filter>Source\UI\Button</Filter>
@@ -461,9 +473,6 @@
     <ClInclude Include="src\SceneFade.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\SceneLoader.h">
-      <Filter>Source\System</Filter>
-    </ClInclude>
     <ClInclude Include="src\Gauge_Horizontal.h">
       <Filter>Source\UI</Filter>
     </ClInclude>
@@ -474,76 +483,76 @@
       <Filter>Source\UI</Filter>
     </ClInclude>
     <ClInclude Include="src\BackPack.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Dragged_Icon.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Gun.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Gun_Custamize_Window.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Gun_Info.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Inventory_Info.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\ISetIcon.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Magazine.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Slot.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Define_Inventory.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Icon_Table.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\IEraseIcon.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\AbstructBullet.h">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\BulletController.h">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Paramater.h">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Resource.h">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_LeftCurve.h">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Refrect.h">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_RightCurve.h">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_ST.h">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_Star.h">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClInclude>
     <ClInclude Include="src\Bullet_V.h">
-      <Filter>Source\Bullet_Custam\Bullets</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam\Bullets</Filter>
     </ClInclude>
     <ClInclude Include="src\Survival_Counter.h">
       <Filter>Source\GameObject\Component</Filter>
     </ClInclude>
     <ClInclude Include="src\IPackagedIcon.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </ClInclude>
     <ClInclude Include="src\Scene_GunCustom.h">
       <Filter>Source\Scene</Filter>
@@ -552,28 +561,28 @@
       <Filter>Source\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\Item_Bullet.h">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClInclude>
     <ClInclude Include="src\AbstructItem.h">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClInclude>
     <ClInclude Include="src\ItemController.h">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClInclude>
     <ClInclude Include="src\ItemSpawnFunc_Table.h">
-      <Filter>Source\Item</Filter>
+      <Filter>Source\GameObject\Item</Filter>
     </ClInclude>
     <ClInclude Include="src\EnemySpawner.h">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\EnemyController.h">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\eBullet.h">
-      <Filter>Source\Bullet_Custam</Filter>
+      <Filter>Source\GameObject\Bullet\Bullet_Custam</Filter>
     </ClInclude>
     <ClInclude Include="src\eEnemy.h">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\eScene.h">
       <Filter>Source\Scene</Filter>
@@ -581,17 +590,14 @@
     <ClInclude Include="src\Inputcode.h">
       <Filter>Source\System\Input_com</Filter>
     </ClInclude>
-    <ClInclude Include="src\Font_Path.h">
-      <Filter>Source</Filter>
-    </ClInclude>
     <ClInclude Include="src\AbstructEnemy.h">
-      <Filter>Source\Enemy</Filter>
+      <Filter>Source\GameObject\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\PlayerInfo.h">
-      <Filter>Source\Player</Filter>
+      <Filter>Source\GameObject\Player</Filter>
     </ClInclude>
     <ClInclude Include="src\Player.h">
-      <Filter>Source\Player</Filter>
+      <Filter>Source\GameObject\Player</Filter>
     </ClInclude>
     <ClInclude Include="src\BackGround_BigStar.h">
       <Filter>Source\Decoration</Filter>
@@ -612,21 +618,63 @@
       <Filter>Source\UI\Button</Filter>
     </ClInclude>
     <ClInclude Include="src\Volume.h">
-      <Filter>Source\UI\Volume</Filter>
+      <Filter>Source\Sound\Volume</Filter>
     </ClInclude>
     <ClInclude Include="src\VolumeController.h">
-      <Filter>Source\UI\Volume</Filter>
+      <Filter>Source\Sound\Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneLoader.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Abstruct_Shared_Manager.h">
+      <Filter>Source\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Abstruct_Shared_Handle.h">
+      <Filter>Source\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Singleton.h">
+      <Filter>Source\System\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Abstruct_UI.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstructGameObject.h">
+      <Filter>Source\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Font_Path.h">
+      <Filter>Source\System\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Volume_Info.h">
+      <Filter>Source\Sound\Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SE_Player.h">
+      <Filter>Source\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BGM_Player.h">
+      <Filter>Source\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SE_SharedHandle.h">
+      <Filter>Source\mini_struct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BGM_SharedHandle.h">
+      <Filter>Source\mini_struct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shooting_Star.h">
+      <Filter>Source\Decoration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Volume_Set_Scene.h">
+      <Filter>Source\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\IBackListener.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </None>
     <None Include="src\IDragAndDropListener.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </None>
     <None Include="src\IDropListener.h">
-      <Filter>Source\Gun_Custamize</Filter>
+      <Filter>Source\GameObject\Bullet\Gun_Custamize</Filter>
     </None>
     <None Include="src\Vec2_Rotate.h">
       <Filter>Source\mini_struct</Filter>

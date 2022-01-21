@@ -5,8 +5,13 @@
 
 #include"Define.h"
 
+namespace {
+	const std::string SE_Path = "Resource/button06.mp3";
+}
+
 namespace Shooting_HackAndSlash::UI {
 #define _FONT Font_SharedHandle("Resource/Dot_24.dft")
+#define _SOUND sound(::SE_Path)
 
 	Button::Button(std::function<void(void)> onclick, const std::string& text, const Point& leftup) :
 		leftup(leftup),
@@ -16,7 +21,9 @@ namespace Shooting_HackAndSlash::UI {
 		center(),
 		photo(Define::Path::Photo::Button::Normal),
 		photo_selected(Define::Path::Photo::Button::Selected),
-		text(text, _FONT, Color(Palette::Black)) {
+		text(text, _FONT, Color(Palette::Black)) ,
+		_SOUND
+	{
 		// rightdown‚ðŒvŽZ
 		rightdown = leftup + photo.size();
 
@@ -34,7 +41,9 @@ namespace Shooting_HackAndSlash::UI {
 		center(),
 		photo(photo_path),
 		photo_selected(photo_selected_path),
-		text(text, _FONT, Color(Palette::Black)) {
+		text(text, _FONT, Color(Palette::Black)),
+		_SOUND
+	{
 		// rightdown‚ðŒvŽZ
 		rightdown = leftup + photo.size();
 
@@ -51,7 +60,9 @@ namespace Shooting_HackAndSlash::UI {
 		center(),
 		photo(),
 		photo_selected(),	/*‰æ‘œ‚ÍŽg—p‚µ‚È‚¢‚Ì‚Å—¼•û‚Æ‚àNull‚Å“o˜^*/
-		text("", _FONT, Color(Palette::Black)) {
+		text("", _FONT, Color(Palette::Black)),
+		_SOUND
+	{
 		// rightdown‚ðŒvŽZ
 		rightdown = leftup + size;
 
@@ -61,6 +72,7 @@ namespace Shooting_HackAndSlash::UI {
 	}
 
 #undef _FONT
+#undef _SOUND
 
 	void Button::draw() const {
 		DrawGraph(leftup.x, leftup.y, (isselect ? photo_selected : photo), TRUE);
@@ -84,6 +96,7 @@ namespace Shooting_HackAndSlash::UI {
 
 		if (isselect && Input::GetDown(Inputcode::Fire1)) {
 			on_click();
+			sound.play();
 		}
 	}
 

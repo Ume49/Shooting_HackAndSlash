@@ -5,6 +5,7 @@
 #include"CircleCollider.h"
 #include"PhotoDisplayer.h"
 #include"Vector.h"
+#include"SE_Player.h"
 
 #include<memory>
 
@@ -20,6 +21,8 @@ namespace Shooting_HackAndSlash {
 		Vec2 direction;
 
 		PhotoDisplayer displayer;
+
+		SE_Player sound;
 	public:
 		CircleCollider collider;
 		bool is_dead;

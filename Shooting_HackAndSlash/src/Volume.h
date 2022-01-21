@@ -37,7 +37,8 @@ namespace Shooting_HackAndSlash {
 
 		// pos		: ¶ã‚ÌÀ•W
 		// func_slided	: ‚Â‚Ü‚İ‚ğ“®‚©‚·“x‚ÉŒÄ‚Î‚ê‚éŠÖ”
-		Volume(const Point& pos, std::function<void(float)> func_slided);
+		// value : ‰Šú’l
+		Volume(const Point& pos, std::function<void(float)> func_slided, float value = 1.f);
 		~Volume() = default;
 	};
 }

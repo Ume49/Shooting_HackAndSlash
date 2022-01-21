@@ -11,6 +11,7 @@ namespace Shooting_HackAndSlash {
 		Fade,
 		Prepare,
 		Gun_Custom,
+		Volume,
 		Debug
 	};
 }
