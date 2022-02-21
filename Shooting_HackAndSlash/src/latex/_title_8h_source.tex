@@ -1,0 +1,35 @@
+\hypertarget{_title_8h_source}{}\doxysection{Title.\+h}
+\label{_title_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Title.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Title.h}}
+\mbox{\hyperlink{_title_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_abstruct_scene_8h}{AbstructScene.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_button_controller_8h}{ButtonController.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_back_ground___big_star_8h}{BackGround\_BigStar.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{13     \textcolor{keyword}{namespace }Scene \{}
+\DoxyCodeLine{14         \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_title}{Title}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_scene}{AbstructScene}} \{}
+\DoxyCodeLine{15         \textcolor{keyword}{private}:}
+\DoxyCodeLine{16             \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} title\_text;}
+\DoxyCodeLine{17             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller}{ButtonController}} buttons;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19             std::vector<BackGround\_Object::BigStar> stars;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21             \textcolor{keywordtype}{bool} keep\_game;}
+\DoxyCodeLine{22         \textcolor{keyword}{public}:}
+\DoxyCodeLine{23             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_title_a267f2552e293e16de3aab3cf3a4de339}{Title}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener}{ISceneChangeListener}}\& s);}
+\DoxyCodeLine{24             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_title_af491bbeb27634c64ee29556977085323}{\string~Title}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{25             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_title_a4807b4fbdab9d2fbefb086c4115f95cd}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{26             \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_title_a354c4a55fec10af23ec04f45b3b83c6b}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{27         \};}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}

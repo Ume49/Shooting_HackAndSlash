@@ -4,6 +4,10 @@
 
 namespace Shooting_HackAndSlash {
 	namespace UI {
+		/**
+		 * @brief “G‚ğ“|‚µ‚½”‚ğ•\¦‚·‚éƒNƒ‰ƒX
+		 * @sa Abstruct_UI \n Font_SharedHandle
+		 */
 		class Kill_Count_Displayer : public Abstruct_UI {
 			Font_SharedHandle font_handle;
 		public:

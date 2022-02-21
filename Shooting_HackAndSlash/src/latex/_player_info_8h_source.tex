@@ -1,0 +1,48 @@
+\hypertarget{_player_info_8h_source}{}\doxysection{Player\+Info.\+h}
+\label{_player_info_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/PlayerInfo.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/PlayerInfo.h}}
+\mbox{\hyperlink{_player_info_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_singleton_8h}{Singleton.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_s_e___player_8h}{SE\_Player.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{7     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info}{PlayerInfo}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}}<PlayerInfo> \{}
+\DoxyCodeLine{8         \textcolor{keyword}{static} \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} INIT\_HP = 100;}
+\DoxyCodeLine{9         \textcolor{keyword}{static} \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} INIT\_SPEED = 0.f;}
+\DoxyCodeLine{10         \textcolor{keyword}{static} \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} INIT\_ATK = 1;}
+\DoxyCodeLine{11         \textcolor{keyword}{static} \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} INIT\_BOMB = 3;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_s_e___player}{SE\_Player}} sound;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_a4e345ae554075779dabd696ea3ee7f33}{hp}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_a61f829b816d9035725a56a0afbd0118a}{max\_hp}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_ae5c1f447881dc491ae33982883dd92cd}{atk}};}
+\DoxyCodeLine{17         \textcolor{keywordtype}{float} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_a7205d51d5f18315cc7cc0df0933c17c5}{speed}};}
+\DoxyCodeLine{18         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_ab248514d80c3b98ceea6bedff10e7c9b}{bomb\_count}};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{comment}{// HPを回復する}}
+\DoxyCodeLine{22         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_ae26da001606926561e0d65789ed8b7f6}{Cure}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         \textcolor{comment}{// ダメージを与える}}
+\DoxyCodeLine{25         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_a2b0d8e6638bc96c69cb4bcb0ff90024f}{Damage}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{comment}{// データの初期化}}
+\DoxyCodeLine{28         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_ae72b42a3c395937115474422f67c4d09}{initialize}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         }
+\DoxyCodeLine{31     \textcolor{keyword}{private}:}
+\DoxyCodeLine{32         \textcolor{keyword}{friend} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}};}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info}{PlayerInfo}}() :}
+\DoxyCodeLine{34             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_a4e345ae554075779dabd696ea3ee7f33}{hp}}(100), \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_a61f829b816d9035725a56a0afbd0118a}{max\_hp}}(100),}
+\DoxyCodeLine{35             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_ae5c1f447881dc491ae33982883dd92cd}{atk}}(1),}
+\DoxyCodeLine{36             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_a7205d51d5f18315cc7cc0df0933c17c5}{speed}}(0),}
+\DoxyCodeLine{37             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info_ab248514d80c3b98ceea6bedff10e7c9b}{bomb\_count}}(3) ,}
+\DoxyCodeLine{38             sound(\textcolor{stringliteral}{"{}Resource/damage2.mp3"{}})}
+\DoxyCodeLine{39         \{\}}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_info}{\string~PlayerInfo}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{41     \};}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}

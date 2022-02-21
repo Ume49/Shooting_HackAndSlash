@@ -1,0 +1,43 @@
+\hypertarget{_main_game_8h_source}{}\doxysection{Main\+Game.\+h}
+\label{_main_game_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/MainGame.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/MainGame.h}}
+\mbox{\hyperlink{_main_game_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_abstruct_scene_8h}{AbstructScene.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_u_i_controller_8h}{UIController.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bullet_controller_8h}{BulletController.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_enemy_controller_8h}{EnemyController.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_enemy_spawner_8h}{EnemySpawner.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_item_controller_8h}{ItemController.h}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_shooting___star_8h}{Shooting\_Star.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_b_g_m___player_8h}{BGM\_Player.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_scene}{Shooting\_HackAndSlash::Scene}} \{}
+\DoxyCodeLine{17     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_main_game}{MainGame}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_scene}{AbstructScene}} \{}
+\DoxyCodeLine{18     \textcolor{keyword}{private}:}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}} player;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_controller}{UIController}} ui;}
+\DoxyCodeLine{22         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{BulletController}} bullet\_player;}
+\DoxyCodeLine{23         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller}{ItemController}} item\_controller;}
+\DoxyCodeLine{24         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_spawner}{EnemySpawner}} enemy\_spawner;}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{EnemyController}} enemy\_controller;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_back_ground___object_1_1_shooting___stars}{BackGround\_Object::Shooting\_Stars}} star;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_b_g_m___player}{BGM\_Player}} bgm;}
+\DoxyCodeLine{30     \textcolor{keyword}{public}:}
+\DoxyCodeLine{31         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_main_game_a938a78c5c0706f958043ce4ac430275f}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_main_game_aac1ac6952874cc5fe9a2bb632bbd1424}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_main_game_ace65dcfc2d4980a1cdec230d260d17df}{MainGame}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener}{ISceneChangeListener}}\& s);}
+\DoxyCodeLine{35         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_main_game_aad3aa249ab1925a95f1c1aef35fb3c5a}{\string~MainGame}}();}
+\DoxyCodeLine{36     \};}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}

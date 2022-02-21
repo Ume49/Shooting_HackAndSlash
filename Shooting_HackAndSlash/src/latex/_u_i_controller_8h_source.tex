@@ -1,0 +1,39 @@
+\hypertarget{_u_i_controller_8h_source}{}\doxysection{UIController.\+h}
+\label{_u_i_controller_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/UIController.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/UIController.h}}
+\mbox{\hyperlink{_u_i_controller_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bomb__count__displayer_8h}{Bomb\_count\_displayer.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bullet___cool_time___displayer_8h}{Bullet\_CoolTime\_Displayer.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct___u_i_8h}{Abstruct\_UI.h}}"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{12     \textcolor{keyword}{class }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a356a3de71c4428bfaef72f2dc9ef49ca}{Player}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{21     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_controller}{UIController}} \{}
+\DoxyCodeLine{22         \textcolor{keyword}{using} List = std::vector<std::unique\_ptr<Abstruct\_UI>>;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         \textcolor{keyword}{static} \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} UI\_WIDTH = 120;}
+\DoxyCodeLine{25         \textcolor{keyword}{static} \textcolor{keyword}{constexpr} uint32\_t COLOR = 0xa9a9a9;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{30         Point draw\_pos;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{35         List ui\_objects;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_bomb__count__displayer}{UI::Bomb\_count\_displayer}} bomb;}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{45         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} background;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keyword}{public}:}
+\DoxyCodeLine{51         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_controller_a70dd69d224089abdf71c839d7aed1bd9}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_controller_a216b65eb0646cc445cde3a1e2ba1dac5}{UIController}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& p);}
+\DoxyCodeLine{54     \};}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}

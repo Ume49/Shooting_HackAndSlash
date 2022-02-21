@@ -1,0 +1,54 @@
+\hypertarget{_button_8h_source}{}\doxysection{Button.\+h}
+\label{_button_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Button.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Button.h}}
+\mbox{\hyperlink{_button_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_game_object_8h}{AbstructGameObject.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<functional>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_text__centeralign_8h}{Text\_centeralign.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_s_e___player_8h}{SE\_Player.h}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{14     \textcolor{keyword}{namespace }UI \{}
+\DoxyCodeLine{15         \textcolor{comment}{// AABB方式の当たり判定を利用した、マウスでクリックすることで特定の関数を呼び出すクラス}}
+\DoxyCodeLine{16         \textcolor{comment}{// 当たり判定のサイズは画像のサイズに依存}}
+\DoxyCodeLine{17         \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_button}{Button}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object}{AbstructGameObject}} \{}
+\DoxyCodeLine{18         \textcolor{keyword}{private}:}
+\DoxyCodeLine{19             \textcolor{comment}{// 当たり判定のための領域}}
+\DoxyCodeLine{20             Point leftup, rightdown;}
+\DoxyCodeLine{21             \textcolor{comment}{// 中央座標}}
+\DoxyCodeLine{22             Vec2 center;}
+\DoxyCodeLine{23             \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_text__centeralign}{Text\_centeralign}} text;}
+\DoxyCodeLine{24             \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} photo, photo\_selected;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26             std::function<void(\textcolor{keywordtype}{void})> on\_click;}
+\DoxyCodeLine{27             \textcolor{keywordtype}{bool} isselect;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_s_e___player}{SE\_Player}} sound;}
+\DoxyCodeLine{30         \textcolor{keyword}{public}:}
+\DoxyCodeLine{31             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_button_adac49f7dc265fffec87a0816a7062ef2}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{32             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_button_a48d079542ec4e5a292582b51682188f7}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34             \textcolor{comment}{// x軸の平行移動}}
+\DoxyCodeLine{35             \textcolor{comment}{// 符号をちゃんと意識して渡す}}
+\DoxyCodeLine{36             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_button_a1f1626676260db7e6801913bfd2b5d5d}{Slide\_horizontal}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38             \textcolor{comment}{// 画像を指定しない版、デフォルト画像を使用する}}
+\DoxyCodeLine{39             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_button_a292fee48996b99f1ab9bfb2636c23076}{Button}}(std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{void})> onclick, \textcolor{keyword}{const} std::string\& text, \textcolor{keyword}{const} Point\& leftup);}
+\DoxyCodeLine{40             \textcolor{comment}{// 画像を自分で指定する版}}
+\DoxyCodeLine{41             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_button_a4d8d0b434e7d917b4a8a1fed77adf8df}{Button}}(\textcolor{keyword}{const} std::string\& photo\_path, \textcolor{keyword}{const} std::string\& photo\_selected\_path,  std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{void})> onclick, \textcolor{keyword}{const} std::string\& text, \textcolor{keyword}{const} Point\& leftup);}
+\DoxyCodeLine{42             \textcolor{comment}{// 当たり判定を自分で指定する版}}
+\DoxyCodeLine{43             \textcolor{comment}{// 見た目は用意しない}}
+\DoxyCodeLine{44             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_button_ae2fb97204729ca07c9f3e839a14cc977}{Button}}(\textcolor{keyword}{const} Point\& size, std::function<\textcolor{keywordtype}{void}()> onclick, \textcolor{keyword}{const} Point\& leftup);}
+\DoxyCodeLine{45             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_u_i_1_1_button_a4f47854efac2a425034788affeb631e1}{\string~Button}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{46         \};}
+\DoxyCodeLine{47     \}}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}

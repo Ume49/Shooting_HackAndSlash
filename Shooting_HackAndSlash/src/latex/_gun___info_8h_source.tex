@@ -1,0 +1,42 @@
+\hypertarget{_gun___info_8h_source}{}\doxysection{Gun\+\_\+\+Info.\+h}
+\label{_gun___info_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Gun\_Info.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Gun\_Info.h}}
+\mbox{\hyperlink{_gun___info_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_singleton_8h}{Singleton.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_gun_8h}{Gun.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{7     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info}{Gun\_Info}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}}<Gun\_Info> \{}
+\DoxyCodeLine{8         \textcolor{keyword}{friend} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}};}
+\DoxyCodeLine{9         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info}{Gun\_Info}}();}
+\DoxyCodeLine{10         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info}{\string~Gun\_Info}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12         \textcolor{comment}{// 現在所有している銃}}
+\DoxyCodeLine{13         std::vector<Gun\_Custamize::Gun> guns;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15         \textcolor{comment}{// 現在見ているインデックス}}
+\DoxyCodeLine{16         \textcolor{keywordtype}{size\_t} now\_select;}
+\DoxyCodeLine{17     \textcolor{keyword}{public}:}
+\DoxyCodeLine{18         \textcolor{comment}{// 初期化}}
+\DoxyCodeLine{19         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info_a0be82e376fa4f2e92c2bbceea3d9f88a}{initialize}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{comment}{// 要素へのアクセス}}
+\DoxyCodeLine{22         \textcolor{keyword}{static} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_gun}{Gun\_Custamize::Gun}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info_a5d4068dfa545aa101087a858091e15fc}{at}}(\textcolor{keywordtype}{size\_t} index);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         \textcolor{comment}{// 銃を追加する}}
+\DoxyCodeLine{25         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info_a9c9715153b94479a3688de2af089a31d}{Add}}(\textcolor{keywordtype}{size\_t} magazine\_length);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{comment}{// 現在の銃}}
+\DoxyCodeLine{28         \textcolor{keyword}{static} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_gun}{Gun\_Custamize::Gun}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info_a8b796054876ceb721e9ce4e3730455f2}{Now\_Gun}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{comment}{// インデックスを前に進める}}
+\DoxyCodeLine{31         \textcolor{keyword}{static} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_gun}{Gun\_Custamize::Gun}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info_ad363dd33f5be790b6c1e749c3ecfcdfd}{Plus}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         \textcolor{comment}{// インデックスを後ろに進める}}
+\DoxyCodeLine{34         \textcolor{keyword}{static} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_gun}{Gun\_Custamize::Gun}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___info_a661c09793fdd95bad4ed716515575763}{Minus}}();}
+\DoxyCodeLine{35     \};}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}

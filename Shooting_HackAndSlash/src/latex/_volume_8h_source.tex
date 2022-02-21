@@ -1,0 +1,50 @@
+\hypertarget{_volume_8h_source}{}\doxysection{Volume.\+h}
+\label{_volume_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Volume.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Volume.h}}
+\mbox{\hyperlink{_volume_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_button_8h}{Button.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_gauge___horizontal_8h}{Gauge\_Horizontal.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include<functional>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume}{Volume}} \{}
+\DoxyCodeLine{11         \textcolor{keywordtype}{float} value;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13         \textcolor{comment}{// ドラッグされているか}}
+\DoxyCodeLine{14         \textcolor{keywordtype}{bool} is\_dragged;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         std::unique\_ptr<UI::Button> touch\_pannel;}
+\DoxyCodeLine{17         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge___horizontal}{Gauge\_Horizontal}} gauge;}
+\DoxyCodeLine{18         \textcolor{comment}{// 端の点}}
+\DoxyCodeLine{19         \textcolor{keywordtype}{int} start\_x, end\_x;}
+\DoxyCodeLine{20         \textcolor{comment}{// ゲージの長さ}}
+\DoxyCodeLine{21         \textcolor{keywordtype}{float} width;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{keyword}{struct }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_volume_a6c19523843b23aa06368ad6956677f73}{Clip}} \{}
+\DoxyCodeLine{24             \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} handle;}
+\DoxyCodeLine{25             Point pos;}
+\DoxyCodeLine{26             \textcolor{keywordtype}{int} half\_width;}
+\DoxyCodeLine{27         \} clip;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{comment}{// clipを動かしたときに呼び出される処理}}
+\DoxyCodeLine{30         std::function<void(\textcolor{keywordtype}{float})> func\_slided;}
+\DoxyCodeLine{31     \textcolor{keyword}{public}:}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_ae8971a7c64c8c01c9b66f45458522c6c}{update}}();}
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_afa2a83c721374305f23927fafcf6cf3c}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35         \textcolor{comment}{// 高さを返す}}
+\DoxyCodeLine{36         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_ac29bba56ca9cae1fed72d0080a32c70c}{height}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         \textcolor{comment}{// pos      : 左上の座標}}
+\DoxyCodeLine{39         \textcolor{comment}{// func\_slided  : つまみを動かす度に呼ばれる関数}}
+\DoxyCodeLine{40         \textcolor{comment}{// value : 初期値}}
+\DoxyCodeLine{41         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_a47bb5f2ac86a5f449dbbecb76b686ea8}{Volume}}(\textcolor{keyword}{const} Point\& pos, std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{float})> func\_slided, \textcolor{keywordtype}{float} value = 1.f);}
+\DoxyCodeLine{42         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_a782748dbe4b841a30642368fae957f7f}{\string~Volume}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{43     \};}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}

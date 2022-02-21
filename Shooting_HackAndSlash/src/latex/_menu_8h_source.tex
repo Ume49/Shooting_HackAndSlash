@@ -1,0 +1,32 @@
+\hypertarget{_menu_8h_source}{}\doxysection{Menu.\+h}
+\label{_menu_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Menu.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Menu.h}}
+\mbox{\hyperlink{_menu_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_abstruct_scene_8h}{AbstructScene.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_button_controller_8h}{ButtonController.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{8     \textcolor{keyword}{namespace }Scene \{}
+\DoxyCodeLine{9         \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_menu}{Menu}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_scene}{AbstructScene}} \{}
+\DoxyCodeLine{10         \textcolor{keyword}{private}:}
+\DoxyCodeLine{11             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller}{ButtonController}} buttons;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13             \textcolor{keywordtype}{bool} keep\_game;}
+\DoxyCodeLine{14             \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} back\_screen;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16             \textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_scene}{AbstructScene}}\& back\_scene;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \textcolor{keyword}{public}:}
+\DoxyCodeLine{19             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_menu_a3b126dc2f4b46f4510a890d73953c9e9}{Menu}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener}{ISceneChangeListener}}\& s, \textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_scene}{AbstructScene}}\& back);}
+\DoxyCodeLine{20             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_menu_a86671b98dfc0c0f214267d04d2fd31e3}{\string~Menu}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22             \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_menu_aab67ba727a5858c1e8c85124d4e5736b}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{23             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_menu_a8f33dd0bb442a449eaf1145e90695a6a}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{24         \};}
+\DoxyCodeLine{25     \}}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}

@@ -11,6 +11,13 @@
 namespace Shooting_HackAndSlash {
 	class Player;
 
+	/**
+	 * @brief UIオブジェクトをまとめるクラス
+	 * @brief 所持しているUIオブジェクトのupdate、draw関数をまとめて呼び出すことができる
+	 *
+	 * @see Abstruct_UI Photo_SharedHandle
+	 * @see UI::Bomb_count_displayer
+	 */
 	class UIController {
 		using List = std::vector<std::unique_ptr<Abstruct_UI>>;
 
@@ -26,6 +33,9 @@ namespace Shooting_HackAndSlash {
 		Photo_SharedHandle background;
 
 	public:
+		/**
+		 * @brief 描画関数
+		 */
 		void draw() const;
 
 		UIController(Player& p);

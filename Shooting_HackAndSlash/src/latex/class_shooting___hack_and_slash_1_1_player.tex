@@ -1,0 +1,117 @@
+\hypertarget{class_shooting___hack_and_slash_1_1_player}{}\doxysection{Shooting\+\_\+\+Hack\+And\+Slash\+::Player クラス}
+\label{class_shooting___hack_and_slash_1_1_player}\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Shooting\+\_\+\+Hack\+And\+Slash\+::Player の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_shooting___hack_and_slash_1_1_player}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a16fa9d7133c4de1da488f075a47d73aa}{Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em ダメージ関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a60edc8485480f15c19460bee19a73ec9}{Crush}} ()
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a73abe3026ec298e024fd4620ea2fe01c}{update}} () override
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_aef0bd154395a56e3446d1308f32d7a2d}{draw}} () const override
+\item 
+const \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___lancher}{Bullet\+\_\+\+Lancher}} \& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a4b906b10aa3d7f8bd8b2a886df10753c}{show\+\_\+bulletlancher}} () const
+\item 
+const Vec2 \& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a0f04cc39cb14756785aca9059e0c706e}{show\+\_\+position}} () const
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_aabf8f4333dd22ed44f831e6dbfd34a21}{Player}} (\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{Bullet\+Controller}} \&b, std\+::function$<$ void()$>$ func\+\_\+go\+\_\+result)
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{Circle\+Collider}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_adcb69543b6551bdd5119a642395de36b}{collider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_player_aabf8f4333dd22ed44f831e6dbfd34a21}\label{class_shooting___hack_and_slash_1_1_player_aabf8f4333dd22ed44f831e6dbfd34a21}} 
+\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}!Player@{Player}}
+\index{Player@{Player}!Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Shooting\+\_\+\+Hack\+And\+Slash\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{Bullet\+Controller}} \&}]{b,  }\item[{std\+::function$<$ void()$>$}]{func\+\_\+go\+\_\+result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_player_a60edc8485480f15c19460bee19a73ec9}\label{class_shooting___hack_and_slash_1_1_player_a60edc8485480f15c19460bee19a73ec9}} 
+\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}!Crush@{Crush}}
+\index{Crush@{Crush}!Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+\doxysubsubsection{\texorpdfstring{Crush()}{Crush()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Player\+::\+Crush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_player_a16fa9d7133c4de1da488f075a47d73aa}\label{class_shooting___hack_and_slash_1_1_player_a16fa9d7133c4de1da488f075a47d73aa}} 
+\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}!Damage@{Damage}}
+\index{Damage@{Damage}!Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+\doxysubsubsection{\texorpdfstring{Damage()}{Damage()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Player\+::\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+
+
+ダメージ関数 
+
+
+\begin{DoxyParams}{引数}
+{\em damage} & 与えるダメージ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+ダメージを与えた後\+HPが0になるならfalse
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_player_aef0bd154395a56e3446d1308f32d7a2d}\label{class_shooting___hack_and_slash_1_1_player_aef0bd154395a56e3446d1308f32d7a2d}} 
+\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}!draw@{draw}}
+\index{draw@{draw}!Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Player\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_aa0bc9e71097556e120609b7fc47da203}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Game\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_player_a4b906b10aa3d7f8bd8b2a886df10753c}\label{class_shooting___hack_and_slash_1_1_player_a4b906b10aa3d7f8bd8b2a886df10753c}} 
+\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}!show\_bulletlancher@{show\_bulletlancher}}
+\index{show\_bulletlancher@{show\_bulletlancher}!Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+\doxysubsubsection{\texorpdfstring{show\_bulletlancher()}{show\_bulletlancher()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___lancher}{Bullet\+\_\+\+Lancher}} \& Shooting\+\_\+\+Hack\+And\+Slash\+::\+Player\+::show\+\_\+bulletlancher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_player_a0f04cc39cb14756785aca9059e0c706e}\label{class_shooting___hack_and_slash_1_1_player_a0f04cc39cb14756785aca9059e0c706e}} 
+\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}!show\_position@{show\_position}}
+\index{show\_position@{show\_position}!Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+\doxysubsubsection{\texorpdfstring{show\_position()}{show\_position()}}
+{\footnotesize\ttfamily const Vec2 \& Shooting\+\_\+\+Hack\+And\+Slash\+::\+Player\+::show\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_player_a73abe3026ec298e024fd4620ea2fe01c}\label{class_shooting___hack_and_slash_1_1_player_a73abe3026ec298e024fd4620ea2fe01c}} 
+\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}!update@{update}}
+\index{update@{update}!Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Player\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_af0d1647cf2be66a80f60b97956031367}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Game\+Object}}を再実装しています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_player_adcb69543b6551bdd5119a642395de36b}\label{class_shooting___hack_and_slash_1_1_player_adcb69543b6551bdd5119a642395de36b}} 
+\index{Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}!collider@{collider}}
+\index{collider@{collider}!Shooting\_HackAndSlash::Player@{Shooting\_HackAndSlash::Player}}
+\doxysubsubsection{\texorpdfstring{collider}{collider}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{Circle\+Collider}} Shooting\+\_\+\+Hack\+And\+Slash\+::\+Player\+::collider}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

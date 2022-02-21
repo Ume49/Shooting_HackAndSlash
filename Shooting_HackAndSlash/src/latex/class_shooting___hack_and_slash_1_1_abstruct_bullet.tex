@@ -1,0 +1,187 @@
+\hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet}{}\doxysection{Shooting\+\_\+\+Hack\+And\+Slash\+::Abstruct\+Bullet クラス}
+\label{class_shooting___hack_and_slash_1_1_abstruct_bullet}\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+
+
+{\ttfamily \#include $<$Abstruct\+Bullet.\+h$>$}
+
+Shooting\+\_\+\+Hack\+And\+Slash\+::Abstruct\+Bullet の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.854092cm]{class_shooting___hack_and_slash_1_1_abstruct_bullet}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_aa7d728fce02a5bb5f408f49a32df0ed5}{update}} () override
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_aa2cdb4205bd9dd09ab836969988ed8b6}{draw}} () const override
+\item 
+virtual void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a618edb2c8d24c11860a088c408bcae42}{On\+Destroy}} ()
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a76616b431acd9ce30d86855dc272cdc8}{Abstruct\+Bullet}} (const std\+::string \&path, const \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___paramater}{Bullet\+\_\+\+Paramater}} \&para, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource}{Bullet\+\_\+\+Resource}} $>$ \&r, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{Enemy\+Controller}} \&e, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{Bullet\+Controller}} \&b)
+\item 
+virtual \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_adb21c467dca07760a503cb57cea8b7c1}{$\sim$\+Abstruct\+Bullet}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a90a312b4871900222808802192477381}{is\+\_\+dead}}
+\item 
+bool \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a4c7c7599b803fe02a5e166795df90f6d}{is\+\_\+destroy}}
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{Circle\+Collider}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a982ad72811292ae71c8031da5079ee2b}{collider}}
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_aec3adb77ca45cf513584dddb3ea91fa1}{\+\_\+update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a402f51f89df5eaf3feeb2246a8154dbc}{On\+Collide}} (\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_enemy}{Abstruct\+Enemy}} \&enemy)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+Vec2 \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a42d711703659884cb0343b6cd98de84d}{velocity}}
+\item 
+int \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_abc35a9a4df95ff21b18c6857e9662678}{damage}}
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_photo_displayer}{Photo\+Displayer}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a13640fcde9d51b6a07bfc46d9f5aaed2}{photo}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource}{Bullet\+\_\+\+Resource}} $>$ \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_ae40d6f6cdac5affc8a928114727485c0}{resource}}
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{Enemy\+Controller}} \& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a30090c15bdf2e313a23a056b86986c62}{enemies\+\_\+ref}}
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{Bullet\+Controller}} \& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_ac4a8e49b0621e0406c5146333ae53087}{bulletcontroller\+\_\+ref}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a76616b431acd9ce30d86855dc272cdc8}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a76616b431acd9ce30d86855dc272cdc8}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!AbstructBullet@{AbstructBullet}}
+\index{AbstructBullet@{AbstructBullet}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{AbstructBullet()}{AbstructBullet()}}
+{\footnotesize\ttfamily Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::\+Abstruct\+Bullet (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{const \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___paramater}{Bullet\+\_\+\+Paramater}} \&}]{para,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource}{Bullet\+\_\+\+Resource}} $>$ \&}]{r,  }\item[{\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{Enemy\+Controller}} \&}]{e,  }\item[{\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{Bullet\+Controller}} \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_adb21c467dca07760a503cb57cea8b7c1}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_adb21c467dca07760a503cb57cea8b7c1}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!````~AbstructBullet@{$\sim$AbstructBullet}}
+\index{````~AbstructBullet@{$\sim$AbstructBullet}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstructBullet()}{~AbstructBullet()}}
+{\footnotesize\ttfamily virtual Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::$\sim$\+Abstruct\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_aec3adb77ca45cf513584dddb3ea91fa1}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_aec3adb77ca45cf513584dddb3ea91fa1}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!\_update@{\_update}}
+\index{\_update@{\_update}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{\_update()}{\_update()}}
+{\footnotesize\ttfamily virtual void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_refrect_a538a77f3bbe8a12a46ee5027bcd4e96d}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::\+Refrect}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t_a86c45019b26d0d12c450945623351acd}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::\+ST}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_test_bullet_a65f036fe7c8f2680105d296e90bb9365}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::\+Test\+Bullet}}で実装されています。
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_aa2cdb4205bd9dd09ab836969988ed8b6}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_aa2cdb4205bd9dd09ab836969988ed8b6}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!draw@{draw}}
+\index{draw@{draw}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_aa0bc9e71097556e120609b7fc47da203}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Game\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a402f51f89df5eaf3feeb2246a8154dbc}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a402f51f89df5eaf3feeb2246a8154dbc}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!OnCollide@{OnCollide}}
+\index{OnCollide@{OnCollide}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{OnCollide()}{OnCollide()}}
+{\footnotesize\ttfamily virtual void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::\+On\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_enemy}{Abstruct\+Enemy}} \&}]{enemy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_refrect_ad5a963042e4b90556ee76504b0917a6a}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::\+Refrect}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t_ad410652169c143bd028aabe2dd7c7668}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::\+ST}}で実装されています。
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a618edb2c8d24c11860a088c408bcae42}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a618edb2c8d24c11860a088c408bcae42}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily virtual void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_refrect_a315653d9d8de7283dd51b7b4c0f79f35}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::\+Refrect}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t_ae8ab546d439baafdd13eedce939ae601}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::\+ST}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_star_a7e0f599428e7d56c7a09573bf579242e}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::\+Star}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_v_a088d4a4aaae4612555586257a992166c}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Bullet\+::V}}で再実装されています。
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_aa7d728fce02a5bb5f408f49a32df0ed5}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_aa7d728fce02a5bb5f408f49a32df0ed5}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!update@{update}}
+\index{update@{update}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_af0d1647cf2be66a80f60b97956031367}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Game\+Object}}を再実装しています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_ac4a8e49b0621e0406c5146333ae53087}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_ac4a8e49b0621e0406c5146333ae53087}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!bulletcontroller\_ref@{bulletcontroller\_ref}}
+\index{bulletcontroller\_ref@{bulletcontroller\_ref}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{bulletcontroller\_ref}{bulletcontroller\_ref}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{Bullet\+Controller}}\& Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::bulletcontroller\+\_\+ref\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a982ad72811292ae71c8031da5079ee2b}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a982ad72811292ae71c8031da5079ee2b}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!collider@{collider}}
+\index{collider@{collider}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{collider}{collider}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{Circle\+Collider}} Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::collider}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_abc35a9a4df95ff21b18c6857e9662678}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_abc35a9a4df95ff21b18c6857e9662678}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!damage@{damage}}
+\index{damage@{damage}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily int Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::damage\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a30090c15bdf2e313a23a056b86986c62}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a30090c15bdf2e313a23a056b86986c62}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!enemies\_ref@{enemies\_ref}}
+\index{enemies\_ref@{enemies\_ref}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{enemies\_ref}{enemies\_ref}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{Enemy\+Controller}}\& Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::enemies\+\_\+ref\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a90a312b4871900222808802192477381}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a90a312b4871900222808802192477381}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!is\_dead@{is\_dead}}
+\index{is\_dead@{is\_dead}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{is\_dead}{is\_dead}}
+{\footnotesize\ttfamily bool Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::is\+\_\+dead}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a4c7c7599b803fe02a5e166795df90f6d}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a4c7c7599b803fe02a5e166795df90f6d}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!is\_destroy@{is\_destroy}}
+\index{is\_destroy@{is\_destroy}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{is\_destroy}{is\_destroy}}
+{\footnotesize\ttfamily bool Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::is\+\_\+destroy}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a13640fcde9d51b6a07bfc46d9f5aaed2}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a13640fcde9d51b6a07bfc46d9f5aaed2}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!photo@{photo}}
+\index{photo@{photo}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{photo}{photo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_photo_displayer}{Photo\+Displayer}} Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::photo\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_ae40d6f6cdac5affc8a928114727485c0}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_ae40d6f6cdac5affc8a928114727485c0}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!resource@{resource}}
+\index{resource@{resource}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{resource}{resource}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource}{Bullet\+\_\+\+Resource}}$>$ Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::resource\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_bullet_a42d711703659884cb0343b6cd98de84d}\label{class_shooting___hack_and_slash_1_1_abstruct_bullet_a42d711703659884cb0343b6cd98de84d}} 
+\index{Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}!velocity@{velocity}}
+\index{velocity@{velocity}!Shooting\_HackAndSlash::AbstructBullet@{Shooting\_HackAndSlash::AbstructBullet}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily Vec2 Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Bullet\+::velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_abstruct_bullet_8h}{Abstruct\+Bullet.\+h}}\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_abstruct_bullet_8cpp}{Abstruct\+Bullet.\+cpp}}\end{DoxyCompactItemize}

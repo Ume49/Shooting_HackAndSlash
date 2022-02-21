@@ -1,0 +1,35 @@
+\hypertarget{_gauge___horizontal_8h_source}{}\doxysection{Gauge\+\_\+\+Horizontal.\+h}
+\label{_gauge___horizontal_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Gauge\_Horizontal.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Gauge\_Horizontal.h}}
+\mbox{\hyperlink{_gauge___horizontal_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{6     \textcolor{comment}{// 横方向ゲージ}}
+\DoxyCodeLine{7     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge___horizontal}{Gauge\_Horizontal}} \{}
+\DoxyCodeLine{8         Point pos, photo\_size;}
+\DoxyCodeLine{9         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} photo, photo\_back;}
+\DoxyCodeLine{10     \textcolor{keyword}{public}:}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge___horizontal_a3608d034dfccff495e23d804b4e85281}{draw}}(\textcolor{keywordtype}{float} value) \textcolor{keyword}{const};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         \textcolor{comment}{// ゲージの高さを取得}}
+\DoxyCodeLine{15         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge___horizontal_a41691ab27029f0766ce5e01d552d179e}{Height}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         \textcolor{comment}{// draw(1.f)を呼び出したときに描画される、ゲージの長さを取得}}
+\DoxyCodeLine{18         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge___horizontal_a55b166eb8422f669e58230b74817e5b0}{Max\_Width}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{comment}{// 画像のサイズを返す}}
+\DoxyCodeLine{21         \textcolor{keyword}{const} Point\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge___horizontal_af88ccb34e251af789451f4c8f124f33f}{size}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{comment}{// photo\_path : ゲージ部分に使用する画像のパス}}
+\DoxyCodeLine{24         \textcolor{comment}{// back\_path :  ゲージの空白部分に使用する画像のパス}}
+\DoxyCodeLine{25         \textcolor{comment}{// p :      左上の座標}}
+\DoxyCodeLine{26         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge___horizontal_af796ac30c360970b758c7c8ec72c47c9}{Gauge\_Horizontal}}(\textcolor{keyword}{const} std::string\& photo\_path, \textcolor{keyword}{const} std::string\& back\_path, \textcolor{keyword}{const} Point\& p);}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge___horizontal_a29edc896e06b31f94aee87a2fb6f4ad4}{\string~Gauge\_Horizontal}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{28     \};}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}

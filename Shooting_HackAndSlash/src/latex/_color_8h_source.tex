@@ -1,0 +1,40 @@
+\hypertarget{_color_8h_source}{}\doxysection{Color.\+h}
+\label{_color_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Color.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Color.h}}
+\mbox{\hyperlink{_color_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{4     \textcolor{comment}{// 色情報として使用するunsigned int型のラッパー構造体}}
+\DoxyCodeLine{5     \textcolor{comment}{// RGBで動作}}
+\DoxyCodeLine{6     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color}{Color}}\{}
+\DoxyCodeLine{7     \textcolor{keyword}{private}:}
+\DoxyCodeLine{8         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} code;}
+\DoxyCodeLine{9     \textcolor{keyword}{public}:}
+\DoxyCodeLine{10         \textcolor{comment}{// 赤成分だけ返す}}
+\DoxyCodeLine{11         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_ae684e82c0dd61826abf82c5f456bebfd}{Red}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{12         \textcolor{comment}{// 緑成分だけ返す}}
+\DoxyCodeLine{13         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_ae97a58f97fe9722a58fa234bf60bd640}{Green}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{14         \textcolor{comment}{// 青成分だけ返す}}
+\DoxyCodeLine{15         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_ae7bcdc0aa6a0a353031b991d963182ff}{Blue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         \textcolor{comment}{// 赤成分に対して和算}}
+\DoxyCodeLine{18         \textcolor{comment}{// 値は0\string~255をはみ出さないように処理される}}
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_ae0f4719950f2f825d128dd9125127371}{AddRed}}(\textcolor{keywordtype}{int} r);}
+\DoxyCodeLine{20         \textcolor{comment}{// 緑成分に対して和算}}
+\DoxyCodeLine{21         \textcolor{comment}{// 値は0\string~255をはみ出さないように処理される}}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_a330f02f6882ef085935916865bcc6886}{AddGreen}}(\textcolor{keywordtype}{int} g);}
+\DoxyCodeLine{23         \textcolor{comment}{// 青成分に対して和算}}
+\DoxyCodeLine{24         \textcolor{comment}{// 値は0\string~255をはみ出さないように処理される}}
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_ac14a8ba896d2203e532dd027247eb9f4}{AddBlue}}(\textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{keyword}{operator} \textcolor{keywordtype}{unsigned} int() \textcolor{keyword}{const} \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{28         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color}{Color}}\& \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_ab1a30e1da08915543f51197690e94543}{operator=}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} r);}
+\DoxyCodeLine{29         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_a582f8b680d955bd970b8ed91fe95548a}{Color}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} color\_code);}
+\DoxyCodeLine{30         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_a582f8b680d955bd970b8ed91fe95548a}{Color}}(\textcolor{keywordtype}{int} r, \textcolor{keywordtype}{int} g, \textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{31         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_a582f8b680d955bd970b8ed91fe95548a}{Color}}();}
+\DoxyCodeLine{32         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color_ab50e5c2545145849b0c83f894c68f345}{\string~Color}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}

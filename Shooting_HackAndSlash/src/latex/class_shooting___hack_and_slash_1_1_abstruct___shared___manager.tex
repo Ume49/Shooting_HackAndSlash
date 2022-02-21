@@ -1,0 +1,99 @@
+\hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager}{}\doxysection{Shooting\+\_\+\+Hack\+And\+Slash\+::Abstruct\+\_\+\+Shared\+\_\+\+Manager クラス}
+\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager}\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+
+
+{\ttfamily \#include $<$Abstruct\+\_\+\+Shared\+\_\+\+Manager.\+h$>$}
+
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_abstruct___shared___manager_1_1_handle}{Handle}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a64c3cb3cfd1ddc543ca16eed01816db1}{Load}} (const std\+::string \&path)
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_aaba77569e47c922ba180dc603fc6cdff}{Count\+\_\+\+Add}} (const std\+::string \&key)
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a7fa278864818c6059d52e2719019b316}{Release}} (const std\+::string \&path)
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_adfa3ade5177d5e5af5df39625cfaa6f3}{Abstruct\+\_\+\+Shared\+\_\+\+Manager}} ()
+\item 
+virtual \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a10416039397e7507b3ff0f940ca3904e}{$\sim$\+Abstruct\+\_\+\+Shared\+\_\+\+Manager}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a610906e39d4c8f2a5e08db2d430d5d1b}{load\+\_\+func}} (const std\+::string \&path)=0
+\item 
+virtual void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a13c98600ea1c9df018ec583669cac0db}{release\+\_\+func}} (int handle)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_abstruct___shared___manager_1_1_handle}{Handle}} $>$ \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_aef07fc99cf7b437fb68d9c6ed3bbf97d}{container}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_adfa3ade5177d5e5af5df39625cfaa6f3}\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_adfa3ade5177d5e5af5df39625cfaa6f3}} 
+\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}!Abstruct\_Shared\_Manager@{Abstruct\_Shared\_Manager}}
+\index{Abstruct\_Shared\_Manager@{Abstruct\_Shared\_Manager}!Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+\doxysubsubsection{\texorpdfstring{Abstruct\_Shared\_Manager()}{Abstruct\_Shared\_Manager()}}
+{\footnotesize\ttfamily Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a10416039397e7507b3ff0f940ca3904e}\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a10416039397e7507b3ff0f940ca3904e}} 
+\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}!````~Abstruct\_Shared\_Manager@{$\sim$Abstruct\_Shared\_Manager}}
+\index{````~Abstruct\_Shared\_Manager@{$\sim$Abstruct\_Shared\_Manager}!Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$Abstruct\_Shared\_Manager()}{~Abstruct\_Shared\_Manager()}}
+{\footnotesize\ttfamily virtual Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager\+::$\sim$\+Abstruct\+\_\+\+Shared\+\_\+\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_aaba77569e47c922ba180dc603fc6cdff}\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_aaba77569e47c922ba180dc603fc6cdff}} 
+\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}!Count\_Add@{Count\_Add}}
+\index{Count\_Add@{Count\_Add}!Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+\doxysubsubsection{\texorpdfstring{Count\_Add()}{Count\_Add()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager\+::\+Count\+\_\+\+Add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a64c3cb3cfd1ddc543ca16eed01816db1}\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a64c3cb3cfd1ddc543ca16eed01816db1}} 
+\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}!Load@{Load}}
+\index{Load@{Load}!Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily int Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a610906e39d4c8f2a5e08db2d430d5d1b}\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a610906e39d4c8f2a5e08db2d430d5d1b}} 
+\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}!load\_func@{load\_func}}
+\index{load\_func@{load\_func}!Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+\doxysubsubsection{\texorpdfstring{load\_func()}{load\_func()}}
+{\footnotesize\ttfamily virtual int Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager\+::load\+\_\+func (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a7fa278864818c6059d52e2719019b316}\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a7fa278864818c6059d52e2719019b316}} 
+\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}!Release@{Release}}
+\index{Release@{Release}!Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager\+::\+Release (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a13c98600ea1c9df018ec583669cac0db}\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_a13c98600ea1c9df018ec583669cac0db}} 
+\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}!release\_func@{release\_func}}
+\index{release\_func@{release\_func}!Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+\doxysubsubsection{\texorpdfstring{release\_func()}{release\_func()}}
+{\footnotesize\ttfamily virtual void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager\+::release\+\_\+func (\begin{DoxyParamCaption}\item[{int}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_aef07fc99cf7b437fb68d9c6ed3bbf97d}\label{class_shooting___hack_and_slash_1_1_abstruct___shared___manager_aef07fc99cf7b437fb68d9c6ed3bbf97d}} 
+\index{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}!container@{container}}
+\index{container@{container}!Shooting\_HackAndSlash::Abstruct\_Shared\_Manager@{Shooting\_HackAndSlash::Abstruct\_Shared\_Manager}}
+\doxysubsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_abstruct___shared___manager_1_1_handle}{Handle}}$>$ Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+\_\+\+Shared\+\_\+\+Manager\+::container\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_abstruct___shared___manager_8h}{Abstruct\+\_\+\+Shared\+\_\+\+Manager.\+h}}\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_abstruct___shared___manager_8cpp}{Abstruct\+\_\+\+Shared\+\_\+\+Manager.\+cpp}}\end{DoxyCompactItemize}

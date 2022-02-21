@@ -1,0 +1,23 @@
+\hypertarget{_i_scene_chang_listener_8h_source}{}\doxysection{IScene\+Chang\+Listener.\+h}
+\label{_i_scene_chang_listener_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/ISceneChangListener.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/ISceneChangListener.h}}
+\mbox{\hyperlink{_i_scene_chang_listener_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{e_scene_8h}{eScene.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{5     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener}{ISceneChangeListener}} \{}
+\DoxyCodeLine{6     \textcolor{keyword}{public}:}
+\DoxyCodeLine{7         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener_a318b0201cdc1e2591edb91f46b0fd9b2}{ISceneChangeListener}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{8         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener_a43c20a37cdbb1ad10d259bfb4ab38f6e}{\string~ISceneChangeListener}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10         \textcolor{comment}{// シーン変更関数}}
+\DoxyCodeLine{11         \textcolor{comment}{// escene       : 追加してほしいシーン}}
+\DoxyCodeLine{12         \textcolor{comment}{// stack\_clear  : シーンスタックをクリアするかどうか}}
+\DoxyCodeLine{13         \textcolor{comment}{// is\_fade      : シーンを変更する際、フェード処理をするかどうか}}
+\DoxyCodeLine{14         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener_ad4e5eee1399d05bc9e34551083bae749}{SceneChange}}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_a43b9675a37ae8c7c8ffe20d0b5612479}{eScene}} nextScene, \textcolor{keywordtype}{bool} stack\_clear = \textcolor{keyword}{false}, \textcolor{keywordtype}{bool} is\_fade=\textcolor{keyword}{false}) = 0;}
+\DoxyCodeLine{15         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener_a871a79a85c354e93fd629714e6afb783}{ScenePop}}() = 0;}
+\DoxyCodeLine{16     \};}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}

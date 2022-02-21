@@ -1,0 +1,37 @@
+\hypertarget{_volume_controller_8h_source}{}\doxysection{Volume\+Controller.\+h}
+\label{_volume_controller_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/VolumeController.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/VolumeController.h}}
+\mbox{\hyperlink{_volume_controller_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_volume_8h}{Volume.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_font___shared_handle_8h}{Font\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include<utility>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{13     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_controller}{VolumeController}} \{}
+\DoxyCodeLine{14         std::vector <std::unique\_ptr<Volume>> container;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         std::vector<std::pair<std::string, Point>> texts;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_font___shared_handle}{Font\_SharedHandle}} font;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{keyword}{struct }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_bullet___gauge_aeb76e7ec053c90c661913958290acfca}{Back}} \{}
+\DoxyCodeLine{21             \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} handle;}
+\DoxyCodeLine{22             Point pos;}
+\DoxyCodeLine{23         \} back;}
+\DoxyCodeLine{24     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_controller_a722963b316588c5906c04c87a2163604}{update}}();}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_controller_a969213909d67643f65cb636187ae096d}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_controller_a54df79d391972c158998c77a2a0b43a5}{VolumeController}}(\textcolor{keyword}{const} Point\& pos);}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_controller_ac4020299a9ed03a82abb227cccb9cf27}{\string~VolumeController}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{30     \};}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}

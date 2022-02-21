@@ -1,0 +1,38 @@
+\hypertarget{_shooting___star_8h_source}{}\doxysection{Shooting\+\_\+\+Star.\+h}
+\label{_shooting___star_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Shooting\_Star.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Shooting\_Star.h}}
+\mbox{\hyperlink{_shooting___star_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<list>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_back_ground___object}{Shooting\_HackAndSlash::BackGround\_Object}} \{}
+\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_back_ground___object_1_1_shooting___stars}{Shooting\_Stars}} \{}
+\DoxyCodeLine{9         \textcolor{keyword}{class }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_icon_af3b9726a51598e45d7c7b2457d511e11}{Star}} \{}
+\DoxyCodeLine{10             Vec2 pos;}
+\DoxyCodeLine{11         \textcolor{keyword}{public}:}
+\DoxyCodeLine{12             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_back_ground___object_1_1_shooting___stars_a3cd92c8cdfff523ff6a7c60176538ddb}{update}}();}
+\DoxyCodeLine{13             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_back_ground___object_1_1_shooting___stars_aad511bcccb48ebeebb63cf5fbd688f03}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15             \textcolor{keywordtype}{bool} is\_stage\_out() \textcolor{keyword}{const};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17             Star(\textcolor{keyword}{const} Vec2\& init\_pos);}
+\DoxyCodeLine{18             \string~Star() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{19         \};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22         std::list<Star> container;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         \textcolor{keywordtype}{float} counter;}
+\DoxyCodeLine{25     \textcolor{keyword}{public}:}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_back_ground___object_1_1_shooting___stars_a3cd92c8cdfff523ff6a7c60176538ddb}{update}}();}
+\DoxyCodeLine{27         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_back_ground___object_1_1_shooting___stars_aad511bcccb48ebeebb63cf5fbd688f03}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_back_ground___object_1_1_shooting___stars_ad9acf67aaf0eeaf65b631fe988325e7b}{Shooting\_Stars}}();}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_back_ground___object_1_1_shooting___stars_acd6c5aec59610b2da4c01eb92b0a2739}{\string~Shooting\_Stars}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{31     \};}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}

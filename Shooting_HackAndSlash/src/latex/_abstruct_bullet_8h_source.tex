@@ -1,0 +1,61 @@
+\hypertarget{_abstruct_bullet_8h_source}{}\doxysection{Abstruct\+Bullet.\+h}
+\label{_abstruct_bullet_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/AbstructBullet.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/AbstructBullet.h}}
+\mbox{\hyperlink{_abstruct_bullet_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_game_object_8h}{AbstructGameObject.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_circle_collider_8h}{CircleCollider.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo_displayer_8h}{PhotoDisplayer.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bullet___paramater_8h}{Bullet\_Paramater.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bullet___resource_8h}{Bullet\_Resource.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define \_Bullet\_Args\_Template const Bullet\_Paramater\& p, std::unique\_ptr<Bullet\_Resource>\& resource, BulletController\& b, EnemyController\& e}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{14     \textcolor{keyword}{class }EnemyController;}
+\DoxyCodeLine{15     \textcolor{keyword}{class }AbstructEnemy;}
+\DoxyCodeLine{16     \textcolor{keyword}{class }BulletController;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{comment}{// 画像の描画、移動、ダメージ保持、移動、衝突判定を行う}}
+\DoxyCodeLine{19     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet}{AbstructBullet}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object}{AbstructGameObject}} \{}
+\DoxyCodeLine{20     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{21         \textcolor{comment}{// 移動速度}}
+\DoxyCodeLine{22         Vec2 \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a42d711703659884cb0343b6cd98de84d}{velocity}};}
+\DoxyCodeLine{23         \textcolor{comment}{// 弾が保持するダメージ}}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_abc35a9a4df95ff21b18c6857e9662678}{damage}};}
+\DoxyCodeLine{25         \textcolor{comment}{// 見た目表示器}}
+\DoxyCodeLine{26         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_photo_displayer}{PhotoDisplayer}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a13640fcde9d51b6a07bfc46d9f5aaed2}{photo}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{comment}{// 分岐情報を格納しておくリソース}}
+\DoxyCodeLine{29         std::unique\_ptr<Bullet\_Resource> \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_ae40d6f6cdac5affc8a928114727485c0}{resource}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{EnemyController}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a30090c15bdf2e313a23a056b86986c62}{enemies\_ref}};}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{BulletController}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_ac4a8e49b0621e0406c5146333ae53087}{bulletcontroller\_ref}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \textcolor{comment}{// 更新処理}}
+\DoxyCodeLine{35         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_aec3adb77ca45cf513584dddb3ea91fa1}{\_update}}() = 0;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \textcolor{comment}{// エネミーと衝突した時の処理}}
+\DoxyCodeLine{38         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a402f51f89df5eaf3feeb2246a8154dbc}{OnCollide}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_enemy}{AbstructEnemy}}\& enemy) = 0;}
+\DoxyCodeLine{39     \textcolor{keyword}{public}:}
+\DoxyCodeLine{40         \textcolor{comment}{// 消えるかどうか}}
+\DoxyCodeLine{41         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a90a312b4871900222808802192477381}{is\_dead}};}
+\DoxyCodeLine{42         \textcolor{comment}{// 消えるとき、OnDestroyを呼び出すかどうか}}
+\DoxyCodeLine{43         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a4c7c7599b803fe02a5e166795df90f6d}{is\_destroy}};}
+\DoxyCodeLine{44         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{CircleCollider}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a982ad72811292ae71c8031da5079ee2b}{collider}};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_aa7d728fce02a5bb5f408f49a32df0ed5}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{47         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_aa2cdb4205bd9dd09ab836969988ed8b6}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{comment}{// オブジェクトが消去される直前に呼ばれる処理}}
+\DoxyCodeLine{50         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a618edb2c8d24c11860a088c408bcae42}{OnDestroy}}() \{\}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_a76616b431acd9ce30d86855dc272cdc8}{AbstructBullet}}(\textcolor{keyword}{const} std::string\& path, \textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___paramater}{Bullet\_Paramater}}\& para, std::unique\_ptr<Bullet\_Resource>\& r, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{EnemyController}}\& e, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{BulletController}}\& b);}
+\DoxyCodeLine{53         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_adb21c467dca07760a503cb57cea8b7c1}{\string~AbstructBullet}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{54     \};}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}

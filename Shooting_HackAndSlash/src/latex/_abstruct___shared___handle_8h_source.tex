@@ -1,0 +1,32 @@
+\hypertarget{_abstruct___shared___handle_8h_source}{}\doxysection{Abstruct\+\_\+\+Shared\+\_\+\+Handle.\+h}
+\label{_abstruct___shared___handle_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Abstruct\_Shared\_Handle.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Abstruct\_Shared\_Handle.h}}
+\mbox{\hyperlink{_abstruct___shared___handle_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct___shared___manager_8h}{Abstruct\_Shared\_Manager.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{7     \textcolor{comment}{// リソースが共有可能なハンドル}}
+\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle}{Abstruct\_SharedHandle}} \{}
+\DoxyCodeLine{9     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{10         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle_abc098f23efd22682bcdcb0ac75d54833}{handle}};}
+\DoxyCodeLine{11         std::string \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle_ae755383aa20ba6211b3667b24b973ed1}{release\_key}};}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager}{Abstruct\_Shared\_Manager}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle_a4d231fce1816fd50896af27e54f6754a}{manager}};}
+\DoxyCodeLine{13     \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \textcolor{keyword}{operator} int() const noexcept;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle}{Abstruct\_SharedHandle}}(const std::\textcolor{keywordtype}{string}\& s, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager}{Abstruct\_Shared\_Manager}}\& m);}
+\DoxyCodeLine{17         \textcolor{comment}{// これを利用する際は、handle, release\_keyを設定してください}}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle}{Abstruct\_SharedHandle}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared___manager}{Abstruct\_Shared\_Manager}}\& m);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{comment}{// コピーコンストラクタ}}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle}{Abstruct\_SharedHandle}}(const \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle}{Abstruct\_SharedHandle}}\& s);}
+\DoxyCodeLine{22         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle}{Abstruct\_SharedHandle}}\& operator=(const \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle}{Abstruct\_SharedHandle}}\& s) = delete;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         virtual \string~\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct___shared_handle}{Abstruct\_SharedHandle}}();}
+\DoxyCodeLine{25     \};}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}

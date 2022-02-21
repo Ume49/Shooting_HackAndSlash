@@ -1,0 +1,148 @@
+\hypertarget{_define_8h_source}{}\doxysection{Define.\+h}
+\label{_define_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Define.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Define.h}}
+\mbox{\hyperlink{_define_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_define___debug_8h}{Define\_Debug.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{5     \textcolor{keyword}{namespace }Palette \{}
+\DoxyCodeLine{6         \textcolor{keyword}{constexpr} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_palette_a11dad8147e85687bfd95aa5171ca32b0}{Black}} = 0x000000;}
+\DoxyCodeLine{7         \textcolor{keyword}{constexpr} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_palette_a558f7ecd5704cfa342cbbf4f040ab1e7}{White}} = 0xffffff;}
+\DoxyCodeLine{8     \}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     \textcolor{keyword}{namespace }Define \{}
+\DoxyCodeLine{11         \textcolor{comment}{// ウインドウの左上に表示されるメッセージ}}
+\DoxyCodeLine{12         \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_a3c968baa0786cf6987558e244237e5e9}{GAME\_TITLE}}[] = \textcolor{stringliteral}{"{}Shoot!"{}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         \textcolor{comment}{// 背景の色}}
+\DoxyCodeLine{15         \textcolor{keyword}{namespace }Background \{}
+\DoxyCodeLine{16             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_background_a9b0606f5e484e8886a796a8233774699}{R}} = 10;}
+\DoxyCodeLine{17             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_background_a593a9813a7ad526b5a8165f17b4fc2b5}{G}} = 10;}
+\DoxyCodeLine{18             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_background_a17dc9802ff9c67af7819b823857b3de1}{B}} = 10;}
+\DoxyCodeLine{19         \}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_volume_a10c8d6d9a685ac69ba2dd72c7e2af71e}{Window}} \{}
+\DoxyCodeLine{22             \textcolor{comment}{// カラービット数}}
+\DoxyCodeLine{23             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_a3392fe13dcb1ceee6293ad158d0862df}{COLOR\_BIT\_NUM}} = 32;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_a43e674eea144c9c022d62b7c68ca4f69}{WITDH}} = 768;}
+\DoxyCodeLine{26             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_ad487e7e473bdd3de361065f153c66efd}{HEIGHT}} = 1024;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28             \textcolor{comment}{// ウインドウサイズを可変にするかどうか}}
+\DoxyCodeLine{29             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_a3220fd1e126e287966964bf55d6681c4}{IS\_WINDOWSIZE\_FLEXIBLE}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\textcolor{keyword}{false});}
+\DoxyCodeLine{30             \textcolor{comment}{// ウインドウモードで起動するかどうか}}
+\DoxyCodeLine{31             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_ab12c2e082a1e399fe57ca2d56d7ab565}{IS\_WINDOW\_MODE}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\textcolor{keyword}{true});}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33             \textcolor{keyword}{namespace }Center \{}
+\DoxyCodeLine{34                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_center_a9a70836811a311f73910227311bca60b}{Xf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_a43e674eea144c9c022d62b7c68ca4f69}{Window::WITDH}}) / 2.f;}
+\DoxyCodeLine{35                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_center_adc702180db579e16ddeab449fb06d8c8}{Yf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_ad487e7e473bdd3de361065f153c66efd}{Window::HEIGHT}}) / 2.f;}
+\DoxyCodeLine{36                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_center_a21b681d92e6141e8a6e343ee4da0a05b}{X}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_center_a9a70836811a311f73910227311bca60b}{Xf}});}
+\DoxyCodeLine{37                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_center_a6f4811fea3e1f166463d182a5432b953}{Y}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_center_adc702180db579e16ddeab449fb06d8c8}{Yf}});}
+\DoxyCodeLine{38             \}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40             \textcolor{keyword}{namespace }UI \{}
+\DoxyCodeLine{41                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_a89b48d22ba3237e519e8997b273a38ed}{WIDTH}} = 120;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43                 \textcolor{comment}{// UIエリアの基準点、左上}}
+\DoxyCodeLine{44                 \textcolor{keyword}{namespace }Standerd \{}
+\DoxyCodeLine{45                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_aac89622c74c04440abdc954944926c14}{X}} = \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_a43e674eea144c9c022d62b7c68ca4f69}{Window::WITDH}} -\/ \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_a89b48d22ba3237e519e8997b273a38ed}{UI::WIDTH}};}
+\DoxyCodeLine{46                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_ace9f40e4069e284b86b008ca0b312195}{Y}} = 0;}
+\DoxyCodeLine{47                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_ac73f14c3cc1a09ed2f8cf6d117d6534e}{Xf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_aac89622c74c04440abdc954944926c14}{X}});}
+\DoxyCodeLine{48                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_a934990e18e47f7074d280368b6f29d1e}{Yf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_ace9f40e4069e284b86b008ca0b312195}{Y}});}
+\DoxyCodeLine{49                 \}}
+\DoxyCodeLine{50                 \textcolor{keyword}{namespace }Center \{}
+\DoxyCodeLine{51                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_center_a41db1087162c6c144facd02d2df7410a}{X}} = (\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_a43e674eea144c9c022d62b7c68ca4f69}{Window::WITDH}} + \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_aac89622c74c04440abdc954944926c14}{Standerd::X}}) / 2;}
+\DoxyCodeLine{52                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_center_a0d10c54f93cabaa9cca4f8307fe9953a}{Y}} = (\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_ad487e7e473bdd3de361065f153c66efd}{Window::HEIGHT}} + \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_ace9f40e4069e284b86b008ca0b312195}{Standerd::Y}}) / 2;}
+\DoxyCodeLine{53                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_center_a4c4531202ccbb945d654198aa279830f}{Xf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_center_a41db1087162c6c144facd02d2df7410a}{X}});}
+\DoxyCodeLine{54                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_center_a322a77dbaf3241e70e92c7ba753efbf9}{Yf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_center_a0d10c54f93cabaa9cca4f8307fe9953a}{Y}});}
+\DoxyCodeLine{55                 \}}
+\DoxyCodeLine{56                 \textcolor{keyword}{namespace }End \{}
+\DoxyCodeLine{57                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_end_a0e6e0138bc2e3fdc5f4f1faf365d27f2}{X}} = \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_a43e674eea144c9c022d62b7c68ca4f69}{Window::WITDH}};}
+\DoxyCodeLine{58                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_end_a8528c55e455cd91ca300b0706e8e8198}{Y}} = \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_ad487e7e473bdd3de361065f153c66efd}{Window::HEIGHT}};}
+\DoxyCodeLine{59                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_end_adaea02e906451693af763dcdf68abd68}{Xf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_end_a0e6e0138bc2e3fdc5f4f1faf365d27f2}{X}});}
+\DoxyCodeLine{60                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_end_a9c163684d6a37bdaa3d76ad58e484f7c}{Yf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_end_a8528c55e455cd91ca300b0706e8e8198}{Y}});}
+\DoxyCodeLine{61                 \}}
+\DoxyCodeLine{62             \}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64             \textcolor{comment}{// プレイヤーが移動できる範囲}}
+\DoxyCodeLine{65             \textcolor{keyword}{namespace }PlayArea \{}
+\DoxyCodeLine{66                 \textcolor{comment}{// プレイエリアをどれだけ狭めるか}}
+\DoxyCodeLine{67                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_a867f4901561d5f9ff622c17a5ce7566f}{SPACE}} = 5;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69                 \textcolor{keyword}{namespace }Start \{}
+\DoxyCodeLine{70                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_start_a542d9d8f29d67c52e2e0dca7427966c4}{X}} = \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_a867f4901561d5f9ff622c17a5ce7566f}{SPACE}};}
+\DoxyCodeLine{71                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_start_a1cdb3ae558fa7b912fc6dc595adcd631}{Y}} = \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_a867f4901561d5f9ff622c17a5ce7566f}{SPACE}};}
+\DoxyCodeLine{72                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_start_a687dc5c5e199c85c78b04b1d4aa7549f}{Xf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_start_a542d9d8f29d67c52e2e0dca7427966c4}{X}});}
+\DoxyCodeLine{73                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_start_a88b6d31c205c611576dbd7763a0d68b1}{Yf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_start_a1cdb3ae558fa7b912fc6dc595adcd631}{Y}});}
+\DoxyCodeLine{74                 \}}
+\DoxyCodeLine{75                 \textcolor{keyword}{namespace }End \{}
+\DoxyCodeLine{76                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_end_a4341b7cbc8e298ec41ddfe11c110661f}{X}} = \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_u_i_1_1_standerd_aac89622c74c04440abdc954944926c14}{UI::Standerd::X}} -\/ 1 -\/ \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_a867f4901561d5f9ff622c17a5ce7566f}{SPACE}}; \textcolor{comment}{// UIエリアの左隣なので-\/1しておく}}
+\DoxyCodeLine{77                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_end_a818e3ba2cb4346dfbc897beff81316b9}{Y}} = \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_ad487e7e473bdd3de361065f153c66efd}{Window::HEIGHT}} -\/ \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_a867f4901561d5f9ff622c17a5ce7566f}{SPACE}};}
+\DoxyCodeLine{78                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_end_af68586f1d869f1c0aa31b8957e2b6ed9}{Xf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_end_a4341b7cbc8e298ec41ddfe11c110661f}{X}});}
+\DoxyCodeLine{79                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_end_a8c61aa2c9e231c4c82648e6993e5c541}{Yf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_end_a818e3ba2cb4346dfbc897beff81316b9}{Y}});}
+\DoxyCodeLine{80                 \}}
+\DoxyCodeLine{81                 \textcolor{keyword}{namespace }Center \{}
+\DoxyCodeLine{82                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_center_a87d1e311a2b0d09e8c6c915f1c248885}{Xf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_start_a542d9d8f29d67c52e2e0dca7427966c4}{Start::X}} + \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_end_a4341b7cbc8e298ec41ddfe11c110661f}{End::X}}) / 2.f;}
+\DoxyCodeLine{83                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_center_a58439d9a9136c2f6eaa67684eb15ebf8}{Yf}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_start_a1cdb3ae558fa7b912fc6dc595adcd631}{Start::Y}} + \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_end_a818e3ba2cb4346dfbc897beff81316b9}{End::Y}}) / 2.f;}
+\DoxyCodeLine{84                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_center_a81e40a904b0f6f3c4e7966e21a9d026e}{X}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_center_a87d1e311a2b0d09e8c6c915f1c248885}{Xf}});}
+\DoxyCodeLine{85                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_center_aaf40082f1c09cbb1b5caad9d2d5f4cbd}{Y}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_window_1_1_play_area_1_1_center_a58439d9a9136c2f6eaa67684eb15ebf8}{Yf}});}
+\DoxyCodeLine{86                 \}}
+\DoxyCodeLine{87             \}}
+\DoxyCodeLine{88         \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90         \textcolor{comment}{// DrawRotaGraphを使ったときの、デフォルトの値}}
+\DoxyCodeLine{91         \textcolor{keyword}{namespace }RotaGraph\_Default \{}
+\DoxyCodeLine{92             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{double} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_rota_graph___default_a74821b6ad138de4124edc126bf514c94}{ExRate}} = 1.;}
+\DoxyCodeLine{93             \textcolor{keyword}{constexpr} \textcolor{keywordtype}{double} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_rota_graph___default_a6a606edfb67bb78306d6f6d2aa66939e}{Angle}} = 0.;}
+\DoxyCodeLine{94         \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96         \textcolor{comment}{// ファイルパス}}
+\DoxyCodeLine{97         \textcolor{keyword}{namespace }Path \{}
+\DoxyCodeLine{98             \textcolor{keyword}{namespace }Photo \{}
+\DoxyCodeLine{99                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a3a5eb097cc11a2ae307b73484af802c9}{Bullet}}[] = \textcolor{stringliteral}{"{}Resource/bullet.png"{}};}
+\DoxyCodeLine{100                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}[] = \textcolor{stringliteral}{"{}Resource/player.png"{}};}
+\DoxyCodeLine{101                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_af0e8432b0536cc51eb857923c0388a0a}{BackScreen}}[] = \textcolor{stringliteral}{"{}Resource/back\_screen.png"{}};}
+\DoxyCodeLine{102                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a9409e2c1e1d4fede2806ac5a27b08fb8}{Cursor}}[] = \textcolor{stringliteral}{"{}Resource/cursor.png"{}};}
+\DoxyCodeLine{103                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a314cac51e8b7acfff06ecd03b9a7d1f9}{UI\_Window}}[] = \textcolor{stringliteral}{"{}Resource/ui\_window.png"{}};}
+\DoxyCodeLine{104                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a2c7bacb231238fbf1d2cc357b4c3247a}{Cristal}}[] = \textcolor{stringliteral}{"{}Resource/cristal.png"{}};}
+\DoxyCodeLine{105                 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_slot}{Slot}}[]\{ \textcolor{stringliteral}{"{}Resource/null\_slot.png"{}} \};}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107                 \textcolor{keyword}{namespace }Enemy \{}
+\DoxyCodeLine{108                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_enemy_a1b588bf345d2e4206c464dc43c62e1f4}{Kusozako}}[] = \textcolor{stringliteral}{"{}Resource/kusozako.png"{}};}
+\DoxyCodeLine{109                 \}}
+\DoxyCodeLine{110                 \textcolor{keyword}{namespace }Bullet\_Gauge \{}
+\DoxyCodeLine{111                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge}{Gauge}}[] = \textcolor{stringliteral}{"{}Resource/BulletGauge.png"{}};}
+\DoxyCodeLine{112                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_bullet___gauge_abcc97ca50b2b72b6bf9ad8b1baab0946}{Frame}}[] = \textcolor{stringliteral}{"{}Resource/BulletGauge\_Frame.png"{}};}
+\DoxyCodeLine{113                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_bullet___gauge_aeb76e7ec053c90c661913958290acfca}{Back}}[] = \textcolor{stringliteral}{"{}Resource/BulletGauge\_Back.png"{}};}
+\DoxyCodeLine{114                 \}}
+\DoxyCodeLine{115                 \textcolor{keyword}{namespace }HP\_Bar \{}
+\DoxyCodeLine{116                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge}{Gauge}}[] = \textcolor{stringliteral}{"{}Resource/HP\_Bar.png"{}};}
+\DoxyCodeLine{117                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_h_p___bar_a06f34ccc9daef975d40a02044957dc78}{Frame}}[] = \textcolor{stringliteral}{"{}Resource/HP\_Frame.png"{}};}
+\DoxyCodeLine{118                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_h_p___bar_aa01562ca9f3a11525c1c3aea5f5841eb}{Back}}[] = \textcolor{stringliteral}{"{}Resource/HP\_Back.png"{}};}
+\DoxyCodeLine{119                 \}}
+\DoxyCodeLine{120                 \textcolor{keyword}{namespace }Button \{}
+\DoxyCodeLine{121                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_button_afb36be1538c0999436cbe6d6df4e5255}{Normal}}[] = \textcolor{stringliteral}{"{}Resource/button.png"{}};}
+\DoxyCodeLine{122                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_button_ac46ea5e7ac89c7643fa19d90173d0a3b}{Selected}}[] = \textcolor{stringliteral}{"{}Resource/button\_selected.png"{}};}
+\DoxyCodeLine{123                 \}}
+\DoxyCodeLine{124                 \textcolor{keyword}{namespace }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume}{Volume}} \{}
+\DoxyCodeLine{125                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_volume_a6c19523843b23aa06368ad6956677f73}{Clip}}[] = \textcolor{stringliteral}{"{}Resource/clip.png"{}};}
+\DoxyCodeLine{126                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_volume_ac98170a5c4724960d18651665cb82549}{Clip\_selected}}[] = \textcolor{stringliteral}{"{}Resource/clip\_selected.png"{}};}
+\DoxyCodeLine{127                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_volume_ae76a9a870713f1a1d8ca8db4961d45db}{Back}}[] = \textcolor{stringliteral}{"{}Resource/volume\_back.png"{}};}
+\DoxyCodeLine{128                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gauge}{Gauge}}[] = \textcolor{stringliteral}{"{}Resource/volume\_gauge.png"{}};}
+\DoxyCodeLine{129                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_volume_a10c8d6d9a685ac69ba2dd72c7e2af71e}{Window}}[] = \textcolor{stringliteral}{"{}Resource/volume\_window.png"{}};}
+\DoxyCodeLine{130                 \}}
+\DoxyCodeLine{131                 \textcolor{keyword}{namespace }Icon \{}
+\DoxyCodeLine{132                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_icon_a0bbbf562f16f2099ca602e523fd90ed5}{ST}}[] = \textcolor{stringliteral}{"{}Resource/Bullet\_ST.png"{}};}
+\DoxyCodeLine{133                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_icon_a1b6440ed53c0f48bad724a2af86a0abc}{V}}[] = \textcolor{stringliteral}{"{}Resource/Bullet\_V.png"{}};}
+\DoxyCodeLine{134                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_icon_af3b9726a51598e45d7c7b2457d511e11}{Star}}[] = \textcolor{stringliteral}{"{}Resource/Bullet\_Star.png"{}};}
+\DoxyCodeLine{135                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_icon_a65c227c39700aa533d90a7c9c9e53407}{RightCurve}}[] = \textcolor{stringliteral}{"{}Resource/Bullet\_RightCurve.png"{}};}
+\DoxyCodeLine{136                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_icon_a035e0a108791640f56d86718dc829b75}{LeftCurve}}[] = \textcolor{stringliteral}{"{}Resource/Bullet\_LeftCurve.png"{}};}
+\DoxyCodeLine{137                     \textcolor{keyword}{constexpr} \textcolor{keywordtype}{char} \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_1_1_icon_a9903ef06d9e2448f18a16c9dcba1a58c}{Refrect}}[] = \textcolor{stringliteral}{"{}Resource/Bullet\_Refrect.png"{}};}
+\DoxyCodeLine{138                 \}}
+\DoxyCodeLine{139             \}}
+\DoxyCodeLine{140         \}}
+\DoxyCodeLine{141     \}}
+\DoxyCodeLine{142 \}}
+
+\end{DoxyCode}

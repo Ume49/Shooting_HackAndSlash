@@ -1,0 +1,30 @@
+\hypertarget{_mouse_checker_8h_source}{}\doxysection{Mouse\+Checker.\+h}
+\label{_mouse_checker_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/MouseChecker.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/MouseChecker.h}}
+\mbox{\hyperlink{_mouse_checker_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<array>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<algorithm>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{8     \textcolor{keyword}{namespace }Input\_Component \{}
+\DoxyCodeLine{9         \textcolor{comment}{// マウスボタンの押下状況を監視するクラス}}
+\DoxyCodeLine{10         \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker}{MouseChecker}} \{}
+\DoxyCodeLine{11         \textcolor{keyword}{private}:}
+\DoxyCodeLine{12             std::array<int, 3> count;}
+\DoxyCodeLine{13         \textcolor{keyword}{public}:}
+\DoxyCodeLine{14             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_a48a6e9e9677be7b3e57e83d47dcc04a6}{update}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16             \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_aa35bb9e525f61b33d8767dbaba7e5336}{GetInput}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} MOUSE\_INPUT\_)\textcolor{keyword}{const};}
+\DoxyCodeLine{17             \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_a04e8178264ed66d5b06191e2080a1a22}{GetDown}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} MOUSE\_INPUT\_)\textcolor{keyword}{const};}
+\DoxyCodeLine{18             \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_ab732e4668e75c38329b161f85214a225}{GetUp}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} MOUSE\_INPUT\_)\textcolor{keyword}{const};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_abdeda72bfb5172bc6ebf31de28030a36}{MouseChecker}}();}
+\DoxyCodeLine{21             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_acd07b95f362ce5821a15aae71771061a}{\string~MouseChecker}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{22         \};}
+\DoxyCodeLine{23     \}}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}

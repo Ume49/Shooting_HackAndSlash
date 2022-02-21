@@ -1,0 +1,65 @@
+\hypertarget{_player_8h_source}{}\doxysection{Player.\+h}
+\label{_player_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Player.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Player.h}}
+\mbox{\hyperlink{_player_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}Vector"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_game_object_8h}{AbstructGameObject.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_circle_collider_8h}{CircleCollider.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bullet___lancher_8h}{Bullet\_Lancher.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bullet_controller_8h}{BulletController.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include<functional>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_displayer_8h}{IDisplayer.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{17     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object}{AbstructGameObject}} \{}
+\DoxyCodeLine{18         \textcolor{keyword}{static} \textcolor{keyword}{constexpr} \textcolor{keywordtype}{float} radius = 12.f;}
+\DoxyCodeLine{19     \textcolor{keyword}{private}:}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} Move();}
+\DoxyCodeLine{21         \textcolor{comment}{// ゲームオーバー処理}}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} game\_over();}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} init();}
+\DoxyCodeLine{24         \textcolor{comment}{// 死んだか判定}}
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} judge\_death();}
+\DoxyCodeLine{26     \textcolor{keyword}{public}:}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a16fa9d7133c4de1da488f075a47d73aa}{Damage}}(\textcolor{keywordtype}{int} damage);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \textcolor{comment}{// エネミー本体と接触した時の処理}}
+\DoxyCodeLine{35         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a60edc8485480f15c19460bee19a73ec9}{Crush}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a73abe3026ec298e024fd4620ea2fe01c}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_aef0bd154395a56e3446d1308f32d7a2d}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         \textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___lancher}{Bullet\_Lancher}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a4b906b10aa3d7f8bd8b2a886df10753c}{show\_bulletlancher}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} bullet; \}}
+\DoxyCodeLine{41         \textcolor{keyword}{const} Vec2\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_a0f04cc39cb14756785aca9059e0c706e}{show\_position}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_aa4ac9dd6c3f92a810f44365d09522637}{pos}}; \}}
+\DoxyCodeLine{42     \textcolor{keyword}{public}:}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{CircleCollider}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_adcb69543b6551bdd5119a642395de36b}{collider}};}
+\DoxyCodeLine{44     \textcolor{keyword}{private}:}
+\DoxyCodeLine{45         \textcolor{comment}{// 見た目を表示する機能}}
+\DoxyCodeLine{46         std::unique\_ptr<IDisplayer> looks;}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         std::function<void(\textcolor{keywordtype}{void})> go\_result;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___lancher}{Bullet\_Lancher}} bullet;}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52         \textcolor{comment}{// 正面方向}}
+\DoxyCodeLine{53         Vec2 front;}
+\DoxyCodeLine{54     \textcolor{keyword}{public}:}
+\DoxyCodeLine{55         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_aabf8f4333dd22ed44f831e6dbfd34a21}{Player}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{BulletController}}\& b, std::function<\textcolor{keywordtype}{void}()> func\_go\_result) :}
+\DoxyCodeLine{56             looks(),}
+\DoxyCodeLine{57             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player_adcb69543b6551bdd5119a642395de36b}{collider}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_aa4ac9dd6c3f92a810f44365d09522637}{pos}}, radius),}
+\DoxyCodeLine{58             bullet(b),}
+\DoxyCodeLine{59             go\_result(func\_go\_result),}
+\DoxyCodeLine{60             front(0.f,0.f)\{}
+\DoxyCodeLine{61             init();}
+\DoxyCodeLine{62         \}}
+\DoxyCodeLine{63     \};}
+\DoxyCodeLine{64 \}}
+
+\end{DoxyCode}

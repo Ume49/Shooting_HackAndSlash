@@ -1,0 +1,30 @@
+\hypertarget{_random_8h_source}{}\doxysection{Random.\+h}
+\label{_random_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Random.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Random.h}}
+\mbox{\hyperlink{_random_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_singleton_8h}{Singleton.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<random>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_random}{Random}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}}<Random> \{}
+\DoxyCodeLine{9     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16         \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_random_a66f76ecd269306318fa3124f1cdcf18f}{Question}}(\textcolor{keywordtype}{int} numerator, \textcolor{keywordtype}{int} denominator);}
+\DoxyCodeLine{21         \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_random_a66f76ecd269306318fa3124f1cdcf18f}{Question}}(\textcolor{keywordtype}{float} true\_rate);}
+\DoxyCodeLine{22         \textcolor{comment}{// min\string~maxまでの数をランダムに返す}}
+\DoxyCodeLine{23         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_random_a8d8e60c91c6df8de2a94c0aaf54a9916}{Range}}(\textcolor{keywordtype}{int} min, \textcolor{keywordtype}{int} max);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         }
+\DoxyCodeLine{26     \textcolor{keyword}{private}:}
+\DoxyCodeLine{27         \textcolor{comment}{//乱数生成器}}
+\DoxyCodeLine{28         std::mt19937 random\_machine;}
+\DoxyCodeLine{29     \textcolor{keyword}{private}:}
+\DoxyCodeLine{30         \textcolor{keyword}{friend} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}};}
+\DoxyCodeLine{31         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_random}{Random}}() : random\_machine(std::random\_device()()) \{}
+\DoxyCodeLine{32         \}}
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: C:/Users/tomok/source/repos/Ume49/Shooting_HackAndSlash/Shooting_HackAndSlash/src/MouseChecker.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_937abf77f1caa6bcbdd0bdd328032b9c.html">tomok</a></li><li class="navelem"><a class="el" href="dir_c985f9d7caec51f10479fe4232ea00d7.html">source</a></li><li class="navelem"><a class="el" href="dir_422d19cfe3cd8712db1fa5ab4dc78bac.html">repos</a></li><li class="navelem"><a class="el" href="dir_c7148c3de5c92a5c36a1ed0dca940083.html">Ume49</a></li><li class="navelem"><a class="el" href="dir_9851522d5ef53cecc1dba7e384894c69.html">Shooting_HackAndSlash</a></li><li class="navelem"><a class="el" href="dir_8cbe1cf3e55c0210d2930aeaac4bd20e.html">Shooting_HackAndSlash</a></li><li class="navelem"><a class="el" href="dir_5be1e8cb374cb6511f6a40a56ca5467f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">MouseChecker.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mouse_checker_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&lt;array&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include&quot;Vector.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_shooting___hack_and_slash.html">Shooting_HackAndSlash</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">namespace </span>Input_Component {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="comment">// マウスボタンの押下状況を監視するクラス</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html">   10</a></span>        <span class="keyword">class </span><a class="code hl_class" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html">MouseChecker</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            std::array&lt;int, 3&gt; count;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#a48a6e9e9677be7b3e57e83d47dcc04a6">update</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#aa35bb9e525f61b33d8767dbaba7e5336">GetInput</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> MOUSE_INPUT_)<span class="keyword">const</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#a04e8178264ed66d5b06191e2080a1a22">GetDown</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> MOUSE_INPUT_)<span class="keyword">const</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#ab732e4668e75c38329b161f85214a225">GetUp</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> MOUSE_INPUT_)<span class="keyword">const</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#abdeda72bfb5172bc6ebf31de28030a36">MouseChecker</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#acd07b95f362ce5821a15aae71771061a">   21</a></span>            <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#acd07b95f362ce5821a15aae71771061a">~MouseChecker</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        };</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_html"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html">Shooting_HackAndSlash::Input_Component::MouseChecker</a></div><div class="ttdef"><b>Definition:</b> MouseChecker.h:10</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_html_a04e8178264ed66d5b06191e2080a1a22"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#a04e8178264ed66d5b06191e2080a1a22">Shooting_HackAndSlash::Input_Component::MouseChecker::GetDown</a></div><div class="ttdeci">bool GetDown(const int MOUSE_INPUT_) const</div><div class="ttdef"><b>Definition:</b> MouseChecker.cpp:39</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_html_a48a6e9e9677be7b3e57e83d47dcc04a6"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#a48a6e9e9677be7b3e57e83d47dcc04a6">Shooting_HackAndSlash::Input_Component::MouseChecker::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> MouseChecker.cpp:12</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_html_aa35bb9e525f61b33d8767dbaba7e5336"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#aa35bb9e525f61b33d8767dbaba7e5336">Shooting_HackAndSlash::Input_Component::MouseChecker::GetInput</a></div><div class="ttdeci">bool GetInput(const int MOUSE_INPUT_) const</div><div class="ttdef"><b>Definition:</b> MouseChecker.cpp:35</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_html_ab732e4668e75c38329b161f85214a225"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#ab732e4668e75c38329b161f85214a225">Shooting_HackAndSlash::Input_Component::MouseChecker::GetUp</a></div><div class="ttdeci">bool GetUp(const int MOUSE_INPUT_) const</div><div class="ttdef"><b>Definition:</b> MouseChecker.cpp:43</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_html_abdeda72bfb5172bc6ebf31de28030a36"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#abdeda72bfb5172bc6ebf31de28030a36">Shooting_HackAndSlash::Input_Component::MouseChecker::MouseChecker</a></div><div class="ttdeci">MouseChecker()</div><div class="ttdef"><b>Definition:</b> MouseChecker.cpp:6</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker_html_acd07b95f362ce5821a15aae71771061a"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_input___component_1_1_mouse_checker.html#acd07b95f362ce5821a15aae71771061a">Shooting_HackAndSlash::Input_Component::MouseChecker::~MouseChecker</a></div><div class="ttdeci">~MouseChecker()=default</div></div>
+<div class="ttc" id="anamespace_shooting___hack_and_slash_html"><div class="ttname"><a href="namespace_shooting___hack_and_slash.html">Shooting_HackAndSlash</a></div><div class="ttdef"><b>Definition:</b> Abstruct_Shared_Handle.cpp:3</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

@@ -1,0 +1,107 @@
+\hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item}{}\doxysection{Shooting\+\_\+\+Hack\+And\+Slash\+::Abstruct\+Item クラス}
+\label{class_shooting___hack_and_slash_1_1_abstruct_item}\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+
+
+{\ttfamily \#include $<$Abstruct\+Item.\+h$>$}
+
+Shooting\+\_\+\+Hack\+And\+Slash\+::Abstruct\+Item の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.992882cm]{class_shooting___hack_and_slash_1_1_abstruct_item}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_aaed0b4d9d9df395070a147cef8dbe539}{update}} () override
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_a3bf2613ac7219107c441535a14cc9227}{Abstruct\+Item}} (const std\+::string \&path, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}} \&p, const Vec2 \&\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_aa4ac9dd6c3f92a810f44365d09522637}{pos}})
+\item 
+virtual \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_a779c60be0a3a73c8d87df25bd07d6854}{$\sim$\+Abstruct\+Item}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_a135fcc6e5ef44b1034ee9927813d271b}{is\+\_\+dead}}
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_ab17ff53625767e0fce661df4d819b2c0}{display}} () const
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_a3b2628d040dc2099186de8f53367e2f5}{display}} (double ex\+\_\+rate) const
+\item 
+virtual void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_ad478e7d1d18fa03e5acb6c8d9ac09e26}{On\+Collide}} (\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}} \&p)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{Circle\+Collider}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_ad20629534d54dbb83150ac3d2efbdb7c}{collider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item_a3bf2613ac7219107c441535a14cc9227}\label{class_shooting___hack_and_slash_1_1_abstruct_item_a3bf2613ac7219107c441535a14cc9227}} 
+\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}!AbstructItem@{AbstructItem}}
+\index{AbstructItem@{AbstructItem}!Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+\doxysubsubsection{\texorpdfstring{AbstructItem()}{AbstructItem()}}
+{\footnotesize\ttfamily Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Item\+::\+Abstruct\+Item (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}} \&}]{p,  }\item[{const Vec2 \&}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item_a779c60be0a3a73c8d87df25bd07d6854}\label{class_shooting___hack_and_slash_1_1_abstruct_item_a779c60be0a3a73c8d87df25bd07d6854}} 
+\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}!````~AbstructItem@{$\sim$AbstructItem}}
+\index{````~AbstructItem@{$\sim$AbstructItem}!Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstructItem()}{~AbstructItem()}}
+{\footnotesize\ttfamily virtual Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Item\+::$\sim$\+Abstruct\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item_ab17ff53625767e0fce661df4d819b2c0}\label{class_shooting___hack_and_slash_1_1_abstruct_item_ab17ff53625767e0fce661df4d819b2c0}} 
+\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}!display@{display}}
+\index{display@{display}!Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Item\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item_a3b2628d040dc2099186de8f53367e2f5}\label{class_shooting___hack_and_slash_1_1_abstruct_item_a3b2628d040dc2099186de8f53367e2f5}} 
+\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}!display@{display}}
+\index{display@{display}!Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Item\+::display (\begin{DoxyParamCaption}\item[{double}]{ex\+\_\+rate }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item_ad478e7d1d18fa03e5acb6c8d9ac09e26}\label{class_shooting___hack_and_slash_1_1_abstruct_item_ad478e7d1d18fa03e5acb6c8d9ac09e26}} 
+\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}!OnCollide@{OnCollide}}
+\index{OnCollide@{OnCollide}!Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+\doxysubsubsection{\texorpdfstring{OnCollide()}{OnCollide()}}
+{\footnotesize\ttfamily virtual void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Item\+::\+On\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item_aaed0b4d9d9df395070a147cef8dbe539}\label{class_shooting___hack_and_slash_1_1_abstruct_item_aaed0b4d9d9df395070a147cef8dbe539}} 
+\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}!update@{update}}
+\index{update@{update}!Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Item\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_af0d1647cf2be66a80f60b97956031367}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Game\+Object}}を再実装しています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item_ad20629534d54dbb83150ac3d2efbdb7c}\label{class_shooting___hack_and_slash_1_1_abstruct_item_ad20629534d54dbb83150ac3d2efbdb7c}} 
+\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}!collider@{collider}}
+\index{collider@{collider}!Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+\doxysubsubsection{\texorpdfstring{collider}{collider}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{Circle\+Collider}} Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Item\+::collider\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_abstruct_item_a135fcc6e5ef44b1034ee9927813d271b}\label{class_shooting___hack_and_slash_1_1_abstruct_item_a135fcc6e5ef44b1034ee9927813d271b}} 
+\index{Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}!is\_dead@{is\_dead}}
+\index{is\_dead@{is\_dead}!Shooting\_HackAndSlash::AbstructItem@{Shooting\_HackAndSlash::AbstructItem}}
+\doxysubsubsection{\texorpdfstring{is\_dead}{is\_dead}}
+{\footnotesize\ttfamily bool Shooting\+\_\+\+Hack\+And\+Slash\+::\+Abstruct\+Item\+::is\+\_\+dead}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_abstruct_item_8h}{Abstruct\+Item.\+h}}\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_abstruct_item_8cpp}{Abstruct\+Item.\+cpp}}\end{DoxyCompactItemize}

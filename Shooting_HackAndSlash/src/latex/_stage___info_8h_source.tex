@@ -1,0 +1,60 @@
+\hypertarget{_stage___info_8h_source}{}\doxysection{Stage\+\_\+\+Info.\+h}
+\label{_stage___info_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Stage\_Info.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Stage\_Info.h}}
+\mbox{\hyperlink{_stage___info_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_singleton_8h}{Singleton.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<functional>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{7     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info}{Stage\_Info}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}}<Stage\_Info> \{}
+\DoxyCodeLine{8     \textcolor{keyword}{private}:}
+\DoxyCodeLine{9         \textcolor{comment}{// 現在のステージ番号}}
+\DoxyCodeLine{10         \textcolor{keywordtype}{int} stage\_num;}
+\DoxyCodeLine{11         \textcolor{comment}{// 討伐数}}
+\DoxyCodeLine{12         \textcolor{comment}{// 現在エネミーを何体倒したか、という値}}
+\DoxyCodeLine{13         \textcolor{keywordtype}{int} enemy\_kill\_count;}
+\DoxyCodeLine{14         \textcolor{comment}{// 要求討伐数}}
+\DoxyCodeLine{15         \textcolor{comment}{// 何体倒したらそのステージがクリアになるか、という値}}
+\DoxyCodeLine{16         \textcolor{keywordtype}{int} kill\_clear\_count;}
+\DoxyCodeLine{17         \textcolor{comment}{// ゲームをクリアしたかどうか}}
+\DoxyCodeLine{18         \textcolor{keywordtype}{bool} clear;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{comment}{// シーン遷移関数}}
+\DoxyCodeLine{21         std::function<void(\textcolor{keywordtype}{void})> stageclear\_func;}
+\DoxyCodeLine{22     \textcolor{keyword}{public}:}
+\DoxyCodeLine{23         \textcolor{comment}{// 値の初期化}}
+\DoxyCodeLine{24         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_ac03781d72df67471a41b58228463b8d8}{initialize}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         \textcolor{comment}{// パラメータを次のステージ用にする}}
+\DoxyCodeLine{27         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_a2d3698aef253361c1c9dc316e2a02df8}{Set\_Stage\_Next}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{comment}{// ゲームをクリアしているか}}
+\DoxyCodeLine{30         \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_a8a9ba23da9162e095b87d63f92926e87}{Is\_GameClear}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \textcolor{comment}{// ステージをクリアしているか}}
+\DoxyCodeLine{33         \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_ae7690c19333ffdf51f302f080db1e783}{Is\_StageClear}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35         \textcolor{comment}{// エネミー討伐通知}}
+\DoxyCodeLine{36         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_a6ef29a90517a5393d075d2ef89cf802f}{Call\_Enemy\_Kill}}();}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         \textcolor{comment}{// エネミー討伐数を公開}}
+\DoxyCodeLine{39         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_a842d96ad10c7ea5c1589e931743b0930}{Show\_KillCount}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \textcolor{comment}{// 残り討伐数を公開}}
+\DoxyCodeLine{42         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_aecf3be3513902e901cbd00e8e12007ce}{Show\_Remaining}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         \textcolor{comment}{// ステージをクリアする処理をセット}}
+\DoxyCodeLine{45         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_a47cd7544c9405f915c6eec26c9c34ed6}{SetStageClearFunc}}(std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{void})>);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47         \textcolor{comment}{// ステージ番号を公開}}
+\DoxyCodeLine{48         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info_ac72b67808f0de02d2bf84c5d03004630}{Show\_Stage\_Num}}();}
+\DoxyCodeLine{49     \textcolor{keyword}{private}:}
+\DoxyCodeLine{50         \textcolor{keyword}{friend} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}};}
+\DoxyCodeLine{51         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info}{Stage\_Info}}();}
+\DoxyCodeLine{52         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_stage___info}{\string~Stage\_Info}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{53     \};}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}

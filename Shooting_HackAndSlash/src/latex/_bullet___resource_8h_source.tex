@@ -1,0 +1,29 @@
+\hypertarget{_bullet___resource_8h_source}{}\doxysection{Bullet\+\_\+\+Resource.\+h}
+\label{_bullet___resource_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Bullet\_Resource.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Bullet\_Resource.h}}
+\mbox{\hyperlink{_bullet___resource_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<queue>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{e_bullet_8h}{eBullet.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{8     \textcolor{comment}{// 何の弾に派生するか、という情報を持つコンテナ}}
+\DoxyCodeLine{9     \textcolor{comment}{// 中身はキュー}}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource}{Bullet\_Resource}} \{}
+\DoxyCodeLine{11         std::queue<eBullet> resource;}
+\DoxyCodeLine{12     \textcolor{keyword}{public}:}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         \textcolor{comment}{// 取得関数}}
+\DoxyCodeLine{15         \textcolor{comment}{// これを使用すると「次の弾」という情報も一緒に更新される}}
+\DoxyCodeLine{16         \textcolor{comment}{// 空の場合は一度だけNullが排出される}}
+\DoxyCodeLine{17         \textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource_a60687febecd6c5f4c9bfb2949bf2e931}{get}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource_a3d690dfe7005ca719fd7a90eac47cafc}{Bullet\_Resource}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource}{Bullet\_Resource}}\& r);}
+\DoxyCodeLine{20         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource_a3d690dfe7005ca719fd7a90eac47cafc}{Bullet\_Resource}}();}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___resource_ad3d587dac35d77c8b327667609d9ada5}{\string~Bullet\_Resource}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{22     \};}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}

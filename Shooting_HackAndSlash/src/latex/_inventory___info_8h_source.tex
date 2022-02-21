@@ -1,0 +1,38 @@
+\hypertarget{_inventory___info_8h_source}{}\doxysection{Inventory\+\_\+\+Info.\+h}
+\label{_inventory___info_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Inventory\_Info.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Inventory\_Info.h}}
+\mbox{\hyperlink{_inventory___info_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_singleton_8h}{Singleton.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{e_bullet_8h}{eBullet.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<array>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_define___inventory_8h}{Define\_Inventory.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{9     \textcolor{comment}{// 現在所有している弾丸を格納しておく場所}}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info}{Inventory\_Info}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}}<Inventory\_Info> \{}
+\DoxyCodeLine{11         \textcolor{keyword}{friend} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}};}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info}{Inventory\_Info}}();}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info}{\string~Inventory\_Info}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info_a9386db43d28b4913a664659a12763fc0}{initialize}}();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         \textcolor{comment}{// コンテナの空いている箇所をイテレータで返す、空いていないならend()を返す}}
+\DoxyCodeLine{18         \textcolor{keyword}{static} std::array<eBullet, Inventory\_Length>::iterator \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info_ab3c70482020e6bedfc66e0aa04885638}{container\_space}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{comment}{// 空欄にする}}
+\DoxyCodeLine{21         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info_ad70376688013f5e8892adfe48f52b4ca}{SetNull}}(\textcolor{keywordtype}{size\_t} index);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info_ac7c40cef28b459cf71ac458adf36de44}{Set}}(\textcolor{keywordtype}{size\_t} index, \textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& \mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a3a5eb097cc11a2ae307b73484af802c9}{Bullet}});}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{comment}{// 空いた場所に追加する}}
+\DoxyCodeLine{26         \textcolor{comment}{// 返り値: 空いている場所があったらtrue、ないならfalse}}
+\DoxyCodeLine{27         \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info_a60fa69defabbf7e603cf97ea0b426515}{Add}}(\textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& bullet);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{comment}{// 現在持っている弾丸}}
+\DoxyCodeLine{30         std::array<eBullet, Inventory\_Length> \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_inventory___info_a3ce164a6d97d932b52d1f32df79c00db}{owned\_item}};}
+\DoxyCodeLine{31     \};}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}

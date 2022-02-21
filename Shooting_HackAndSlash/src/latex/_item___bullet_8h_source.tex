@@ -1,0 +1,27 @@
+\hypertarget{_item___bullet_8h_source}{}\doxysection{Item\+\_\+\+Bullet.\+h}
+\label{_item___bullet_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Item\_Bullet.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Item\_Bullet.h}}
+\mbox{\hyperlink{_item___bullet_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_item_8h}{AbstructItem.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{e_bullet_8h}{eBullet.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_survival___counter_8h}{Survival\_Counter.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_item}{Shooting\_HackAndSlash::Item}} \{}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_1_1_bullet}{Bullet}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item}{AbstructItem}} \{}
+\DoxyCodeLine{11         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_survival___counter}{Survival\_Counter}} survival;}
+\DoxyCodeLine{12         \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}} bullet;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         \textcolor{keywordtype}{void} OnCollide(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& p) \textcolor{keyword}{override};}
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_1_1_bullet_a6113802b43558f7e88d195224046ef10}{Bullet}}(\textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& bullet, \textcolor{keyword}{const} Vec2\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_aa4ac9dd6c3f92a810f44365d09522637}{pos}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& p);}
+\DoxyCodeLine{17         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_1_1_bullet_a3dfd5e1bf763cafcab28b2563458d5bd}{\string~Bullet}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_1_1_bullet_a58a4ba65a95978896335737119f47509}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{20     \};}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}

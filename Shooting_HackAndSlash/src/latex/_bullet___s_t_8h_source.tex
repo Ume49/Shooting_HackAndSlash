@@ -1,0 +1,32 @@
+\hypertarget{_bullet___s_t_8h_source}{}\doxysection{Bullet\+\_\+\+ST.\+h}
+\label{_bullet___s_t_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Bullet\_ST.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Bullet\_ST.h}}
+\mbox{\hyperlink{_bullet___s_t_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_bullet_8h}{AbstructBullet.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{5     \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a3a5eb097cc11a2ae307b73484af802c9}{Bullet}} \{}
+\DoxyCodeLine{6         \textcolor{comment}{// 直進する}}
+\DoxyCodeLine{7         \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t}{ST}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet}{AbstructBullet}} \{}
+\DoxyCodeLine{8         \textcolor{keyword}{private}:}
+\DoxyCodeLine{9             \textcolor{comment}{// 生存時間}}
+\DoxyCodeLine{10             \textcolor{keywordtype}{float} survival\_count;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12         \textcolor{keyword}{protected}:}
+\DoxyCodeLine{13             \textcolor{comment}{// メイン処理}}
+\DoxyCodeLine{14             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t_a86c45019b26d0d12c450945623351acd}{\_update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16             \textcolor{comment}{// 当たった時の処理}}
+\DoxyCodeLine{17             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t_ad410652169c143bd028aabe2dd7c7668}{OnCollide}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_enemy}{AbstructEnemy}}\& enemy) \textcolor{keyword}{override};}
+\DoxyCodeLine{18         \textcolor{keyword}{public}:}
+\DoxyCodeLine{19             \textcolor{comment}{// 死ぬときの処理}}
+\DoxyCodeLine{20             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t_ae8ab546d439baafdd13eedce939ae601}{OnDestroy}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t_a7f86bf0b190aecfccd596e0e93d4aa83}{ST}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___paramater}{Bullet\_Paramater}}\& p, std::unique\_ptr<Bullet\_Resource>\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_bullet_ae40d6f6cdac5affc8a928114727485c0}{resource}}, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{BulletController}}\& b, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{EnemyController}}\& e);}
+\DoxyCodeLine{23             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_1_1_s_t_a5a8406e6e1642a16cd03775e6888e9c4}{\string~ST}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{24         \};}
+\DoxyCodeLine{25     \}}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}

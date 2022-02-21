@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: C:/Users/tomok/source/repos/Ume49/Shooting_HackAndSlash/Shooting_HackAndSlash/src/EnemySpawner.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_937abf77f1caa6bcbdd0bdd328032b9c.html">tomok</a></li><li class="navelem"><a class="el" href="dir_c985f9d7caec51f10479fe4232ea00d7.html">source</a></li><li class="navelem"><a class="el" href="dir_422d19cfe3cd8712db1fa5ab4dc78bac.html">repos</a></li><li class="navelem"><a class="el" href="dir_c7148c3de5c92a5c36a1ed0dca940083.html">Ume49</a></li><li class="navelem"><a class="el" href="dir_9851522d5ef53cecc1dba7e384894c69.html">Shooting_HackAndSlash</a></li><li class="navelem"><a class="el" href="dir_8cbe1cf3e55c0210d2930aeaac4bd20e.html">Shooting_HackAndSlash</a></li><li class="navelem"><a class="el" href="dir_5be1e8cb374cb6511f6a40a56ca5467f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">EnemySpawner.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_enemy_spawner_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&quot;<a class="code" href="_enemy_controller_8h.html">EnemyController.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&quot;<a class="code" href="e_enemy_8h.html">eEnemy.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include&lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_shooting___hack_and_slash.html">Shooting_HackAndSlash</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">class </span><a class="code hl_variable" href="namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo.html#a356a3de71c4428bfaef72f2dc9ef49ca">Player</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_shooting___hack_and_slash_1_1_enemy_spawner.html">   10</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_shooting___hack_and_slash_1_1_enemy_spawner.html">EnemySpawner</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html">   12</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html">Enemy_Info</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html#abcb94ccca075991d8424abd2ffd23ee6">   13</a></span>            <a class="code hl_enumeration" href="namespace_shooting___hack_and_slash.html#a8bd11fac26d7581aedfc76beafa65538">eEnemy</a> <a class="code hl_variable" href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html#abcb94ccca075991d8424abd2ffd23ee6">kind</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html#af4a6e6b5bd78bf4b269df891a6c66b74">   14</a></span>            Vec2 <a class="code hl_variable" href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html#af4a6e6b5bd78bf4b269df891a6c66b74">pos</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        };</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_shooting___hack_and_slash_1_1_player.html">Player</a>&amp; player;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_class" href="class_shooting___hack_and_slash_1_1_enemy_controller.html">EnemyController</a>&amp; controller;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        std::vector&lt;std::vector&lt;Enemy_Info&gt;&gt; party_list;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">float</span> spawn_interval;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">float</span> spawn_count;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_enemy_spawner.html#a3174591c182cb5d6030cc988022b568e">update</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_enemy_spawner.html#a7c4084b891cf84f5f5cf9260167ddee0">EnemySpawner</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_shooting___hack_and_slash_1_1_player.html">Player</a>&amp; p, <a class="code hl_class" href="class_shooting___hack_and_slash_1_1_enemy_controller.html">EnemyController</a>&amp; e);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_shooting___hack_and_slash_1_1_enemy_spawner.html#a0725e55a52998d3be1edde038ee82667">   29</a></span>        <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_enemy_spawner.html#a0725e55a52998d3be1edde038ee82667">~EnemySpawner</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    };</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="ttc" id="a_enemy_controller_8h_html"><div class="ttname"><a href="_enemy_controller_8h.html">EnemyController.h</a></div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_enemy_controller_html"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_enemy_controller.html">Shooting_HackAndSlash::EnemyController</a></div><div class="ttdef"><b>Definition:</b> EnemyController.h:14</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_enemy_spawner_html"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_enemy_spawner.html">Shooting_HackAndSlash::EnemySpawner</a></div><div class="ttdef"><b>Definition:</b> EnemySpawner.h:10</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_enemy_spawner_html_a0725e55a52998d3be1edde038ee82667"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_enemy_spawner.html#a0725e55a52998d3be1edde038ee82667">Shooting_HackAndSlash::EnemySpawner::~EnemySpawner</a></div><div class="ttdeci">~EnemySpawner()=default</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_enemy_spawner_html_a3174591c182cb5d6030cc988022b568e"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_enemy_spawner.html#a3174591c182cb5d6030cc988022b568e">Shooting_HackAndSlash::EnemySpawner::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> EnemySpawner.cpp:69</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_enemy_spawner_html_a7c4084b891cf84f5f5cf9260167ddee0"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_enemy_spawner.html#a7c4084b891cf84f5f5cf9260167ddee0">Shooting_HackAndSlash::EnemySpawner::EnemySpawner</a></div><div class="ttdeci">EnemySpawner(const Player &amp;p, EnemyController &amp;e)</div><div class="ttdef"><b>Definition:</b> EnemySpawner.cpp:44</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_player_html"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_player.html">Shooting_HackAndSlash::Player</a></div><div class="ttdef"><b>Definition:</b> Player.h:17</div></div>
+<div class="ttc" id="ae_enemy_8h_html"><div class="ttname"><a href="e_enemy_8h.html">eEnemy.h</a></div></div>
+<div class="ttc" id="anamespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_html_a356a3de71c4428bfaef72f2dc9ef49ca"><div class="ttname"><a href="namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo.html#a356a3de71c4428bfaef72f2dc9ef49ca">Shooting_HackAndSlash::Define::Path::Photo::Player</a></div><div class="ttdeci">constexpr char Player[]</div><div class="ttdef"><b>Definition:</b> Define.h:100</div></div>
+<div class="ttc" id="anamespace_shooting___hack_and_slash_html"><div class="ttname"><a href="namespace_shooting___hack_and_slash.html">Shooting_HackAndSlash</a></div><div class="ttdef"><b>Definition:</b> Abstruct_Shared_Handle.cpp:3</div></div>
+<div class="ttc" id="anamespace_shooting___hack_and_slash_html_a8bd11fac26d7581aedfc76beafa65538"><div class="ttname"><a href="namespace_shooting___hack_and_slash.html#a8bd11fac26d7581aedfc76beafa65538">Shooting_HackAndSlash::eEnemy</a></div><div class="ttdeci">eEnemy</div><div class="ttdef"><b>Definition:</b> eEnemy.h:4</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info_html"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html">Shooting_HackAndSlash::EnemySpawner::Enemy_Info</a></div><div class="ttdef"><b>Definition:</b> EnemySpawner.h:12</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info_html_abcb94ccca075991d8424abd2ffd23ee6"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html#abcb94ccca075991d8424abd2ffd23ee6">Shooting_HackAndSlash::EnemySpawner::Enemy_Info::kind</a></div><div class="ttdeci">eEnemy kind</div><div class="ttdef"><b>Definition:</b> EnemySpawner.h:13</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info_html_af4a6e6b5bd78bf4b269df891a6c66b74"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info.html#af4a6e6b5bd78bf4b269df891a6c66b74">Shooting_HackAndSlash::EnemySpawner::Enemy_Info::pos</a></div><div class="ttdeci">Vec2 pos</div><div class="ttdef"><b>Definition:</b> EnemySpawner.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

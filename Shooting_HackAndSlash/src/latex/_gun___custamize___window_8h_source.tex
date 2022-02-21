@@ -1,0 +1,40 @@
+\hypertarget{_gun___custamize___window_8h_source}{}\doxysection{Gun\+\_\+\+Custamize\+\_\+\+Window.\+h}
+\label{_gun___custamize___window_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Gun\_Custamize\_Window.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Gun\_Custamize\_Window.h}}
+\mbox{\hyperlink{_gun___custamize___window_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_set_icon_8h}{ISetIcon.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_erase_icon_8h}{IEraseIcon.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_back_pack_8h}{BackPack.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_magazine_8h}{Magazine.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_dragged___icon_8h}{Dragged\_Icon.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{13     \textcolor{comment}{// 銃カスタマイズ画面}}
+\DoxyCodeLine{14     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize___window}{Gun\_Custamize\_Window}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_set_icon}{ISetIcon}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_erase_icon}{IEraseIcon}}\{}
+\DoxyCodeLine{15         \textcolor{comment}{// インベントリ}}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_back_pack}{Gun\_Custamize::BackPack}} backpack;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \textcolor{comment}{// 弾を入れる場所}}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_magazine}{Gun\_Custamize::Magazine}} magazine;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{comment}{// 今ドラッグしている弾を表示する奴}}
+\DoxyCodeLine{22         \textcolor{comment}{// *出したり消したりしたいので、スマートポインタで保持する}}
+\DoxyCodeLine{23         std::unique\_ptr<Gun\_Custamize::Base\_Icon> icon;}
+\DoxyCodeLine{24     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize___window_a81ec75428869f71e6fb0285212aec767}{update}}();}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize___window_a12fc33e501b26ffce65ea649406202cd}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize___window_ae9e3879dd7cb1dae92c2bd3828ba3461}{SetIcon}}(\textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& bullet\_kind, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_back_listener}{IBackListener}}\& back, \textcolor{keywordtype}{size\_t} index) \textcolor{keyword}{override};}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize___window_ad94a2531f5dc490fe8620c07dd60332d}{EraseIcon}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize___window_a803d877dab258c505ea1c6543da17fd3}{Gun\_Custamize\_Window}}();}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize___window_aed3b234774c722ad0384d8413421c6d0}{\string~Gun\_Custamize\_Window}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}

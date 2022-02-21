@@ -1,0 +1,33 @@
+\hypertarget{_bullet_controller_8h_source}{}\doxysection{Bullet\+Controller.\+h}
+\label{_bullet_controller_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/BulletController.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/BulletController.h}}
+\mbox{\hyperlink{_bullet_controller_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<list>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_bullet_8h}{AbstructBullet.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bullet___paramater_8h}{Bullet\_Paramater.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_bullet___resource_8h}{Bullet\_Resource.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{11     \textcolor{keyword}{class }EnemyController;}
+\DoxyCodeLine{12     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller}{BulletController}} \{}
+\DoxyCodeLine{13     \textcolor{keyword}{private}:}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{EnemyController}}\& enemycontroller\_ref;}
+\DoxyCodeLine{15         std::list<std::unique\_ptr<AbstructBullet>> bullets;}
+\DoxyCodeLine{16     \textcolor{keyword}{public}:}
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller_a41cb43c5f4681e571684d2c35bb981cd}{update}}();}
+\DoxyCodeLine{18         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller_a25a94d05ce5a982e30616efb23b3ba77}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{comment}{// 弾生成補助関数}}
+\DoxyCodeLine{21         \textcolor{comment}{// 弾の種類と生成用パラメータを渡す}}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller_a8fc44374e24597a53e2f84416c22c56f}{Make}}(\textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& bullet, \textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet___paramater}{Bullet\_Paramater}}\& bp, std::unique\_ptr<Bullet\_Resource>\& resource);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller_a6a99e4bd7d76db205532297becef743e}{BulletController}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{EnemyController}}\& e);}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_bullet_controller_a072bbb88d267aa905e1120b6d3c4cb3c}{\string~BulletController}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{26     \};}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}

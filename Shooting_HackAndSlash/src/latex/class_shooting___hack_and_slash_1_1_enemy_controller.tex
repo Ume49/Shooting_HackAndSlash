@@ -1,0 +1,99 @@
+\hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller}{}\doxysection{Shooting\+\_\+\+Hack\+And\+Slash\+::Enemy\+Controller クラス}
+\label{class_shooting___hack_and_slash_1_1_enemy_controller}\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+
+
+{\ttfamily \#include $<$Enemy\+Controller.\+h$>$}
+
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a3c8586456d9a8b2a15616de8a042b3db}{Enemy\+\_\+\+Ptr}} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_enemy}{Abstruct\+Enemy}} $>$
+\item 
+using \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a52dd78e241a455c322eece2edd08903d}{Enemy\+\_\+\+List}} = std\+::list$<$ \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a3c8586456d9a8b2a15616de8a042b3db}{Enemy\+\_\+\+Ptr}} $>$
+\item 
+using \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a2edd6b4287516091709faa7e8db48993}{Enemy\+\_\+\+Ref\+\_\+\+List}} = std\+::vector$<$ std\+::reference\+\_\+wrapper$<$ \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a3c8586456d9a8b2a15616de8a042b3db}{Enemy\+\_\+\+Ptr}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a504476134e26643f574e5ee066c66ebb}{update}} ()
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_abd3bf508d51ff62ed93c79cddf38d95c}{draw}} () const
+\item 
+void \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a1e0ae03a8bf4022c448c3916138ed7c6}{Make}} (const Vec2 \&spawn\+\_\+pos, const \mbox{\hyperlink{namespace_shooting___hack_and_slash_a8bd11fac26d7581aedfc76beafa65538}{e\+Enemy}} \&enemy)
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a2edd6b4287516091709faa7e8db48993}{Enemy\+\_\+\+Ref\+\_\+\+List}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a63353ceda3491c4b24dca734e134f750}{Collide}} (const \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{Circle\+Collider}} \&c)
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_ac3216f4f5cea51edae3c77487d9e1a49}{Enemy\+Controller}} (\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}} \&p, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller}{Item\+Controller}} \&i)
+\item 
+\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_acae569139e1758fd66e7efe53e0b58a0}{$\sim$\+Enemy\+Controller}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{型定義メンバ詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_a52dd78e241a455c322eece2edd08903d}\label{class_shooting___hack_and_slash_1_1_enemy_controller_a52dd78e241a455c322eece2edd08903d}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!Enemy\_List@{Enemy\_List}}
+\index{Enemy\_List@{Enemy\_List}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{Enemy\_List}{Enemy\_List}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a52dd78e241a455c322eece2edd08903d}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::\+Enemy\+\_\+\+List}} =  std\+::list$<$\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a3c8586456d9a8b2a15616de8a042b3db}{Enemy\+\_\+\+Ptr}}$>$}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_a3c8586456d9a8b2a15616de8a042b3db}\label{class_shooting___hack_and_slash_1_1_enemy_controller_a3c8586456d9a8b2a15616de8a042b3db}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!Enemy\_Ptr@{Enemy\_Ptr}}
+\index{Enemy\_Ptr@{Enemy\_Ptr}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{Enemy\_Ptr}{Enemy\_Ptr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a3c8586456d9a8b2a15616de8a042b3db}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::\+Enemy\+\_\+\+Ptr}} =  std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_enemy}{Abstruct\+Enemy}}$>$}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_a2edd6b4287516091709faa7e8db48993}\label{class_shooting___hack_and_slash_1_1_enemy_controller_a2edd6b4287516091709faa7e8db48993}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!Enemy\_Ref\_List@{Enemy\_Ref\_List}}
+\index{Enemy\_Ref\_List@{Enemy\_Ref\_List}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{Enemy\_Ref\_List}{Enemy\_Ref\_List}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a2edd6b4287516091709faa7e8db48993}{Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::\+Enemy\+\_\+\+Ref\+\_\+\+List}} =  std\+::vector$<$std\+::reference\+\_\+wrapper$<$\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a3c8586456d9a8b2a15616de8a042b3db}{Enemy\+\_\+\+Ptr}}$>$ $>$}
+
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_ac3216f4f5cea51edae3c77487d9e1a49}\label{class_shooting___hack_and_slash_1_1_enemy_controller_ac3216f4f5cea51edae3c77487d9e1a49}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!EnemyController@{EnemyController}}
+\index{EnemyController@{EnemyController}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{EnemyController()}{EnemyController()}}
+{\footnotesize\ttfamily Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::\+Enemy\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}} \&}]{p,  }\item[{\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller}{Item\+Controller}} \&}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_acae569139e1758fd66e7efe53e0b58a0}\label{class_shooting___hack_and_slash_1_1_enemy_controller_acae569139e1758fd66e7efe53e0b58a0}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!````~EnemyController@{$\sim$EnemyController}}
+\index{````~EnemyController@{$\sim$EnemyController}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{$\sim$EnemyController()}{~EnemyController()}}
+{\footnotesize\ttfamily Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::$\sim$\+Enemy\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_a63353ceda3491c4b24dca734e134f750}\label{class_shooting___hack_and_slash_1_1_enemy_controller_a63353ceda3491c4b24dca734e134f750}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!Collide@{Collide}}
+\index{Collide@{Collide}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{Collide()}{Collide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller_a2edd6b4287516091709faa7e8db48993}{Enemy\+Controller\+::\+Enemy\+\_\+\+Ref\+\_\+\+List}} Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::\+Collide (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{Circle\+Collider}} \&}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_abd3bf508d51ff62ed93c79cddf38d95c}\label{class_shooting___hack_and_slash_1_1_enemy_controller_abd3bf508d51ff62ed93c79cddf38d95c}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!draw@{draw}}
+\index{draw@{draw}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_a1e0ae03a8bf4022c448c3916138ed7c6}\label{class_shooting___hack_and_slash_1_1_enemy_controller_a1e0ae03a8bf4022c448c3916138ed7c6}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!Make@{Make}}
+\index{Make@{Make}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{Make()}{Make()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::\+Make (\begin{DoxyParamCaption}\item[{const Vec2 \&}]{spawn\+\_\+pos,  }\item[{const \mbox{\hyperlink{namespace_shooting___hack_and_slash_a8bd11fac26d7581aedfc76beafa65538}{e\+Enemy}} \&}]{enemy }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_shooting___hack_and_slash_1_1_enemy_controller_a504476134e26643f574e5ee066c66ebb}\label{class_shooting___hack_and_slash_1_1_enemy_controller_a504476134e26643f574e5ee066c66ebb}} 
+\index{Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}!update@{update}}
+\index{update@{update}!Shooting\_HackAndSlash::EnemyController@{Shooting\_HackAndSlash::EnemyController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Hack\+And\+Slash\+::\+Enemy\+Controller\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_enemy_controller_8h}{Enemy\+Controller.\+h}}\item 
+C\+:/\+Users/tomok/source/repos/\+Ume49/\+Shooting\+\_\+\+Hack\+And\+Slash/\+Shooting\+\_\+\+Hack\+And\+Slash/src/\mbox{\hyperlink{_enemy_controller_8cpp}{Enemy\+Controller.\+cpp}}\end{DoxyCompactItemize}

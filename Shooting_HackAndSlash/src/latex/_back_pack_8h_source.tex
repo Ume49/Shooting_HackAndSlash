@@ -1,0 +1,40 @@
+\hypertarget{_back_pack_8h_source}{}\doxysection{Back\+Pack.\+h}
+\label{_back_pack_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/BackPack.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/BackPack.h}}
+\mbox{\hyperlink{_back_pack_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_slot_8h}{Slot.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{e_bullet_8h}{eBullet.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<unordered\_map>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<array>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_define___inventory_8h}{Define\_Inventory.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_drag_and_drop_listener_8h}{IDragAndDropListener.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_set_icon_8h}{ISetIcon.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_gun___custamize}{Shooting\_HackAndSlash::Gun\_Custamize}} \{}
+\DoxyCodeLine{13     \textcolor{comment}{// インベントリの内容を表示するクラス}}
+\DoxyCodeLine{14     \textcolor{keyword}{class }\mbox{\hyperlink{namespace_back_pack}{BackPack}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_drag_and_drop_listener}{IDragAndDropListener}} \{}
+\DoxyCodeLine{15         std::vector<Slot> slots;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} null\_slot\_photo;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         Point pos;}
+\DoxyCodeLine{20         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} back\_photo;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_set_icon}{ISetIcon}}\& setter;}
+\DoxyCodeLine{23     \textcolor{keyword}{public}:}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_back_pack_a16aa11c55d1a9c33ebd8cd4206c783d3}{update}}();}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_back_pack_a11b8cb549acbc6607b0c05b33622e2dd}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_back_pack_a1c1ea9b44b19e8450cc23a1613019a3a}{CheckDrop}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_packaged_icon}{IPackagedIcon}}\& i) \textcolor{keyword}{override};}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_back_pack_a4852d7a4116a126ae66bf03275f8e6ba}{Back}}(\textcolor{keywordtype}{size\_t} index, \textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& bullet) \textcolor{keyword}{override};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_back_pack_abe597fb34cd33324f6182be76257004b}{BackPack}}(\textcolor{keyword}{const} Point\& leftup, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_set_icon}{ISetIcon}}\& i);}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_back_pack_a92691b360c6183d1f30776a46eecac2f}{\string~BackPack}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}

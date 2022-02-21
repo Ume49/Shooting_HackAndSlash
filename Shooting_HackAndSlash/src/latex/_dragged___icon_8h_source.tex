@@ -1,0 +1,65 @@
+\hypertarget{_dragged___icon_8h_source}{}\doxysection{Dragged\+\_\+\+Icon.\+h}
+\label{_dragged___icon_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Dragged\_Icon.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Dragged\_Icon.h}}
+\mbox{\hyperlink{_dragged___icon_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}Vector.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{e_bullet_8h}{eBullet.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_drop_listener_8h}{IDropListener.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_erase_icon_8h}{IEraseIcon.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_back_listener_8h}{IBackListener.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_packaged_icon_8h}{IPackagedIcon.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include<array>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_gun___custamize}{Shooting\_HackAndSlash::Gun\_Custamize}} \{}
+\DoxyCodeLine{11     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_base___icon}{Base\_Icon}} \{}
+\DoxyCodeLine{12     \textcolor{keyword}{public}:}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_base___icon_a62f11105ac5f600cb51476d9b79e07e9}{Base\_Icon}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{14         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_base___icon_abaffef49afbead39191e4ad1387fb77b}{\string~Base\_Icon}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_base___icon_ac1c315c2af0b11d305fcf60cd075f43b}{update}}() = 0;}
+\DoxyCodeLine{17         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_base___icon_a6c5999acdbeb6f2490f3a4d2962fcc25}{draw}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{18     \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{comment}{// マウスカーソルにくっついてくるアイコン}}
+\DoxyCodeLine{21     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon}{Dragged\_Icon}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_base___icon}{Base\_Icon}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_packaged_icon}{IPackagedIcon}} \{}
+\DoxyCodeLine{22         Vec2 pos;}
+\DoxyCodeLine{23         \textcolor{comment}{// 戻るために使用する添え字}}
+\DoxyCodeLine{24         \textcolor{keywordtype}{size\_t} return\_index;}
+\DoxyCodeLine{25     \textcolor{keyword}{public}:}
+\DoxyCodeLine{26         \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_a9c77c5321ca49a0dcf6e12adbaa0d6db}{bullet}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_drop_listener}{IDropListener}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_a1d90ce7fe6e01a24cf5863782348e412}{dropper\_magazine}};}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_drop_listener}{IDropListener}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_af42f6f86cd5553c018b5c6f490a31745}{dropper\_backpack}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_erase_icon}{IEraseIcon}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_ab1648ce8b4b0a13abec3fd17c37fee00}{eraser}};}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_back_listener}{IBackListener}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_a883081327f502864cb4456d9c443f2a8}{back\_listener}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_a0db7176951a6a59fa909196087d92308}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{35         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_a1f89f7846f41be2884e9a8ef06dcabff}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_aed587d7605fa58c08c9ef768479dc62d}{get\_Bullet}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{38         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_a7c6c6530324527e1ec59b413329519d8}{get\_index}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_a75462e1ab2ebd1a484964f203c990b9f}{Dragged\_Icon}}(}
+\DoxyCodeLine{41             \textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_a9c77c5321ca49a0dcf6e12adbaa0d6db}{bullet}},}
+\DoxyCodeLine{42             \textcolor{keywordtype}{size\_t} index,}
+\DoxyCodeLine{43             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_erase_icon}{IEraseIcon}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_ab1648ce8b4b0a13abec3fd17c37fee00}{eraser}},}
+\DoxyCodeLine{44             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_back_listener}{IBackListener}}\& home,}
+\DoxyCodeLine{45             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_drop_listener}{IDropListener}}\& magazine,}
+\DoxyCodeLine{46             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_drop_listener}{IDropListener}}\& backpack);}
+\DoxyCodeLine{47         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon_aac3973a26647e94e34479953946a4bf6}{\string~Dragged\_Icon}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{48     \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{comment}{// Dragged\_IconのNull代替クラス}}
+\DoxyCodeLine{51     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon___null}{Dragged\_Icon\_Null}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_base___icon}{Base\_Icon}} \{}
+\DoxyCodeLine{52     \textcolor{keyword}{public}:}
+\DoxyCodeLine{53         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon___null_a2d05b0cfc7f43752f832eb8eda7106a2}{Dragged\_Icon\_Null}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{54         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon___null_ac7b3add47ef330b4e18e4823c18edbfc}{\string~Dragged\_Icon\_Null}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon___null_a2649f403af8d52e2a4d4c3621c24997d}{update}}()\textcolor{keyword}{ override }\{\}}
+\DoxyCodeLine{57         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_dragged___icon___null_a990b9c9f0c4246c2df7528a46eb6859c}{draw}}()\textcolor{keyword}{ const override }\{\}}
+\DoxyCodeLine{58     \};}
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}

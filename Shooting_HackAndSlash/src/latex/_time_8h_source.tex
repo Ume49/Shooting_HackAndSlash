@@ -1,0 +1,40 @@
+\hypertarget{_time_8h_source}{}\doxysection{Time.\+h}
+\label{_time_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Time.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Time.h}}
+\mbox{\hyperlink{_time_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}DxLib.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_singleton_8h}{Singleton.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{6     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time}{Time}} : \textcolor{keyword}{public}  \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}}<Time> \{}
+\DoxyCodeLine{7     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time_ab81dce86c9356958becbdf0ad6af9dee}{DeltaTime}}();}
+\DoxyCodeLine{16         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time_ad971d7ad2b25c9b2f0c48b71423d414e}{update}}();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \textcolor{comment}{// ストップウォッチをセット}}
+\DoxyCodeLine{19         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time_a7af6e4310f78b4b8717a91f3c41bfce7}{SetTimer}}();}
+\DoxyCodeLine{20         \textcolor{comment}{// ストップウォッチを停止}}
+\DoxyCodeLine{21         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time_a3d53bed39a3b8d0bdf02989add3002c5}{StopTimer}}();}
+\DoxyCodeLine{22         \textcolor{comment}{// ストップウォッチをリセット}}
+\DoxyCodeLine{23         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time_ac0bb6fc5b434740316af84c7cac11d00}{ResetTimer}}();}
+\DoxyCodeLine{24         \textcolor{comment}{// ストップウォッチが何分か取得}}
+\DoxyCodeLine{25         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time_a2c2264f847ee2d90d29511caec720368}{GetTimer\_minute}}();}
+\DoxyCodeLine{26         \textcolor{comment}{// ストップウォッチが何秒かを取得}}
+\DoxyCodeLine{27         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time_ad68d8dbbf5cc68d92d50babd8ef7aa9a}{GetTimer\_seconds}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keyword}{private}:}
+\DoxyCodeLine{30         \textcolor{keywordtype}{float} deltatime;}
+\DoxyCodeLine{31         \textcolor{keywordtype}{int} pastTime;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         \textcolor{keywordtype}{int} start\_time;}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} minute, seconds;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         \textcolor{keyword}{friend} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}};}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_time}{Time}}() : deltatime(0.f), pastTime(0), start\_time(0), minute(0), seconds(0) \{}
+\DoxyCodeLine{38             pastTime = GetNowCount();}
+\DoxyCodeLine{39         \}}
+\DoxyCodeLine{40     \};}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}

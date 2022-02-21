@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: C:/Users/tomok/source/repos/Ume49/Shooting_HackAndSlash/Shooting_HackAndSlash/src/Color.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_937abf77f1caa6bcbdd0bdd328032b9c.html">tomok</a></li><li class="navelem"><a class="el" href="dir_c985f9d7caec51f10479fe4232ea00d7.html">source</a></li><li class="navelem"><a class="el" href="dir_422d19cfe3cd8712db1fa5ab4dc78bac.html">repos</a></li><li class="navelem"><a class="el" href="dir_c7148c3de5c92a5c36a1ed0dca940083.html">Ume49</a></li><li class="navelem"><a class="el" href="dir_9851522d5ef53cecc1dba7e384894c69.html">Shooting_HackAndSlash</a></li><li class="navelem"><a class="el" href="dir_8cbe1cf3e55c0210d2930aeaac4bd20e.html">Shooting_HackAndSlash</a></li><li class="navelem"><a class="el" href="dir_5be1e8cb374cb6511f6a40a56ca5467f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Color.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_color_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_shooting___hack_and_slash.html">Shooting_HackAndSlash</a> {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="comment">// 色情報として使用するunsigned int型のラッパー構造体</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="comment">// RGBで動作</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="struct_shooting___hack_and_slash_1_1_color.html">    6</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_shooting___hack_and_slash_1_1_color.html">Color</a>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> code;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="comment">// 赤成分だけ返す</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#ae684e82c0dd61826abf82c5f456bebfd">Red</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="comment">// 緑成分だけ返す</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#ae97a58f97fe9722a58fa234bf60bd640">Green</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="comment">// 青成分だけ返す</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#ae7bcdc0aa6a0a353031b991d963182ff">Blue</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="comment">// 赤成分に対して和算</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="comment">// 値は0~255をはみ出さないように処理される</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#ae0f4719950f2f825d128dd9125127371">AddRed</a>(<span class="keywordtype">int</span> r);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="comment">// 緑成分に対して和算</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="comment">// 値は0~255をはみ出さないように処理される</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#a330f02f6882ef085935916865bcc6886">AddGreen</a>(<span class="keywordtype">int</span> g);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="comment">// 青成分に対して和算</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="comment">// 値は0~255をはみ出さないように処理される</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#ac14a8ba896d2203e532dd027247eb9f4">AddBlue</a>(<span class="keywordtype">int</span> b);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">operator</span> <span class="keywordtype">unsigned</span> int() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_struct" href="struct_shooting___hack_and_slash_1_1_color.html">Color</a>&amp; <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#ab1a30e1da08915543f51197690e94543">operator=</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> r);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#a582f8b680d955bd970b8ed91fe95548a">Color</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> color_code);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#a582f8b680d955bd970b8ed91fe95548a">Color</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#a582f8b680d955bd970b8ed91fe95548a">Color</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_shooting___hack_and_slash_1_1_color.html#ab50e5c2545145849b0c83f894c68f345">   32</a></span>        <a class="code hl_function" href="struct_shooting___hack_and_slash_1_1_color.html#ab50e5c2545145849b0c83f894c68f345">~Color</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    };</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="ttc" id="anamespace_shooting___hack_and_slash_html"><div class="ttname"><a href="namespace_shooting___hack_and_slash.html">Shooting_HackAndSlash</a></div><div class="ttdef"><b>Definition:</b> Abstruct_Shared_Handle.cpp:3</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html">Shooting_HackAndSlash::Color</a></div><div class="ttdef"><b>Definition:</b> Color.h:6</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_a330f02f6882ef085935916865bcc6886"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#a330f02f6882ef085935916865bcc6886">Shooting_HackAndSlash::Color::AddGreen</a></div><div class="ttdeci">void AddGreen(int g)</div><div class="ttdef"><b>Definition:</b> Color.cpp:64</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_a582f8b680d955bd970b8ed91fe95548a"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#a582f8b680d955bd970b8ed91fe95548a">Shooting_HackAndSlash::Color::Color</a></div><div class="ttdeci">Color()</div><div class="ttdef"><b>Definition:</b> Color.cpp:27</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_ab1a30e1da08915543f51197690e94543"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#ab1a30e1da08915543f51197690e94543">Shooting_HackAndSlash::Color::operator=</a></div><div class="ttdeci">Color &amp; operator=(unsigned int r)</div><div class="ttdef"><b>Definition:</b> Color.cpp:22</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_ab50e5c2545145849b0c83f894c68f345"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#ab50e5c2545145849b0c83f894c68f345">Shooting_HackAndSlash::Color::~Color</a></div><div class="ttdeci">~Color()=default</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_ac14a8ba896d2203e532dd027247eb9f4"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#ac14a8ba896d2203e532dd027247eb9f4">Shooting_HackAndSlash::Color::AddBlue</a></div><div class="ttdeci">void AddBlue(int b)</div><div class="ttdef"><b>Definition:</b> Color.cpp:75</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_ae0f4719950f2f825d128dd9125127371"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#ae0f4719950f2f825d128dd9125127371">Shooting_HackAndSlash::Color::AddRed</a></div><div class="ttdeci">void AddRed(int r)</div><div class="ttdef"><b>Definition:</b> Color.cpp:53</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_ae684e82c0dd61826abf82c5f456bebfd"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#ae684e82c0dd61826abf82c5f456bebfd">Shooting_HackAndSlash::Color::Red</a></div><div class="ttdeci">int Red() const</div><div class="ttdef"><b>Definition:</b> Color.cpp:41</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_ae7bcdc0aa6a0a353031b991d963182ff"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#ae7bcdc0aa6a0a353031b991d963182ff">Shooting_HackAndSlash::Color::Blue</a></div><div class="ttdeci">int Blue() const</div><div class="ttdef"><b>Definition:</b> Color.cpp:49</div></div>
+<div class="ttc" id="astruct_shooting___hack_and_slash_1_1_color_html_ae97a58f97fe9722a58fa234bf60bd640"><div class="ttname"><a href="struct_shooting___hack_and_slash_1_1_color.html#ae97a58f97fe9722a58fa234bf60bd640">Shooting_HackAndSlash::Color::Green</a></div><div class="ttdeci">int Green() const</div><div class="ttdef"><b>Definition:</b> Color.cpp:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

@@ -1,0 +1,24 @@
+\hypertarget{_icon___table_8h_source}{}\doxysection{Icon\+\_\+\+Table.\+h}
+\label{_icon___table_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Icon\_Table.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Icon\_Table.h}}
+\mbox{\hyperlink{_icon___table_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include<unordered\_map>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_singleton_8h}{Singleton.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{e_bullet_8h}{eBullet.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_gun___custamize}{Shooting\_HackAndSlash::Gun\_Custamize}} \{}
+\DoxyCodeLine{8     \textcolor{comment}{// 弾の種類とアイコン画像ハンドルの対応表}}
+\DoxyCodeLine{9     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_icon___table}{Icon\_Table}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}}<Icon\_Table>\{}
+\DoxyCodeLine{10         std::unordered\_map<eBullet, Photo\_SharedHandle> table;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12         \textcolor{keyword}{friend} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_singleton}{Singleton}};}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_icon___table}{Icon\_Table}}();}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_icon___table}{\string~Icon\_Table}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16         \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}}\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_gun___custamize_1_1_icon___table_aafc5a2e9f470222018b88b036d8a4c71}{at}}(\textcolor{keyword}{const} \mbox{\hyperlink{namespace_shooting___hack_and_slash_a054ad589e7b91f27056ffdc58b3276ce}{eBullet}}\& bullet\_kind);}
+\DoxyCodeLine{17     \};}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}

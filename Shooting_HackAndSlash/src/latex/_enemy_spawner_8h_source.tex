@@ -1,0 +1,37 @@
+\hypertarget{_enemy_spawner_8h_source}{}\doxysection{Enemy\+Spawner.\+h}
+\label{_enemy_spawner_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/EnemySpawner.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/EnemySpawner.h}}
+\mbox{\hyperlink{_enemy_spawner_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_enemy_controller_8h}{EnemyController.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{e_enemy_8h}{eEnemy.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{9     \textcolor{keyword}{class }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a356a3de71c4428bfaef72f2dc9ef49ca}{Player}};}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_spawner}{EnemySpawner}} \{}
+\DoxyCodeLine{11     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \textcolor{keyword}{struct }\mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info}{Enemy\_Info}} \{}
+\DoxyCodeLine{13             \mbox{\hyperlink{namespace_shooting___hack_and_slash_a8bd11fac26d7581aedfc76beafa65538}{eEnemy}} \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info_abcb94ccca075991d8424abd2ffd23ee6}{kind}};}
+\DoxyCodeLine{14             Vec2 \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_enemy_spawner_1_1_enemy___info_af4a6e6b5bd78bf4b269df891a6c66b74}{pos}};}
+\DoxyCodeLine{15         \};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keyword}{private}:}
+\DoxyCodeLine{18         \textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& player;}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{EnemyController}}\& controller;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         std::vector<std::vector<Enemy\_Info>> party\_list;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{keywordtype}{float} spawn\_interval;}
+\DoxyCodeLine{24         \textcolor{keywordtype}{float} spawn\_count;}
+\DoxyCodeLine{25     \textcolor{keyword}{public}:}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_spawner_a3174591c182cb5d6030cc988022b568e}{update}}();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_spawner_a7c4084b891cf84f5f5cf9260167ddee0}{EnemySpawner}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& p, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_controller}{EnemyController}}\& e);}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_enemy_spawner_a0725e55a52998d3be1edde038ee82667}{\string~EnemySpawner}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{30     \};}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}

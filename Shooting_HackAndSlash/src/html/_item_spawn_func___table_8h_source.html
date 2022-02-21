@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: C:/Users/tomok/source/repos/Ume49/Shooting_HackAndSlash/Shooting_HackAndSlash/src/ItemSpawnFunc_Table.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_937abf77f1caa6bcbdd0bdd328032b9c.html">tomok</a></li><li class="navelem"><a class="el" href="dir_c985f9d7caec51f10479fe4232ea00d7.html">source</a></li><li class="navelem"><a class="el" href="dir_422d19cfe3cd8712db1fa5ab4dc78bac.html">repos</a></li><li class="navelem"><a class="el" href="dir_c7148c3de5c92a5c36a1ed0dca940083.html">Ume49</a></li><li class="navelem"><a class="el" href="dir_9851522d5ef53cecc1dba7e384894c69.html">Shooting_HackAndSlash</a></li><li class="navelem"><a class="el" href="dir_8cbe1cf3e55c0210d2930aeaac4bd20e.html">Shooting_HackAndSlash</a></li><li class="navelem"><a class="el" href="dir_5be1e8cb374cb6511f6a40a56ca5467f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">ItemSpawnFunc_Table.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_item_spawn_func___table_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&lt;functional&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include&lt;list&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include&lt;memory&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include&quot;<a class="code" href="_abstruct_item_8h.html">AbstructItem.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_shooting___hack_and_slash.html">Shooting_HackAndSlash</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">// 0~99までの数字を与えると対応した関数オブジェクトを返してくれるクラス</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// 確率対応表みたいに使える</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html">   13</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html">ItemSpawnFunc_Table</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">using</span> Func = std::function&lt;void(<span class="keyword">const</span> Vec2&amp; pos)&gt;;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">struct </span>Set {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            Func func;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordtype">int</span> border;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        };</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        std::vector&lt;Set&gt; container;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#ab788289f25aa9a6df59a9ad7dc2eecb8">ItemSpawnFunc_Table</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#a9667a9ee70b011794e12b53c17f28fee">   25</a></span>        <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#a9667a9ee70b011794e12b53c17f28fee">~ItemSpawnFunc_Table</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="comment">// 0~99までの値を与えると対応した関数を返す</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        Func&amp; <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#ae73305fc488e49bb9629f0f66bc585db">at</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">// 項目を追加</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="comment">// ソートしないので、全ての追加が終わった時はsort()を呼び出すこと</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#ae4b9328960647423697246b82d2b1cd9">add_unsort</a>(Func, <span class="keywordtype">int</span> border);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">// 内部コンテナをソート</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">// add_unsortを全て行った後に行うべき</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#adb71bdf170c0f02d4c4779c2daa7b650">sort</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">// 内部コンテナの大きさを明示的に予約する</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#a26f0de54ed54554d98dea1102b103cd0">reserve</a>(<span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    };</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="ttc" id="a_abstruct_item_8h_html"><div class="ttname"><a href="_abstruct_item_8h.html">AbstructItem.h</a></div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_item_spawn_func___table_html"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html">Shooting_HackAndSlash::ItemSpawnFunc_Table</a></div><div class="ttdef"><b>Definition:</b> ItemSpawnFunc_Table.h:13</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_item_spawn_func___table_html_a26f0de54ed54554d98dea1102b103cd0"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#a26f0de54ed54554d98dea1102b103cd0">Shooting_HackAndSlash::ItemSpawnFunc_Table::reserve</a></div><div class="ttdeci">void reserve(size_t size)</div><div class="ttdef"><b>Definition:</b> ItemSpawnFunc_Table.cpp:20</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_item_spawn_func___table_html_a9667a9ee70b011794e12b53c17f28fee"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#a9667a9ee70b011794e12b53c17f28fee">Shooting_HackAndSlash::ItemSpawnFunc_Table::~ItemSpawnFunc_Table</a></div><div class="ttdeci">~ItemSpawnFunc_Table()=default</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_item_spawn_func___table_html_ab788289f25aa9a6df59a9ad7dc2eecb8"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#ab788289f25aa9a6df59a9ad7dc2eecb8">Shooting_HackAndSlash::ItemSpawnFunc_Table::ItemSpawnFunc_Table</a></div><div class="ttdeci">ItemSpawnFunc_Table()</div><div class="ttdef"><b>Definition:</b> ItemSpawnFunc_Table.cpp:15</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_item_spawn_func___table_html_adb71bdf170c0f02d4c4779c2daa7b650"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#adb71bdf170c0f02d4c4779c2daa7b650">Shooting_HackAndSlash::ItemSpawnFunc_Table::sort</a></div><div class="ttdeci">void sort()</div><div class="ttdef"><b>Definition:</b> ItemSpawnFunc_Table.cpp:43</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_item_spawn_func___table_html_ae4b9328960647423697246b82d2b1cd9"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#ae4b9328960647423697246b82d2b1cd9">Shooting_HackAndSlash::ItemSpawnFunc_Table::add_unsort</a></div><div class="ttdeci">void add_unsort(Func, int border)</div><div class="ttdef"><b>Definition:</b> ItemSpawnFunc_Table.cpp:38</div></div>
+<div class="ttc" id="aclass_shooting___hack_and_slash_1_1_item_spawn_func___table_html_ae73305fc488e49bb9629f0f66bc585db"><div class="ttname"><a href="class_shooting___hack_and_slash_1_1_item_spawn_func___table.html#ae73305fc488e49bb9629f0f66bc585db">Shooting_HackAndSlash::ItemSpawnFunc_Table::at</a></div><div class="ttdeci">Func &amp; at(int num)</div><div class="ttdef"><b>Definition:</b> ItemSpawnFunc_Table.cpp:24</div></div>
+<div class="ttc" id="anamespace_shooting___hack_and_slash_html"><div class="ttname"><a href="namespace_shooting___hack_and_slash.html">Shooting_HackAndSlash</a></div><div class="ttdef"><b>Definition:</b> Abstruct_Shared_Handle.cpp:3</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

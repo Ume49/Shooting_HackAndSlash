@@ -1,0 +1,34 @@
+\hypertarget{_item_controller_8h_source}{}\doxysection{Item\+Controller.\+h}
+\label{_item_controller_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/ItemController.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/ItemController.h}}
+\mbox{\hyperlink{_item_controller_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_spawn_call_listener_8h}{ISpawnCallListener.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<list>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_item_8h}{AbstructItem.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_item_spawn_func___table_8h}{ItemSpawnFunc\_Table.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{11     \textcolor{keyword}{class }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a356a3de71c4428bfaef72f2dc9ef49ca}{Player}};}
+\DoxyCodeLine{12     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller}{ItemController}}\{}
+\DoxyCodeLine{13         \textcolor{keyword}{using} Pointer = std::unique\_ptr<AbstructItem>;}
+\DoxyCodeLine{14         \textcolor{keyword}{using} List = std::list<Pointer>;}
+\DoxyCodeLine{15     \textcolor{keyword}{private}:}
+\DoxyCodeLine{16         List item\_list;}
+\DoxyCodeLine{17         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& player\_ref;}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_spawn_func___table}{ItemSpawnFunc\_Table}} func\_table;}
+\DoxyCodeLine{19     \textcolor{keyword}{public}:}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller_a61c1ce30b217d2051ca322156e7f6bc0}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller_a7fe00b852c5608beab2ba095906de12d}{update}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller_a34dad0389091594bbc478d2863b7cf0c}{call\_spawn}}(\textcolor{keyword}{const} Vec2\& pos);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller_a5125c42272827d767fac5f62309b7bf9}{ItemController}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& p);}
+\DoxyCodeLine{26         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_item_controller_a0f18e5b1b04cd43203296ef5882c1ee0}{\string~ItemController}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{27     \};}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}

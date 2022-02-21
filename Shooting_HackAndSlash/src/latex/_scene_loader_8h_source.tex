@@ -1,0 +1,50 @@
+\hypertarget{_scene_loader_8h_source}{}\doxysection{Scene\+Loader.\+h}
+\label{_scene_loader_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/SceneLoader.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/SceneLoader.h}}
+\mbox{\hyperlink{_scene_loader_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<stack>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<memory>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_scene_chang_listener_8h}{ISceneChangListener.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_scene_8h}{AbstructScene.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_color_8h}{Color.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_cursor_drawer_8h}{CursorDrawer.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_fade_8h}{Fade.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{13     \textcolor{comment}{// シーン読み込み機}}
+\DoxyCodeLine{14     \textcolor{comment}{// シーンの外側で動くようなものも動かす}}
+\DoxyCodeLine{15     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_loader}{SceneLoader}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener}{ISceneChangeListener}} \{}
+\DoxyCodeLine{16         std::stack<std::unique\_ptr<AbstructScene>> scene\_stack;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \textcolor{keyword}{struct }SceneChange\_Info \{}
+\DoxyCodeLine{19             \mbox{\hyperlink{namespace_shooting___hack_and_slash_a43b9675a37ae8c7c8ffe20d0b5612479}{eScene}} scene;}
+\DoxyCodeLine{20             \textcolor{keywordtype}{bool} is\_clear;}
+\DoxyCodeLine{21         \};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         SceneChange\_Info next;}
+\DoxyCodeLine{24         \textcolor{keywordtype}{bool} isSceneChange, isScenePop, isFade;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_cursor_drawer}{CursorDrawer}} cursor;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_color}{Color}} background\_color;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_fade}{Fade}} fade;}
+\DoxyCodeLine{31     \textcolor{keyword}{public}:}
+\DoxyCodeLine{32         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_loader_a0441e389b9e05657e4b9cdb6a2436650}{load}}();}
+\DoxyCodeLine{33         \textcolor{comment}{// SceneChangeはScenePopの後に処理される}}
+\DoxyCodeLine{34         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_loader_ad624db2bc6893c213d565d75dfbc4abc}{SceneChange}}(\mbox{\hyperlink{namespace_shooting___hack_and_slash_a43b9675a37ae8c7c8ffe20d0b5612479}{eScene}} next\_scene, \textcolor{keywordtype}{bool} stack\_clear = \textcolor{keyword}{false}, \textcolor{keywordtype}{bool} is\_fade = \textcolor{keyword}{false}) \textcolor{keyword}{override};}
+\DoxyCodeLine{35         \textcolor{comment}{// ScenePopはSceneChangeの前に処理される}}
+\DoxyCodeLine{36         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_loader_a09c3bde2a459a03d0251a7386233e3c5}{ScenePop}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{37     \textcolor{keyword}{private}:}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39         \textcolor{keywordtype}{void} scene\_change();}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} scene\_pop();}
+\DoxyCodeLine{41     \textcolor{keyword}{public}:}
+\DoxyCodeLine{42         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_loader_a2b4e66c0e041964f4582e4e764bdd6cd}{SceneLoader}}();}
+\DoxyCodeLine{43     \};}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}

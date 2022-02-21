@@ -1,0 +1,29 @@
+\hypertarget{_button_controller_8h_source}{}\doxysection{Button\+Controller.\+h}
+\label{_button_controller_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/ButtonController.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/ButtonController.h}}
+\mbox{\hyperlink{_button_controller_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_button_8h}{Button.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller}{ButtonController}} \{}
+\DoxyCodeLine{9     \textcolor{keyword}{private}:}
+\DoxyCodeLine{10         std::vector<UI::Button> buttons;}
+\DoxyCodeLine{11     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller_a533ef80e965e2744d7e0d7042d4ae335}{update}}();}
+\DoxyCodeLine{13         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller_a01b8d7ffce49370c803fb57353513413}{draw}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15         \textcolor{comment}{// ボタン追加関数}}
+\DoxyCodeLine{16         \textcolor{comment}{// onclick  : クリックした時に呼ばれる処理}}
+\DoxyCodeLine{17         \textcolor{comment}{// text : 見出しとして表示する文章}}
+\DoxyCodeLine{18         \textcolor{comment}{// p\_leftup : ボタンの基準となる座標、ここをボタンの左上として表示する}}
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller_ad0174acb25deb0703dfe0ec72a547d27}{Add}}(std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{void})> onclick, \textcolor{keyword}{const} std::string\& text, \textcolor{keyword}{const} Point\& p\_leftup);}
+\DoxyCodeLine{20         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller_ab091d31e18dca7f98efccc4e2e3134bd}{ButtonController}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller_a28618c76d4f8473f6a369f3fcb6e9b9d}{\string~ButtonController}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{22     \};}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}

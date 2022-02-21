@@ -1,0 +1,27 @@
+\hypertarget{_photo_displayer_8h_source}{}\doxysection{Photo\+Displayer.\+h}
+\label{_photo_displayer_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/PhotoDisplayer.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/PhotoDisplayer.h}}
+\mbox{\hyperlink{_photo_displayer_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_i_displayer_8h}{IDisplayer.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{6     \textcolor{comment}{// 見た目を静止画像で表現するDisplayer}}
+\DoxyCodeLine{7     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_photo_displayer}{PhotoDisplayer}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_displayer}{IDisplayer}}\{}
+\DoxyCodeLine{8     \textcolor{keyword}{private}:}
+\DoxyCodeLine{9         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} gr\_handle;}
+\DoxyCodeLine{10         \textcolor{comment}{// 画像の大きさの半分、座標の補正に使う}}
+\DoxyCodeLine{11         Vec2 gr\_half\_size;}
+\DoxyCodeLine{12     \textcolor{keyword}{public}:}
+\DoxyCodeLine{13         \textcolor{comment}{// 描画}}
+\DoxyCodeLine{14         \textcolor{comment}{// pos\_center: 中央座標}}
+\DoxyCodeLine{15         \textcolor{comment}{// direction: 向き}}
+\DoxyCodeLine{16         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_photo_displayer_a626551b54affef1af0df5f585b7560e6}{display}}(\textcolor{keyword}{const} Vec2\& pos\_center, \textcolor{keyword}{const} Vec2\& direction) \textcolor{keyword}{const override};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_photo_displayer_a7be763eef42c93aa95c72c3c754067d7}{PhotoDisplayer}}(\textcolor{keyword}{const} std::string\& path);}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_photo_displayer_a585a8f0e73244eaadc44c460ab812d4d}{\string~PhotoDisplayer}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{20     \};}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}

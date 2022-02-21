@@ -1,0 +1,34 @@
+\hypertarget{_debug___scene_8h_source}{}\doxysection{Debug\+\_\+\+Scene.\+h}
+\label{_debug___scene_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Debug\_Scene.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/Debug\_Scene.h}}
+\mbox{\hyperlink{_debug___scene_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_scene_8h}{AbstructScene.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_button_controller_8h}{ButtonController.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{comment}{// ここから先自由に\#includeしてよい}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_gun___custamize___window_8h}{Gun\_Custamize\_Window.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_back_ground___big_star_8h}{BackGround\_BigStar.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_volume_controller_8h}{VolumeController.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{13     \textcolor{keyword}{namespace }Scene \{}
+\DoxyCodeLine{14         \textcolor{comment}{// 単体テストとかを行う実験場}}
+\DoxyCodeLine{15         \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_debug___scene}{Debug\_Scene}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_scene}{AbstructScene}} \{}
+\DoxyCodeLine{16             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_button_controller}{ButtonController}} buttons;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_volume_controller}{VolumeController}} volume\_controller;}
+\DoxyCodeLine{19         \textcolor{keyword}{public}:}
+\DoxyCodeLine{20             \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_debug___scene_ad38ee0d070e28149c6bbcc9f94e57802}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{21             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_debug___scene_ac6ce46a6de75124280fc35571d01232d}{draw}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_debug___scene_a411054ef21a53589faa7cdcdc4930abf}{Debug\_Scene}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_i_scene_change_listener}{ISceneChangeListener}}\& i);}
+\DoxyCodeLine{24             \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_scene_1_1_debug___scene_ae4ddaac464a1f92c1e8b0f67dc136215}{\string~Debug\_Scene}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{25         \textcolor{keyword}{private}:}
+\DoxyCodeLine{26         \};}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}

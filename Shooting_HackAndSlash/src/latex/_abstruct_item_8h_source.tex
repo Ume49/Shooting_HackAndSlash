@@ -1,0 +1,41 @@
+\hypertarget{_abstruct_item_8h_source}{}\doxysection{Abstruct\+Item.\+h}
+\label{_abstruct_item_8h_source}\index{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/AbstructItem.h@{C:/Users/tomok/source/repos/Ume49/Shooting\_HackAndSlash/Shooting\_HackAndSlash/src/AbstructItem.h}}
+\mbox{\hyperlink{_abstruct_item_8h}{\mbox{[}詳解\mbox{]}}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_abstruct_game_object_8h}{AbstructGameObject.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_photo___shared_handle_8h}{Photo\_SharedHandle.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_circle_collider_8h}{CircleCollider.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_survival___counter_8h}{Survival\_Counter.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_shooting___hack_and_slash}{Shooting\_HackAndSlash}} \{}
+\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{namespace_shooting___hack_and_slash_1_1_define_1_1_path_1_1_photo_a356a3de71c4428bfaef72f2dc9ef49ca}{Player}};}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item}{AbstructItem}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object}{AbstructGameObject}} \{}
+\DoxyCodeLine{11     \textcolor{keyword}{private}:}
+\DoxyCodeLine{12         \mbox{\hyperlink{struct_shooting___hack_and_slash_1_1_photo___shared_handle}{Photo\_SharedHandle}} photo\_handle;}
+\DoxyCodeLine{13         Vec2 half\_size;}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_survival___counter}{Survival\_Counter}} survival;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& p;}
+\DoxyCodeLine{17     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_circle_collider}{CircleCollider}} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_ad20629534d54dbb83150ac3d2efbdb7c}{collider}};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{comment}{// 見た目の描画}}
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_ab17ff53625767e0fce661df4d819b2c0}{display}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{comment}{// 拡大縮小をしたい場合}}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_ab17ff53625767e0fce661df4d819b2c0}{display}}(\textcolor{keywordtype}{double} ex\_rate) \textcolor{keyword}{const};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_ad478e7d1d18fa03e5acb6c8d9ac09e26}{OnCollide}}(\mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& p) = 0;}
+\DoxyCodeLine{27     \textcolor{keyword}{public}:}
+\DoxyCodeLine{28         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_a135fcc6e5ef44b1034ee9927813d271b}{is\_dead}};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_aaed0b4d9d9df395070a147cef8dbe539}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_a3bf2613ac7219107c441535a14cc9227}{AbstructItem}}(\textcolor{keyword}{const} std::string\& path, \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_player}{Player}}\& p, \textcolor{keyword}{const} Vec2\& \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_game_object_aa4ac9dd6c3f92a810f44365d09522637}{pos}});}
+\DoxyCodeLine{33         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_shooting___hack_and_slash_1_1_abstruct_item_a779c60be0a3a73c8d87df25bd07d6854}{\string~AbstructItem}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{34     \};}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
