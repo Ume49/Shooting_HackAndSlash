@@ -23,11 +23,13 @@ namespace Shooting_HackAndSlash::Scene {
 		back_screen(Define::Path::Photo::BackScreen)
 	{
 		result_text = Stage_Info::Is_GameClear() ? CLEAR : FAILED;
-		buttons.Add([&]() {listener.SceneChange(eScene::Title, true); }, "Return to Title", Point{ 45,920 });
-		buttons.Add([&]() {keep_game = false; }, "Quit Game", Point{ 623, 920 });
-		result_pos = Point(100, 100);
-		time_pos = Point(100, 200);
-		kill_pos = Point(100, 300);
+
+		buttons.Add([&]() {listener.SceneChange(eScene::Title, true); },	"Return to Title",	Point{ 45,  920 });
+		buttons.Add([&]() {keep_game = false; },							"Quit Game",		Point{ 623, 920 });
+		
+		result_pos  = Point(100, 100);
+		time_pos	= Point(100, 200);
+		kill_pos	= Point(100, 300);
 	}
 
 	bool Result::update() {
@@ -42,9 +44,9 @@ namespace Shooting_HackAndSlash::Scene {
 		// ƒtƒBƒ‹ƒ€‚ð•`‰æ
 		DrawGraph(0, 0, back_screen, TRUE);
 
-		DrawFormatString(result_pos.x, result_pos.y, COLOR, result_text.c_str());
-		DrawFormatString(time_pos.x, time_pos.y, COLOR, "Time %d:%d", Time::GetTimer_minute(), Time::GetTimer_seconds());
-		DrawFormatString(kill_pos.x, kill_pos.y, COLOR, "kill : %d", Stage_Info::Show_KillCount());
+		DrawFormatString(result_pos.x,	result_pos.y,	COLOR, result_text.c_str());
+		DrawFormatString(time_pos.x,	time_pos.y,		COLOR, "Time %d:%d", Time::GetTimer_minute(), Time::GetTimer_seconds());
+		DrawFormatString(kill_pos.x,	kill_pos.y,		COLOR, "kill : %d",	 Stage_Info::Show_KillCount());
 		buttons.draw();
 	}
 }

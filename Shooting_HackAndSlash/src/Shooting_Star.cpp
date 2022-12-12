@@ -11,54 +11,51 @@ namespace {	// 星自体の設定
 	// 星が流れる速度
 	const Vec2 velocity{ 0.f, 1000.f };
 
-	// 星の半径
-	constexpr float radius = 1.f;
-
-	// 星を正何角形で表現するか
-	constexpr int poly = 4;
-
-	// 色
-	constexpr unsigned int color = 0xffffff;
+	constexpr float			radius	= 1.f;		// 星の半径
+	constexpr int			poly	= 4;		// 星を正何角形で表現するか
+	constexpr unsigned int	color = 0xffffff;	// 星の色
 
 	// ステージ外と判定されるy座標
 	constexpr float stage_out_border = Shooting_HackAndSlash::Define::Window::PlayArea::End::Yf + radius;
 }
 
 namespace {	// スポナーの設定
-	// 星が出現する頻度
-	constexpr float interval = 0.2f;
-
-	// 初期y座標
-	constexpr float spawn_y = ::radius * (-1.f);
+	
+	constexpr float interval		= 0.2f;					// 星が出現する頻度
+	constexpr float spawn_y			= ::radius * (-1.f);	// 初期y座標
+	constexpr float counter_init	= 0.f;					// カウンター初期値
 
 	// 星が出現する範囲
 	constexpr int
 		x_range_start = 0,
 		x_range_end = Shooting_HackAndSlash::Define::Window::PlayArea::End::X;
-
-	// カウンター初期値
-	constexpr float counter_init = 0.f;
 }
 
 namespace Shooting_HackAndSlash::BackGround_Object {
+	//=星単品のメンバ実装=========================================================
+
+	// コンストラクタ
 	Shooting_Stars::Star::Star(const Vec2& p) :
 		pos(p) {
 	}
 
+	// 1フレームにつき1回呼び出される更新処理
 	void Shooting_Stars::Star::update() {
 		// 移動
 		pos += ::velocity * Time::DeltaTime();
 	}
 
+	// 星を描画
 	void Shooting_Stars::Star::draw() const {
 		DrawCircleAA(pos.x, pos.y, ::radius, ::poly, ::color);
 	}
 
+	// 自分がステージ外にいるのかどうか
 	bool Shooting_Stars::Star::is_stage_out() const {
 		return pos.y >= ::stage_out_border;
 	}
 
-	//===========================================================
+	//=星の管理クラスのメンバ実装===================================================
 
 	Shooting_Stars::Shooting_Stars() :
 		container{},

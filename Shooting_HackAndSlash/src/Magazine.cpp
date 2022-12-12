@@ -21,7 +21,7 @@ namespace Shooting_HackAndSlash::Gun_Custamize {
 		auto length = gun->get().magazine.size();
 
 		for (auto i = 0U; i < length; i++) {
-			Point temp_size = p.size();
+			Point temp_size	  = p.size();
 
 			Point temp_center = center + Point{ 0, temp_size.y + slot_space }*static_cast<int>(i);
 

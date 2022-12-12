@@ -8,11 +8,9 @@
 #include"Define.h"
 
 namespace {
-	// ダメージ減衰率
-	constexpr float damage_decrease = 0.6f;
-
+	constexpr float damage_decrease = 0.6f;		// ダメージ減衰率
 	// 一個の角度
-	constexpr float mono_angle = 360.f / 5.f * static_cast<float>(std::numbers::pi) / 180.f;
+	constexpr float mono_angle		= 360.f / 5.f * static_cast<float>(std::numbers::pi) / 180.f;
 }
 
 namespace Shooting_HackAndSlash::Bullet {
@@ -38,7 +36,7 @@ namespace Shooting_HackAndSlash::Bullet {
 		Bullet_Paramater para;
 
 		para.damage = damage;
-		para.pos = pos;
+		para.pos	= pos;
 
 		for (auto i = 0.f; i < 5.f; i++) {
 			// 方向計算

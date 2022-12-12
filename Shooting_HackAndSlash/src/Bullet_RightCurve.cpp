@@ -9,11 +9,11 @@
 #include"Time.h"
 
 namespace {
-	constexpr float survival_count = 10.f;
-	// 右に曲げる力の大きさ
-	constexpr float curve_rength = 3000.f;
+	constexpr float survival_count	= 10.f;
+	
+	constexpr float curve_rength	= 3000.f;	// 右に曲げる力の大きさ
 
-	constexpr float speed = 1280.f;
+	constexpr float speed			= 1280.f;
 
 	constexpr float collider_radius = 10.f;
 }
@@ -42,8 +42,8 @@ namespace Shooting_HackAndSlash::Bullet {
 	}
 
 	void RightCurve::OnCollide(AbstructEnemy& e) {
-		is_dead = true;
-		is_destroy = true;
+		is_dead		= true;
+		is_destroy	= true;
 
 		e.Damage(damage);
 	}
@@ -58,9 +58,9 @@ namespace Shooting_HackAndSlash::Bullet {
 		Bullet_Paramater para;
 
 		// パラメータ設定
-		para.direction = this->velocity.nomalize();
-		para.damage = this->damage;
-		para.pos = this->pos;
+		para.direction	= this->velocity.nomalize();
+		para.damage		= this->damage;
+		para.pos		= this->pos;
 
 		// 生成
 		this->bulletcontroller_ref.Make(bullet, para, resource);

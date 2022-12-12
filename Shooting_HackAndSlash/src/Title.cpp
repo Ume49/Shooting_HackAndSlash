@@ -19,7 +19,7 @@ namespace {
 		Set{Vec2{ 594,728 }, 0xffffff, 0.f},
 		Set{Vec2{ 213,813 }, 0xffffff, 0.1f},
 		Set{Vec2{ 646,241 }, 0xffffff, 0.f},
-		Set{Vec2{ 39,182 }, 0xffffff, 0.f},
+		Set{Vec2{ 39 ,182 }, 0xffffff, 0.f},
 		Set{Vec2{ 379,663 }, 0xffffff, 0.7f}
 	};
 }
@@ -32,16 +32,16 @@ namespace Shooting_HackAndSlash::Scene {
 		keep_game(true) {
 		// ボタン登録
 		buttons.Add([&]() { listener.SceneChange(eScene::Game, true); }, "Start", Point{ 300, 800 });
-		buttons.Add([&]() {keep_game = false; }, "Quit", Point{ 300, 900 });
-		buttons.Add([&]() {listener.SceneChange(eScene::Volume); },  "Volume", Point{300, 700});
+		buttons.Add([&]() { keep_game = false; }, "Quit", Point{ 300, 900 });
+		buttons.Add([&]() { listener.SceneChange(eScene::Volume); },  "Volume", Point{300, 700});
 
 		// 星登録
 		for (auto& w : ::star_preset) { stars.push_back(BackGround_Object::BigStar(w.pos, w.color, w.deray)); }
 
 		// シングルトンクラス初期化
-		PlayerInfo::initialize();
-		Stage_Info::initialize();
-		Gun_Info::initialize();
+		PlayerInfo    ::initialize();
+		Stage_Info	  ::initialize();
+		Gun_Info      ::initialize();
 		Inventory_Info::initialize();
 	}
 

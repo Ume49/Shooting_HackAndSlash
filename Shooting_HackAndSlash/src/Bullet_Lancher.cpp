@@ -44,9 +44,9 @@ namespace Shooting_HackAndSlash {
 		// ƒpƒ‰ƒ[ƒ^ì¬
 		Bullet_Paramater para;
 
-		para.damage = PlayerInfo::getInstance().atk;
-		para.pos = pos;
-		para.direction = direction;
+		para.damage		= PlayerInfo::getInstance().atk;
+		para.pos		= pos;
+		para.direction	= direction;
 
 		// ’eæ“¾
 		eBullet bullet = resource->get();

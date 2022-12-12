@@ -11,19 +11,16 @@ namespace {
 	// 後ろの計算式は度数法をラジアン表記に変換するための式
 	constexpr float v_angle = 30.f * static_cast<float>(std::numbers::pi) / 180.f;
 
-	// 発射する個数
-	constexpr int launch_count = 2;
-
-	// ダメージ減衰率
-	constexpr float damage_decrease = 0.8f;
+	constexpr int	launch_count	= 2;		// 発射する個数
+	constexpr float damage_decrease = 0.8f;		// ダメージ減衰率
 }
 
 namespace Shooting_HackAndSlash::Bullet {
 	V::V(const Bullet_Paramater& p, std::unique_ptr<Bullet_Resource>& resource, BulletController& b, EnemyController& e) :
 		AbstructBullet(Define::Path::Photo::Bullet, p, resource, e, b) {
 		// すぐ消去されるようにする
-		this->is_dead = true;
-		this->is_destroy = true;
+		this->is_dead		= true;
+		this->is_destroy	= true;
 
 		// ダメージ減衰
 		this->damage = static_cast<int>(p.damage * ::damage_decrease);
@@ -38,7 +35,7 @@ namespace Shooting_HackAndSlash::Bullet {
 
 		// パラメータの設定
 		para.damage = this->damage;
-		para.pos = this->pos;
+		para.pos	= this->pos;
 
 		// 弾取得
 		eBullet bullet = resource->get();

@@ -2,123 +2,150 @@
 
 #include<DxLib.h>
 
+// データ取得関数呼び出し用マクロ
+// 同じこと書くのがめんどくさいので
+
+// マクロをさらに省略して書くためのやつ
+#define GET_INSTANCE	Input::getInstance()	
+
+// ＊ マクロ名(引数)で使用
+// キー入力取得
+#define GET_KEY			GET_INSTANCE.key.GetKey
+#define GET_KEY_DOWN	GET_INSTANCE.key.GetKeyDown
+#define GET_KEY_UP		GET_INSTANCE.key.GetKeyUp
+// マウスのボタン入力取得
+#define GET_MOUSE		GET_INSTANCE.mouse.GetInput
+#define GET_MOUSE_DOWN	GET_INSTANCE.mouse.GetDown
+#define GET_MOUSE_UP	GET_INSTANCE.mouse.GetUp
+
 namespace Shooting_HackAndSlash{
 	void Input::update() {
-		Input::getInstance().key.udpate();
-		Input::getInstance().mouse.update();
+		Input::getInstance().key	.udpate();
+		Input::getInstance().mouse	.update();
 		Input::getInstance().pointer.update();
 	}
 
+	// 渡されたキーが押されているか
 	bool Input::Get(const Inputcode& code) {
-		bool temp = false;
+		// 結果を入れる変数
+		bool result = false;
+
+		// code ごと分岐してにチェック
 		switch (code) {
 		case Inputcode::Up:
-			temp = Input::getInstance().key.GetKey(KEY_INPUT_W);
+			result = GET_KEY(KEY_INPUT_W);
 			break;
 		case Inputcode::Down:
-			temp = Input::getInstance().key.GetKey(KEY_INPUT_S);
+			result = GET_KEY(KEY_INPUT_S);
 			break;
 		case Inputcode::Right:
-			temp = Input::getInstance().key.GetKey(KEY_INPUT_D);
+			result = GET_KEY(KEY_INPUT_D);
 			break;
 		case Inputcode::Left:
-			temp = Input::getInstance().key.GetKey(KEY_INPUT_A);
+			result = GET_KEY(KEY_INPUT_A);
 			break;
 		case Inputcode::Fire1:
-			temp = Input::getInstance().mouse.GetInput(MOUSE_INPUT_LEFT);
+			result = GET_MOUSE(MOUSE_INPUT_LEFT);
 			break;
 		case Inputcode::Fire2:
-			temp = Input::getInstance().mouse.GetInput(MOUSE_INPUT_RIGHT);
+			result = GET_MOUSE(MOUSE_INPUT_RIGHT);
 			break;
 		case Inputcode::Esc:
-			temp = Input::getInstance().key.GetKey(KEY_INPUT_ESCAPE);
+			result = GET_KEY(KEY_INPUT_ESCAPE);
 			break;
 		case Inputcode::Tab:
-			temp = Input::getInstance().key.GetKey(KEY_INPUT_TAB);
+			result = GET_KEY(KEY_INPUT_TAB);
 			break;
 		case Inputcode::Debug_Exit:
-			temp = Input::getInstance().key.GetKey(KEY_INPUT_I);
+			result = GET_KEY(KEY_INPUT_I);
 			break;
 		}
 
-		return temp;
+		return result;
 	}
 
+	// 渡されたキーが現在のフレームで押されたかチェックする
+	// 押されている: true 押されていない: false
 	bool Input::GetDown(const Inputcode& code) {
-		bool temp = false;
+		// 結果を受け取る変数
+		bool result = false;
+		
+		// キーごとに対応した処理を呼び出し
 		switch (code) {
 		case Inputcode::Up:
-			temp = Input::getInstance().key.GetKeyDown(KEY_INPUT_W);
+			result = GET_KEY_DOWN(KEY_INPUT_W);
 			break;
 		case Inputcode::Down:
-			temp = Input::getInstance().key.GetKeyDown(KEY_INPUT_S);
+			result = GET_KEY_DOWN(KEY_INPUT_S);
 			break;
 		case Inputcode::Right:
-			temp = Input::getInstance().key.GetKeyDown(KEY_INPUT_D);
+			result = GET_KEY_DOWN(KEY_INPUT_D);
 			break;
 		case Inputcode::Left:
-			temp = Input::getInstance().key.GetKeyDown(KEY_INPUT_A);
+			result = GET_KEY_DOWN(KEY_INPUT_A);
 			break;
 		case Inputcode::Fire1:
-			temp = Input::getInstance().mouse.GetDown(MOUSE_INPUT_LEFT);
+			result = GET_MOUSE_DOWN(MOUSE_INPUT_LEFT);
 			break;
 		case Inputcode::Fire2:
-			temp = Input::getInstance().mouse.GetDown(MOUSE_INPUT_RIGHT);
+			result = GET_MOUSE_DOWN(MOUSE_INPUT_RIGHT);
 			break;
 		case Inputcode::Esc:
-			temp = Input::getInstance().key.GetKeyDown(KEY_INPUT_ESCAPE);
+			result = GET_KEY_DOWN(KEY_INPUT_ESCAPE);
 			break;
 		case Inputcode::Tab:
-			temp = Input::getInstance().key.GetKeyDown(KEY_INPUT_TAB);
+			result = GET_KEY_DOWN(KEY_INPUT_TAB);
 			break;
 		case Inputcode::Debug_Exit:
-			temp = Input::getInstance().key.GetKeyDown(KEY_INPUT_I);
+			result = GET_KEY_DOWN(KEY_INPUT_I);
 			break;
 		}
 
-		return temp;
+		return result;
 	}
 
+	// 現在フレームで、指定したキーが離れたかチェック
+	// 
 	bool Input::GetUp(const Inputcode& code) {
-		bool temp = false;
+		bool result = false;
 		switch (code) {
 		case Inputcode::Up:
-			temp = Input::getInstance().key.GetKeyUp(KEY_INPUT_W);
+			result = GET_KEY_UP(KEY_INPUT_W);
 			break;
 		case Inputcode::Down:
-			temp = Input::getInstance().key.GetKeyUp(KEY_INPUT_S);
+			result = GET_KEY_UP(KEY_INPUT_S);
 			break;
 		case Inputcode::Right:
-			temp = Input::getInstance().key.GetKeyUp(KEY_INPUT_D);
+			result = GET_KEY_UP(KEY_INPUT_D);
 			break;
 		case Inputcode::Left:
-			temp = Input::getInstance().key.GetKeyUp(KEY_INPUT_A);
+			result = GET_KEY_UP(KEY_INPUT_A);
 			break;
 		case Inputcode::Fire1:
-			temp = Input::getInstance().mouse.GetUp(MOUSE_INPUT_LEFT);
+			result = GET_MOUSE_UP(MOUSE_INPUT_LEFT);
 			break;
 		case Inputcode::Fire2:
-			temp = Input::getInstance().mouse.GetUp(MOUSE_INPUT_RIGHT);
+			result = GET_MOUSE_UP(MOUSE_INPUT_RIGHT);
 			break;
 		case Inputcode::Esc:
-			temp = Input::getInstance().key.GetKeyUp(KEY_INPUT_ESCAPE);
+			result = GET_KEY_UP(KEY_INPUT_ESCAPE);
 			break;
 		case Inputcode::Tab:
-			temp = Input::getInstance().key.GetKeyUp(KEY_INPUT_TAB);
+			result = GET_KEY_UP(KEY_INPUT_TAB);
 			break;
 		case Inputcode::Debug_Exit:
-			temp = Input::getInstance().key.GetKeyUp(KEY_INPUT_I);
+			result = GET_KEY_UP(KEY_INPUT_I);
 			break;
 		}
 
-		return temp;
+		return result;
 	}
 
 	Vec2 Input::GetStick() {
 		Vec2 stick{};
 
-		stick.x = (Input::getInstance().key.GetKey(KEY_INPUT_A) ? -1.f : 0.f) + (Input::getInstance().key.GetKey(KEY_INPUT_D) ? 1.f : 0.f);
-		stick.y = (Input::getInstance().key.GetKey(KEY_INPUT_W) ? -1.f : 0.f) + (Input::getInstance().key.GetKey(KEY_INPUT_S) ? 1.f : 0.f);
+		stick.x = (GET_KEY(KEY_INPUT_A) ? -1.f : 0.f) + (GET_KEY(KEY_INPUT_D) ? 1.f : 0.f);
+		stick.y = (GET_KEY(KEY_INPUT_W) ? -1.f : 0.f) + (GET_KEY(KEY_INPUT_S) ? 1.f : 0.f);
 
 		return stick.nomalize();
 	}
@@ -135,3 +162,13 @@ namespace Shooting_HackAndSlash{
 		return Input::getInstance().pointer.MouseDelta();
 	}
 }
+
+// 上で宣言したマクロを全て消去
+// ここでしか使わないので
+#undef GET_INSTANCE
+#undef GET_KEY
+#undef GET_KEY_DOWN
+#undef GET_KEY_UP
+#undef GET_MOUSE
+#undef GET_MOUSE_DOWN
+#undef GET_MOUSE_UP		

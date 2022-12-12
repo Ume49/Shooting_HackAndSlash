@@ -4,10 +4,11 @@
 #include"IOnPositionChangedListener.h"
 
 namespace Shooting_HackAndSlash {
-	class CircleCollider : public Interface::IOnPositionChangedListener {
+	// ‰~Œ`‚Ì“–‚½‚è”»’è
+	class CircleCollider : public IOnPositionChangedListener {
 	private:
-		Vec2 pos;
-		float radius;
+		Vec2  pos;		// ’†SÀ•W
+		float radius;	// ”¼Œa
 	public:
 		void OnPositionChanged(const Vec2& p) override { pos = p; }
 

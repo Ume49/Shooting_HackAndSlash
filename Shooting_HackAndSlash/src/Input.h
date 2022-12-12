@@ -11,20 +11,23 @@
 namespace Shooting_HackAndSlash {
 	class Input :public Singleton<Input> {
 	private:
-		Input_Component::KeyChecker key;
-		Input_Component::MouseChecker mouse;
-		Input_Component::MousePointer pointer;
+		Input_Component::KeyChecker		key;
+		Input_Component::MouseChecker	mouse;
+		Input_Component::MousePointer	pointer;
 	public:
 		static void update();
 
 		// 入力しているか
-		static bool Get(const Inputcode& code);
+		static bool Get		(const Inputcode& code);
 		// 押された瞬間か
-		static bool GetDown(const Inputcode& code);
+		static bool GetDown	(const Inputcode& code);
 		// 離された瞬間か
-		static bool GetUp(const Inputcode& code);
-		// 仮想スティックの入力
+		static bool GetUp	(const Inputcode& code);
+
+		// WASDの入力をジョイスティック風に、縦横(-1.f~1.f)のデータに翻訳して取得
+		// 右と上が同時に押されていたら1/√2倍、みたいな斜め処理はここでは実装していない
 		static Vec2 GetStick();
+		
 		// マウス座標
 		static Point GetMousePos();
 		// マウス座標

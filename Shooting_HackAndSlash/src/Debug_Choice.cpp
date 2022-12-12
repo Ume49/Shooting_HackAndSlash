@@ -8,10 +8,10 @@ namespace Shooting_HackAndSlash::Scene {
 		is_quit(true),
 		buttons() {
 		// ƒ{ƒ^ƒ“‚ð“o˜^
-		buttons.Add([&]() { is_quit = false; }, "Quit", Point{ 600,900 });
-		buttons.Add([&]() { listener.SceneChange(eScene::Title, true); }, "Title", Point{ 100,100 });
-		buttons.Add([&]() {listener.SceneChange(eScene::Debug); }, "DebugScene", Point{ 100,200 });
-		buttons.Add([&]() {listener.SceneChange(eScene::Menu); }, "Menu", Point{ 100,300 });
+		buttons.Add([&]() { is_quit = false; },								"Quit",			Point{ 600,900 });
+		buttons.Add([&]() { listener.SceneChange(eScene::Title, true); },	"Title",		Point{ 100,100 });
+		buttons.Add([&]() { listener.SceneChange(eScene::Debug); },			"DebugScene",	Point{ 100,200 });
+		buttons.Add([&]() { listener.SceneChange(eScene::Menu); },			"Menu",			Point{ 100,300 });
 	}
 
 	bool Debug_Choice::update() {

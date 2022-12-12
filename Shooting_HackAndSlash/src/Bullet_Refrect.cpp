@@ -11,11 +11,11 @@ namespace {
 	constexpr float x_min = Start::Xf, x_max = End::Xf;
 	constexpr float y_min = Start::Yf, y_max = End::Yf;
 
-	constexpr float survival_time = 6.f;
+	constexpr float survival_time	= 6.f;
 
 	constexpr float collider_radius = 10.f;
 
-	constexpr float speed = 1280.f;
+	constexpr float speed			= 1280.f;
 }
 
 namespace Shooting_HackAndSlash::Bullet {
@@ -44,8 +44,8 @@ namespace Shooting_HackAndSlash::Bullet {
 
 		// 生存時間が終了したら消滅
 		if (survival.is_end()) {
-			is_dead = true;
-			is_destroy = false;
+			is_dead		= true;
+			is_destroy	= false;
 		}
 	}
 
@@ -66,9 +66,9 @@ namespace Shooting_HackAndSlash::Bullet {
 		Bullet_Paramater para;
 
 		// パラメータ設定
-		para.direction = this->velocity.nomalize();
-		para.damage = this->damage;
-		para.pos = this->pos;
+		para.direction	= this->velocity.nomalize();
+		para.damage		= this->damage;
+		para.pos		= this->pos;
 
 		// 生成
 		this->bulletcontroller_ref.Make(bullet, para, resource);

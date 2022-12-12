@@ -28,6 +28,7 @@ namespace Shooting_HackAndSlash::Scene {
 		, volume_controller(Point{ 100,100 })
 	{
 #ifdef  _DEBUG
+		// デバッグ専用にボタンを追加
 		buttons.Add([&]() { listener.ScenePop(); }, "Return", Point{ 10, 10 });
 		::init();
 

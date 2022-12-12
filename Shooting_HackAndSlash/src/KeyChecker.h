@@ -8,16 +8,17 @@
 namespace Shooting_HackAndSlash {
 	namespace Input_Component {
 		// キーボードの押下状況を監視するクラス
+		// Inputクラスにメンバとして利用される
 		class KeyChecker {
 		private:
-			std::array<int, 256> key_count;
+			std::array<int , 256> key_count;
 			std::array<char, 256> key_buf;
 		public:
 			void udpate();
 
-			bool GetKey(const int keycode) const;
-			bool GetKeyDown(const int keycode) const;
-			bool GetKeyUp(const int keycode) const;
+			bool GetKey		(const int keycode) const;
+			bool GetKeyDown	(const int keycode) const;
+			bool GetKeyUp	(const int keycode) const;
 
 			KeyChecker() :
 				key_count(),

@@ -8,6 +8,7 @@
 
 #include<memory>
 
+// 弾クラスのインスタンスを生成するときに引数として渡せるお決まりのセット
 #define _Bullet_Args_Template const Bullet_Paramater& p, std::unique_ptr<Bullet_Resource>& resource, BulletController& b, EnemyController& e
 
 namespace Shooting_HackAndSlash {

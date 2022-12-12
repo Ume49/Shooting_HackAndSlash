@@ -8,6 +8,7 @@
 namespace Shooting_HackAndSlash {
 	namespace PATH = Define::Path::Photo::Volume;
 
+	// コンストラクタ
 	Volume::Volume(const Point& p, std::function<void(float)> f, float v) :
 		value(v),
 		is_dragged(false),
@@ -30,10 +31,12 @@ namespace Shooting_HackAndSlash {
 		value = static_cast<float>(clip.pos.x - start_x) / width;
 	}
 
+	// 更新処理
 	void Volume::update() {
 		touch_pannel->update();
 
 		if (is_dragged) {
+			// 左クリックが離されたかチェック
 			if (Input::GetUp(Inputcode::Fire1)) {
 				is_dragged = false;
 			}
@@ -57,6 +60,7 @@ namespace Shooting_HackAndSlash {
 		}
 	}
 
+	// 描画処理
 	void Volume::draw() const {
 		// ゲージを描画
 		gauge.draw(value);

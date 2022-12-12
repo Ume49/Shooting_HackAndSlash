@@ -52,8 +52,8 @@ namespace Shooting_HackAndSlash {
 
 		// ボリュームバーを登録
 		container.push_back(std::make_unique<Volume>(Point{ x_pos,y_pos(1) }, [](float value) { Volume_Info::SetMaster(value); }, Volume_Info::getInstance().master_volume));
-		container.push_back(std::make_unique<Volume>(Point{ x_pos,y_pos(2) }, [](float value) { Volume_Info::SetBGM(value); }, Volume_Info::getInstance().bgm_volume));
-		container.push_back(std::make_unique<Volume>(Point{ x_pos,y_pos(3) }, [](float value) { Volume_Info::SetSE(value); }, Volume_Info::getInstance().se_volume));
+		container.push_back(std::make_unique<Volume>(Point{ x_pos,y_pos(2) }, [](float value) { Volume_Info::SetBGM(value); },	  Volume_Info::getInstance().bgm_volume));
+		container.push_back(std::make_unique<Volume>(Point{ x_pos,y_pos(3) }, [](float value) { Volume_Info::SetSE(value); },	  Volume_Info::getInstance().se_volume));
 
 		// テキストを登録
 		texts.reserve(bar_amount);

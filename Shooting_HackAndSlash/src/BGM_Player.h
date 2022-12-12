@@ -12,7 +12,9 @@ namespace Shooting_HackAndSlash {
 		BGM_Player(const std::string& file_path);
 		~BGM_Player();
 
+		// BGMÄ¶
 		void play() const;
+		// Ä¶‚µ‚Ä‚¢‚éBGM‚ğ’†~‚·‚é
 		void stop() const;
 	};
 }

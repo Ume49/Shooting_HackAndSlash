@@ -47,6 +47,7 @@ namespace Shooting_HackAndSlash {
 		const Bullet_Paramater& p,
 		std::unique_ptr<Bullet_Resource>& r
 	) {
+// à¯êîÇìnÇ∑ÇΩÇﬂÇÃÉ}ÉNÉçÇê›íË
 #define _Args_Pass p, r, *this, enemycontroller_ref
 
 		switch (b) {
@@ -54,22 +55,22 @@ namespace Shooting_HackAndSlash {
 		case eBullet::Null: break;	// âΩÇ‡ÇµÇ»Ç¢
 
 		case eBullet::ST:
-			bullets.push_back(std::make_unique<Bullet::ST>(p, r, *this, enemycontroller_ref));
+			bullets.push_back(std::make_unique<Bullet::ST>		  (_Args_Pass));
 			break;
 		case eBullet::V:
-			bullets.push_back(std::make_unique<Bullet::V>(p, r, *this, enemycontroller_ref));
+			bullets.push_back(std::make_unique<Bullet::V>		  (_Args_Pass));
 			break;
 		case eBullet::Star:
-			bullets.push_back(std::make_unique<Bullet::Star>(p, r, *this, enemycontroller_ref));
+			bullets.push_back(std::make_unique<Bullet::Star>	  (_Args_Pass));
 			break;
 		case eBullet::Refrect:
-			bullets.push_back(std::make_unique < Bullet::Refrect>(_Args_Pass));
+			bullets.push_back(std::make_unique<Bullet::Refrect>	  (_Args_Pass));
 			break;
 		case eBullet::RightCurve:
 			bullets.push_back(std::make_unique<Bullet::RightCurve>(_Args_Pass));
 			break;
 		case eBullet::LeftCurve:
-			bullets.push_back(std::make_unique<Bullet::LeftCurve>(_Args_Pass));
+			bullets.push_back(std::make_unique<Bullet::LeftCurve> (_Args_Pass));
 			break;
 		}
 

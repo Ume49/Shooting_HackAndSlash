@@ -8,17 +8,10 @@
 #include"Time.h"
 
 namespace {
-	// 当たり判定の大きさ
-	constexpr float collider_radius = 10.f;
-
-	// 移動速度
-	constexpr float speed = 1280.f;
-
-	// 速度の減衰度
-	constexpr float resistance = 0.99f;
-
-	// 生存時間
-	constexpr float survival_count = 0.7f;
+	constexpr float collider_radius = 10.f;		// 当たり判定の大きさ
+	constexpr float speed			= 1280.f;	// 移動速度
+	constexpr float resistance		= 0.99f;	// 速度の減衰度
+	constexpr float survival_count	= 0.7f;		// 生存時間
 }
 
 namespace Shooting_HackAndSlash::Bullet {
@@ -39,8 +32,8 @@ namespace Shooting_HackAndSlash::Bullet {
 		this->survival_count -= Time::DeltaTime();
 
 		if (this->survival_count <= 0.f) {
-			is_dead = true;
-			is_destroy = false;
+			is_dead		= true;
+			is_destroy	= false;
 		}
 	}
 
@@ -60,9 +53,9 @@ namespace Shooting_HackAndSlash::Bullet {
 		Bullet_Paramater para;
 
 		// パラメータ設定
-		para.direction = this->velocity.nomalize();
-		para.damage = this->damage;
-		para.pos = this->pos;
+		para.direction	= this->velocity.nomalize();
+		para.damage		= this->damage;
+		para.pos		= this->pos;
 
 		// 生成
 		this->bulletcontroller_ref.Make(bullet, para, resource);

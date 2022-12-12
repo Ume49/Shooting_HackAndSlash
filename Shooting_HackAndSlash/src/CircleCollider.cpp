@@ -11,8 +11,8 @@ namespace Shooting_HackAndSlash {
 	}
 
 	bool CircleCollider::isColide(const CircleCollider& r) {
-		float distance = pos.distance(r.pos);
-		float boarder = radius + r.radius;
+		float distance	= pos.distance(r.pos);
+		float boarder	= radius + r.radius;
 
 		return distance <= boarder;
 	}

@@ -8,15 +8,13 @@ namespace {
 	// 何角形で表現するのか
 	constexpr int poly = 4;
 
+	// 星のサイズ。大きいときと小さいとき
 	constexpr float
-		big_radius = 2.f,
+		big_radius	 = 2.f,
 		small_radius = 1.f;
 
-	// stateの切り替わる周期
-	constexpr float interval = 1.f;
-
-	// カウンター初期値
-	constexpr float count_init = 0.f;
+	constexpr float interval   = 1.f;	// stateの切り替わる周期
+	constexpr float count_init = 0.f;	// カウンター初期値
 }
 
 namespace Shooting_HackAndSlash::BackGround_Object {
@@ -51,13 +49,16 @@ namespace Shooting_HackAndSlash::BackGround_Object {
 	}
 
 	void BigStar::draw() const {
+#define SWITCH Shooting_HackAndSlash::BackGround_Object::BigStar::State
+
 		switch (state) {
-		case Shooting_HackAndSlash::BackGround_Object::BigStar::State::ON:
+		case SWITCH::ON:
 			DrawCircleAA(position.x, position.y, ::big_radius, ::poly, color);
 			break;
-		case Shooting_HackAndSlash::BackGround_Object::BigStar::State::OFF:
+		case SWITCH::OFF:
 			DrawCircleAA(position.x, position.y, ::small_radius, ::poly, color);
 			break;
 		}
+#undef SWITCH
 	}
 }

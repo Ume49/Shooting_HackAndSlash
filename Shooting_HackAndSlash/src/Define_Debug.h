@@ -1,5 +1,7 @@
 #pragma once
 
+// デバッグ中だけ使われるパラメータ
+
 #ifdef _DEBUG
 namespace Shooting_HackAndSlash{
 	namespace Palette {

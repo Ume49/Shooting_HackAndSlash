@@ -18,11 +18,11 @@ namespace Shooting_HackAndSlash::Scene {
 	private:
 		Player player;
 
-		UIController ui;
-		BulletController bullet_player;
-		ItemController item_controller;
-		EnemySpawner enemy_spawner;
-		EnemyController enemy_controller;
+		UIController		ui;					// MainGameシーンで表示するUIを管理するクラス
+		BulletController	bullet_player;		// 弾を管理するクラス
+		ItemController		item_controller;	// アイテムを管理するクラス
+		EnemySpawner		enemy_spawner;		// エネミーを生成するためのクラス
+		EnemyController		enemy_controller;	// エネミーをまとめて管理するクラス
 
 		BackGround_Object::Shooting_Stars star;
 

@@ -9,13 +9,13 @@
 #include"Time.h"
 
 namespace {
-	constexpr float survival_count = 3.f;
-	// ‹È‚°‚é—Í‚Ì‘å‚«‚³
-	constexpr float curve_rength = 3000.f;
+	constexpr float survival_count	= 3.f;
+	
+	constexpr float curve_rength	= 3000.f;	// ‹È‚°‚é—Í‚Ì‘å‚«‚³
 
 	constexpr float collider_radius = 10.f;
 
-	constexpr float speed = 1280.f;
+	constexpr float speed			= 1280.f;
 }
 
 namespace Shooting_HackAndSlash::Bullet {
@@ -42,8 +42,8 @@ namespace Shooting_HackAndSlash::Bullet {
 	}
 
 	void LeftCurve::OnCollide(AbstructEnemy& e) {
-		is_dead = true;
-		is_destroy = true;
+		is_dead		= true;
+		is_destroy	= true;
 
 		e.Damage(damage);
 	}
@@ -58,9 +58,9 @@ namespace Shooting_HackAndSlash::Bullet {
 		Bullet_Paramater para;
 
 		// ƒpƒ‰ƒ[ƒ^Ý’è
-		para.direction = this->velocity.nomalize();
-		para.damage = this->damage;
-		para.pos = this->pos;
+		para.direction	= this->velocity.nomalize();
+		para.damage		= this->damage;
+		para.pos		= this->pos;
 
 		// ¶¬
 		this->bulletcontroller_ref.Make(bullet, para, resource);
